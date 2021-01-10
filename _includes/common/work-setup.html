@@ -1,0 +1,30 @@
+<article class="view-work">
+    <div class="intro">
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img1 | replace: '..', site.baseurl}}.png">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img2 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="work-desc">{% contentblock introduction %}</div>
+    </div>
+    <div class="intro">
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img3 | replace: '..', site.baseurl}}.png">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img4 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="work-desc">{% contentblock problem %}</div>
+    </div>
+    <div class="intro">
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img5 | replace: '..', site.baseurl}}.png">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img6 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="work-desc">{% contentblock overview %}</div>
+    </div>
+    <div class="intro">
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img7 | replace: '..', site.baseurl}}.png">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img8 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="work-desc">{% contentblock outcome %}</div>
+    </div>
+</article>

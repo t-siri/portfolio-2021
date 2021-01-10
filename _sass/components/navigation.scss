@@ -1,0 +1,264 @@
+/* Horizontal navigation */
+nav {
+	width: 100%;
+	padding: $space-xxs $space-lg;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+
+	a {
+		cursor: pointer;
+	}
+
+	&.fixed {
+		@include themify {
+			background-color: themed('background-color');
+		}
+
+		@include transform-timing(.15s);
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+
+		li {
+			&:first-of-type {
+				margin-right: auto;
+				padding-left: 0;
+			}
+
+			&:last-of-type {
+				padding-right: 0;
+			}
+
+			padding: 0 1vw;
+			min-width: convert-rem(80px);
+
+			@include media-min(md) {
+				.home {
+					display: none;
+				}
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+
+				@include themify {
+					color: get-contrasting-text-color(themed(background-color));
+				}
+
+				&:hover,
+				&:active,
+				&:focus {
+					@include transform-timing($quick-animation-time);
+				}
+
+				&.active {
+					&:before {
+						content: '';
+						width: convert-rem(8px);
+						height: convert-rem(8px);
+						margin-right: $space-xxs;
+						@include themify {
+							background-color: themed('responsive-state');
+						}
+						border-radius: 50%;
+					}
+
+					@include media(md) {
+						&:before {
+							display: none;
+						}
+
+						&:after {
+							content: '';
+							width: convert-rem(18px);
+							height: convert-rem(18px);
+							margin-left: $space-sm;
+							background-color: $color-brand-01;
+							border-radius: 50%;
+						}
+					}
+				}
+
+				&.btn--force {
+					color: $color-secondary;
+				}
+			}
+
+			#contact {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			//contact chevron
+			.icon-chevron-down.icon-bottom {
+				position: relative;
+				height: 0;
+
+				&:after {
+					margin-top: 0;
+					color: $color-primary;
+					@include motion-selected-bounce;
+				}
+			}
+		}
+	}
+
+	//Sub nav - resource content
+	.contact-content {
+		display: flex;
+		position: absolute;
+		right: $space-lg;
+		top: convert-rem(110px);
+		z-index: 5;
+
+		@include media-min(md) {
+			.contact {
+				display: none;
+			}
+		}
+
+		@include themify {
+			background-color: themed('sub-nav-bg');
+		}
+
+		&__hidden {
+			opacity: 0;
+			width: 0;
+			height: 0;
+			z-index: -1;
+			@include transform-timing(.25s);
+		}
+
+		&__visible {
+			opacity: 1;
+			min-height: convert-rem(300px);
+			height: fit-content;
+			width: convert-rem(1200px);
+			@include slideInRight($quick-animation-time);
+
+			@include media(lg) {
+				width: 85vw;
+			}
+		}
+
+		//blog article on the let section
+		.blog-article-nav {
+			padding: $space-sm;
+			width: 60%;
+			position: relative;
+			overflow: hidden;
+
+			//putting image at the back
+			img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center 75%;
+				opacity: .1;
+				left: 0;
+				top: 0;
+				z-index: 0;
+			}
+
+			.article-info {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+
+				h5 {
+					margin-top: auto;
+				}
+
+				p {
+					@include media(lg) {
+						@include truncate-more-lines(3, 2);
+					}
+				}
+
+				.btn {
+					margin-right: auto;
+					margin-left: 0;
+				}
+
+				//required to override image bg
+				* {
+					z-index: 1;
+				}
+			}
+		}
+
+		//sub contact - right section 
+		.sub-contact {
+			display: grid;
+			grid-template-areas: 'blog knowledge'
+				'ebooks faq';
+
+			.blog {
+				grid-area: blog;
+			}
+
+			.knowledge-base {
+				grid-area: knowledge;
+			}
+
+			.ebooks {
+				grid-area: ebooks;
+			}
+
+			.faq {
+				grid-area: faq;
+			}
+
+			//generic of all blocks
+			.sub-block {
+				display: flex;
+				flex-direction: column;
+				padding: $space-xs $space-sm;
+				width: convert-rem(300px);
+
+				&:focus {
+					border: none;
+				}
+
+				p {
+					font-size: $text-xsm;
+					margin-bottom: 0;
+					height: convert-rem(65px);
+
+					a {
+						display: inline;
+
+						@include themify {
+							color: themed('responsive-state');
+						}
+
+						&:hover,
+						&:active {
+							@include themify {
+								color: themed('responsive-state');
+							}
+						}
+					}
+				}
+
+				&.ebooks {
+
+					//hoding e-book links that are in DOM for mobile view
+					.mobile-link {
+						display: none;
+						pointer-events: none;
+					}
+				}
+			}
+		}
+	}
+}

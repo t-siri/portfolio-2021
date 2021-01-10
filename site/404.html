@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+	<!-- Primary Meta Tags -->
+<meta charset="utf-8">
+<title> | Dsignkul</title>
+
+<!-- Various available includes for head -->
+
+
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class=""> 
+    <nav id="navigation" class="inactive">
+	<ul>
+		<li><a href="/" aria-label="Home page">toy · <span class="b"> ux engineer</span></a></li>
+		
+		<li><a href="/about" aria-label="about page" >about</a></li>
+		<li><a href="/experience" aria-label="experience page" >experience</a></li>
+		<li><a href="/work" aria-label="work page" >work</a></li>
+		<li><a href="/gallery" aria-label="gallery page" >creative gallery</a></li>
+		<li>
+			<a onclick="toggleContact()" id="contact" aria-haspopup="true" aria-expanded="false"
+				aria-label="contact toggle">contact <span
+					class="icon-bottom icon-chevron-down"></span></a>
+
+			<div id="contact-content" class="contact-content contact-content__hidden">
+				<a aria-label="contact" onclick="toggleContact()"
+					class="contact icon-chevron-left icon-left">close</a>
+
+				<div class="contact-nav-form">
+					<div class="contact">
+						<p>You can contact me via <a class="linked-in"
+								href="https://www.linkedin.com/in/toy-sirichindakul">LinkedIn</a>, or use the contact
+							form. </p>
+						<p>Please make sure to enter your email in the form so I can reply to you.</p>
+						<form name="contact" netlify method="POST" data-netlify="true">
+							<div class="input-group input-group--text">
+								<label for='email'>
+									<span>Your email</span>
+									<input id="email" type="email" name="email" placeholder="Valid Email Address" />
+								</label>
+							</div>
+							<div class="input-group input-group--textarea">
+								<label for='message'>
+									<span>Message</span>
+									<textarea id="message" name="message" placeholder="Your Message"></textarea>
+								</label>
+							</div>
+
+							<button class="btn btn--solid pg-form-submit" type="submit"> Send it </button>
+						</form>
+
+					</div>
+					<div class="submit-message">
+						<h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</nav>
+<a id="menu-link" aria-label="Expand nav" class="menu-link inactive">
+	<div id="nav-icon1" class="close">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</a>
+
+    <main class="content">
+    <br>
+<br>
+<br>
+<br>
+<br>
+<!-- I no how 2 heyteeandL -->
+<h1>404</h1>
+
+<p><strong>Page not found :(</strong></p>
+<p>The requested page could not be found.</p>
+    </main>
+</body>
+
+<!-- Topbar navigation links -->
+<script async src="/assets/js/nav-toggle.js"></script>
+<!-- <script async src="/assets/js/nav-scroll.js"></script> -->
+<script async src="/assets/js/mob-height-responsive.js"></script>
+<script async src="/assets/js/prevent-inspect.js"></script>
+
+
+<!-- <script>
+    $(document).ready(function () {
+        $(".form-submit").click(function () {
+            $(".contact-form").addClass("submitted");
+        });
+    });
+</script> -->
+</html>

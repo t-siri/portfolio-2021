@@ -1,0 +1,55 @@
+---
+permalink: /gallery
+layout: default
+title: Creative gallery
+class: gallery-page
+---
+
+
+<h2> Creative gallery </h2>
+<p>A few of my creative work; most have not been related to work. These included illustrations and photography.
+</p>
+
+
+
+<section class="creative-gallery">
+    {% for image in site.static_files %}
+        {% if image.path contains 'img/gallery' %}
+        <div class="gallery-image">
+            <img src="{{ site.baseurl }}{{ image.path }}">
+        </div>
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+<script src="/assets/js/jquery-2.1.1.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script>
+    $(function () {
+        var container = $('.creative-gallery').masonry();
+
+        setTimeout(function () {
+            container.masonry('.gallery-image');
+        }, 1000);
+
+    });
+
+    $(window).load(function () {
+        $('.creative-gallery').masonry();
+    });
+
+    // $(function () {
+    //     var container = $('.creative-gallery');
+
+    //     // Trigger masonry
+    //     container.masonry({
+    //         itemSelector: '.gallery-image',
+    //         fitWidth: true,
+    //         horizontalOrder: false,
+    //         fitWidth: true,
+    //         fitHeight: true
+    //     });
+    // });
+</script>
+<script src="/assets/js/masonry.js"></script>
