@@ -106,6 +106,12 @@ $easing-exit-expressive: cubic-bezier(0.100, 0.015, 0.850, 0.100);
 	animation-duration: $duration;
 }
 
+@mixin slideOutUp($duration:linear) {
+	-webkit-animation-name: slideOutUp;
+	animation-name: slideOutUp;
+	animation-duration: $duration;
+}
+
 @mixin slideInUp($duration:linear) {
 	-webkit-animation-name: slideInUp;
 	animation-name: slideInUp;
@@ -115,6 +121,11 @@ $easing-exit-expressive: cubic-bezier(0.100, 0.015, 0.850, 0.100);
 @mixin slideInRight($duration:linear) {
 	-webkit-animation-name: slideInRight;
 	animation-name: slideInRight;
+	animation-duration: $duration;
+}
+@mixin slideOutRight($duration:linear) {
+	-webkit-animation-name: slideOutRight;
+	animation-name: slideOutRight;
 	animation-duration: $duration;
 }
 

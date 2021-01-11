@@ -1,0 +1,40 @@
+- name: codebots marketing site v2
+  type: development
+  url: /work-codebots-v2
+  img: codebots-v2-1
+- name: carted
+  type: design & development
+  url: /work-carted
+  img: codebots-1
+- name: codebots marketing site v1
+  type: development
+  url: /work-codebots-v1
+  img: codebots-mktg-1
+- name: self taught
+  type: design
+  url: /work-self-taught
+  img: self-taught-1
+- name: harmony design system
+  type: design, development & documentation
+  url: /work-harmony
+  img: harmony-1
+- name: kindred client portal
+  type: design & development
+  url: /work-kindred-client
+  img: kindred-client-1
+- name: kindred admin portal
+  type: design
+  url: /work-kindred-green-zone
+  img: kindred-admin-1
+- name: advance cabello
+  type: design & development
+  url: /work-advance-cabello
+  img: advance-cabello
+- name: portfolio 2016
+  type: design & development
+  url: /work-portfolio-2016
+  img: portfolio-1
+- name: innovo
+  type: design
+  url: /work-innovo
+  img: innovo-1

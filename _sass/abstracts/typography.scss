@@ -6,25 +6,17 @@ https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9
 Just like colours this is where you set the style of your target project and assign your fonts, font-sizes, font spacings.
  */
 
- @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap");
 @import url("https://use.typekit.net/vno3jue.css");
 
 /* Font family */
-$body-font-family: 'Lato',
-Arial,
-Helvetica,
-sans-serif;
-$heading-font-family: 'montserrat',
-'lato',
-Arial,
-Helvetica,
-sans-serif !default;
-$source-font-family: 'JetBrains Mono';
+$body-font-family: "Lato", Arial, Helvetica, sans-serif;
+$heading-font-family: "montserrat", "lato", Arial, Helvetica, sans-serif !default;
+$source-font-family: "JetBrains Mono";
 
 $base-font-family: $body-font-family;
 $base-font-size: convert-rem(16px) !default;
 $base-font-weight: 400;
-
 
 /* Weights */
 $text-light: 300;
@@ -45,8 +37,19 @@ $text-md: calc(1rem * #{$text-scale-ratio});
 $text-lg: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio}));
 $text-xl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
 $text-xxl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
-$text-xxxl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
-$text-xxxxl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
+$text-xxxl: calc(
+	1rem *
+		(
+			#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}
+		)
+);
+$text-xxxxl: calc(
+	1rem *
+		(
+			#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} *
+				#{$text-scale-ratio}
+		)
+);
 
 /* Line height */
 $heading-line-height: 1.2;
@@ -57,9 +60,7 @@ $text-base-size: 1rem;
 $btn-font-size: $text-base-size;
 
 .monospace {
-	* {
-		font-family: $source-font-family;
-	}
+	font-family: $source-font-family;
 }
 
 /*Scale down the text at a smaller screen size*/
@@ -92,7 +93,7 @@ h6,
 form legend,
 table caption {
 	@include themify {
-		color: themed('color-text-heading');
+		color: themed("color-text-heading");
 	}
 
 	margin-bottom: $space-xxs;
@@ -128,7 +129,7 @@ h3,
 h1,
 .h1 {
 	//only use for seo
-	font-size: 5.21vw;
+	font-size: $text-xxl;
 	font-weight: $text-bold;
 
 	@include media(md) {
@@ -142,8 +143,8 @@ h1,
 
 h2,
 .h2 {
-	font-size: 3.5vw;
-	margin-bottom: $space-lg;
+	font-size: $text-xl;
+	margin-bottom: $space-md;
 	font-weight: $text-bold;
 
 	@include media(md) {
@@ -175,7 +176,6 @@ h4,
 	font-weight: $text-medium;
 
 	&[class*="icon"] {
-
 		&:before,
 		&:after {
 			width: $text-md;
@@ -190,7 +190,6 @@ h5,
 	font-weight: $text-regular;
 
 	&[class*="icon"] {
-
 		&:before,
 		&:after {
 			width: $text-md;
@@ -205,7 +204,6 @@ h6,
 	font-weight: $text-medium;
 
 	&[class*="icon"] {
-
 		&:before,
 		&:after {
 			width: $base-font-size;
@@ -290,21 +288,21 @@ a:not(.no-a-style) {
 }
 
 p a {
+	font-weight: $text-bold;
 	@include themify {
-		color: themed('responsive-state');
+		color: themed("responsive-state");
 	}
 }
 
 p a,
-.footer__links a {
-	font-weight: $text-bold;
+nav a:not(.no-a-hover) {
 	position: relative;
 	cursor: pointer;
 
 	@include icon(after, a-underline);
 
 	&:after {
-		content: '';
+		content: "";
 		display: block;
 		width: 0;
 		position: absolute;
@@ -312,14 +310,14 @@ p a,
 		left: -8px;
 
 		@include themify {
-			background-color: themed('responsive-state');
+			background-color: themed("responsive-state");
 		}
 	}
 
 	&:hover,
 	&:active {
 		@include themify {
-			color: themed('responsive-state');
+			color: themed("responsive-state");
 		}
 
 		&:after {
@@ -332,14 +330,13 @@ p a,
 	}
 }
 
-
 /* Code */
 pre {
 	font-size: $base-font-size;
 }
 
 // Allow scrolling of code and tables
-article>table {
+article > table {
 	overflow-x: scroll;
 	overflow-y: hidden;
 
@@ -377,7 +374,6 @@ ul li {
 	font-size: $text-xsm;
 
 	&[class*="icon"] {
-
 		&:before,
 		&:after {
 			width: $text-xsm;
@@ -390,7 +386,6 @@ ul li {
 	font-size: $text-smd;
 
 	&[class*="icon"] {
-
 		&:before,
 		&:after {
 			width: $text-smd;
@@ -413,8 +408,7 @@ ul li {
 }
 
 //assigning colors in text
-@each $color-class,
-$color in $color-list {
+@each $color-class, $color in $color-list {
 	.color--#{$color-class} {
 		color: $color;
 	}

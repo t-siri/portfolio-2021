@@ -7,18 +7,19 @@ class: gallery-page
 
 
 <h2> Creative gallery </h2>
-<p>A few of my creative work; most have not been related to work. These included illustrations and photography.
-</p>
+<p>A few of my creative work - most have not been related to work.<br>
+Mediums: adobe illustrator, water colour, ink, lino print, acrylic. <br>
+There is a few photography work as well.</p>
 
 
 
 <section class="creative-gallery">
     {% for image in site.static_files %}
-        {% if image.path contains 'img/gallery' %}
-        <div class="gallery-image">
-            <img src="{{ site.baseurl }}{{ image.path }}">
-        </div>
-        {% endif %}
+    {% if image.path contains 'img/gallery' %}
+    <div class="gallery-image">
+        <img src="{{ site.baseurl }}{{ image.path }}">
+    </div>
+    {% endif %}
     {% endfor %}
 </section>
 

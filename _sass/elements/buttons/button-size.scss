@@ -18,7 +18,7 @@
 // Inline buttons should never be shown with an icon
 @mixin set-button-size($size: standard) {
 	@if $size==standard {
-		padding: $space-xs $space-sm;
+		padding: $space-xs;
 		@include set-button-font-size($btn-font-size);
 	}
 

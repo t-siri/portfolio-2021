@@ -1,6 +1,6 @@
-title: Codebots
+title: Dsignkul
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://codebots.com"
+url: "https://designkul.netlify.app"
 destination: ./site
 
 plugins:

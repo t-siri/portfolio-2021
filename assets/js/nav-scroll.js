@@ -1,8 +1,8 @@
 function handleNavigation() {
-	var titleHeight = document.getElementsByClassName('section__title')[0].clientHeight;
+	var navigation = document.getElementById('navigation').clientHeight;
 	var bodyWidth = window.document.getElementsByTagName('html')[0].clientWidth;
 	if (bodyWidth > 1000)  {
-		if (document.documentElement.scrollTop > (titleHeight - 100)) {
+		if (document.documentElement.scrollTop > (navigation - 50)) {
 			// Scrolled down the page
 			document.getElementById("navigation").classList.add('fixed')
 		} else {
@@ -10,7 +10,7 @@ function handleNavigation() {
 			document.getElementById("navigation").classList.remove('fixed')
 		}
 	} else{
-		if (document.documentElement.scrollTop > (titleHeight - 550)) {
+		if (document.documentElement.scrollTop > (navigation - 550)) {
 			// Scrolled down the page
 			document.getElementById("navigation").classList.add('fixed')
 		} else {

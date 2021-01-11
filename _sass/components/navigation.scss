@@ -5,17 +5,15 @@ nav {
 	position: fixed;
 	top: 0;
 	z-index: 9;
+	background-color: $color-brand-01;
 
 	a {
 		cursor: pointer;
 	}
 
 	&.fixed {
-		@include themify {
-			background-color: themed('background-color');
-		}
-
-		@include transform-timing(.15s);
+		@include shadow-box(subtle);
+		@include transform-timing(0.15s);
 	}
 
 	ul {
@@ -28,6 +26,22 @@ nav {
 			&:first-of-type {
 				margin-right: auto;
 				padding-left: 0;
+				display: flex;
+				align-items: center;
+				@include text-shadow;
+
+				span.b {
+					display: flex;
+					align-items: center;
+					&:before {
+						content: "";
+						height: 6px;
+						width: 6px;
+						background-color: $color-primary;
+						margin: auto $space-xxs;
+						border-radius: 50%;
+					}
+				}
 			}
 
 			&:last-of-type {
@@ -47,10 +61,9 @@ nav {
 				display: flex;
 				align-items: center;
 				text-decoration: none;
-
-				@include themify {
-					color: get-contrasting-text-color(themed(background-color));
-				}
+				justify-content: center;
+				font-family: $heading-font-family !important;
+				color: $color-primary;
 
 				&:hover,
 				&:active,
@@ -59,16 +72,7 @@ nav {
 				}
 
 				&.active {
-					&:before {
-						content: '';
-						width: convert-rem(8px);
-						height: convert-rem(8px);
-						margin-right: $space-xxs;
-						@include themify {
-							background-color: themed('responsive-state');
-						}
-						border-radius: 50%;
-					}
+					font-weight: bold;
 
 					@include media(md) {
 						&:before {
@@ -76,7 +80,7 @@ nav {
 						}
 
 						&:after {
-							content: '';
+							content: "";
 							width: convert-rem(18px);
 							height: convert-rem(18px);
 							margin-left: $space-sm;
@@ -115,9 +119,12 @@ nav {
 	.contact-content {
 		display: flex;
 		position: absolute;
-		right: $space-lg;
-		top: convert-rem(110px);
+		right: 0;
 		z-index: 5;
+		width: 100vw;
+		@include media-min(lg) {
+			top: convert-rem(70px);
+		}
 
 		@include media-min(md) {
 			.contact {
@@ -126,137 +133,86 @@ nav {
 		}
 
 		@include themify {
-			background-color: themed('sub-nav-bg');
+			background-color: themed("sub-nav-bg");
 		}
 
 		&__hidden {
-			opacity: 0;
-			width: 0;
-			height: 0;
 			z-index: -1;
-			@include transform-timing(.25s);
+			@include transform-timing($quick-animation-time);
+
+			@include media-min(md) {
+				top: -100vh;
+			}
 		}
 
 		&__visible {
 			opacity: 1;
 			min-height: convert-rem(300px);
 			height: fit-content;
-			width: convert-rem(1200px);
-			@include slideInRight($quick-animation-time);
-
-			@include media(lg) {
-				width: 85vw;
+			@include media-min(md) {
+				@include slideInDown($quick-animation-time);
+			}
+			@include media(md) {
+				@include slideInRight($quick-animation-time);
 			}
 		}
 
-		//blog article on the let section
-		.blog-article-nav {
-			padding: $space-sm;
-			width: 60%;
-			position: relative;
-			overflow: hidden;
+		//contact form
+		.contact-nav-form {
+			padding: $space-lg $space-xl;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: $color-brand-01;
+			.h2 {
+				margin-bottom: $space-xs;
+			}
+			p {
+				text-align: center;
+				a {
+					display: inline;
+				}
+			}
 
-			//putting image at the back
-			img {
+			.btn.icon-x {
 				position: absolute;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				object-position: center 75%;
-				opacity: .1;
-				left: 0;
-				top: 0;
-				z-index: 0;
+				right: $space-xl;
+				top: 50px;
+
+				@include media(md) {
+					display: none;
+				}
 			}
 
-			.article-info {
-				height: 100%;
+			#form-submit {
 				display: flex;
-				flex-direction: column;
+				margin-left: auto;
 
-				h5 {
-					margin-top: auto;
-				}
-
-				p {
-					@include media(lg) {
-						@include truncate-more-lines(3, 2);
-					}
-				}
-
-				.btn {
-					margin-right: auto;
-					margin-left: 0;
-				}
-
-				//required to override image bg
-				* {
-					z-index: 1;
+				@include media(sm) {
+					width: 100%;
+					justify-content: center;
 				}
 			}
 		}
-
-		//sub contact - right section 
-		.sub-contact {
-			display: grid;
-			grid-template-areas: 'blog knowledge'
-				'ebooks faq';
-
-			.blog {
-				grid-area: blog;
+		#contact-form {
+			.submit-message {
+				opacity: 0;
+				height: 0;
 			}
-
-			.knowledge-base {
-				grid-area: knowledge;
+			.form {
+				opacity: 1;
+				height: max-content;
 			}
-
-			.ebooks {
-				grid-area: ebooks;
-			}
-
-			.faq {
-				grid-area: faq;
-			}
-
-			//generic of all blocks
-			.sub-block {
-				display: flex;
-				flex-direction: column;
-				padding: $space-xs $space-sm;
-				width: convert-rem(300px);
-
-				&:focus {
-					border: none;
+			&.submitted {
+				.submit-message {
+					opacity: 1;
+					height: max-content;
 				}
-
-				p {
-					font-size: $text-xsm;
-					margin-bottom: 0;
-					height: convert-rem(65px);
-
-					a {
-						display: inline;
-
-						@include themify {
-							color: themed('responsive-state');
-						}
-
-						&:hover,
-						&:active {
-							@include themify {
-								color: themed('responsive-state');
-							}
-						}
-					}
-				}
-
-				&.ebooks {
-
-					//hoding e-book links that are in DOM for mobile view
-					.mobile-link {
-						display: none;
-						pointer-events: none;
-					}
+				.form {
+					opacity: 0;
+					height: 0;
 				}
 			}
 		}

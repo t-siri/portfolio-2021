@@ -4,7 +4,7 @@
 <head>
 	<!-- Primary Meta Tags -->
 <meta charset="utf-8">
-<title>Work | Dsignkul</title>
+<title>Work | Advance Cabello | Dsignkul</title>
 
 <!-- Various available includes for head -->
 
@@ -18,23 +18,26 @@
 <body class=""> 
     <nav id="navigation" class="inactive">
 	<ul>
-		<li><a href="/" aria-label="Home page">toy · <span class="b"> ux engineer</span></a></li>
+		<li><a href="/" aria-label="Home page">toy<span class="b">ux engineer</span></a></li>
 		
 		<li><a href="/about" aria-label="about page" >about</a></li>
 		<li><a href="/experience" aria-label="experience page" >experience</a></li>
 		<li><a href="/work" aria-label="work page" >work</a></li>
 		<li><a href="/gallery" aria-label="gallery page" >creative gallery</a></li>
 		<li>
-			<a onclick="toggleContact()" id="contact" aria-haspopup="true" aria-expanded="false"
+			<a onclick="toggleContact()" id="contact" class="no-a-hover" aria-haspopup="true" aria-expanded="false"
 				aria-label="contact toggle">contact <span
 					class="icon-bottom icon-chevron-down"></span></a>
 
 			<div id="contact-content" class="contact-content contact-content__hidden">
 				<a aria-label="contact" onclick="toggleContact()"
-					class="contact icon-chevron-left icon-left">close</a>
+					class="contact icon-chevron-left icon-left">back</a>
 
-				<div class="contact-nav-form">
-					<div class="contact">
+				<div class="contact-nav-form" id="contact-form">
+					<span class="btn btn--solid btn--primary icon-only icon-x no-a-hover show-text" id="close-nav"></span>
+					</a>
+					<div class="form">
+						<p class="h2">write to me</p>
 						<p>You can contact me via <a class="linked-in"
 								href="https://www.linkedin.com/in/toy-sirichindakul">LinkedIn</a>, or use the contact
 							form. </p>
@@ -53,7 +56,7 @@
 								</label>
 							</div>
 
-							<button class="btn btn--solid pg-form-submit" type="submit"> Send it </button>
+							<button class="btn btn--solid btn--primary show-text icon-right icon-arrow-right" id="form-submit" type="submit"> Send it </button>
 						</form>
 
 					</div>
@@ -113,19 +116,22 @@
 </article>
     </main>
 </body>
-
+<p class="footer-note">designed and developed by <a href="https://www.linkedin.com/in/toy-sirichindakul">Toy Sirichindakul</a></p>
 <!-- Topbar navigation links -->
 <script async src="/assets/js/nav-toggle.js"></script>
-<!-- <script async src="/assets/js/nav-scroll.js"></script> -->
+<script async src="/assets/js/nav-scroll.js"></script>
 <script async src="/assets/js/mob-height-responsive.js"></script>
 <script async src="/assets/js/prevent-inspect.js"></script>
 
 
-<!-- <script>
-    $(document).ready(function () {
-        $(".form-submit").click(function () {
-            $(".contact-form").addClass("submitted");
+<script>
+    function formSubmit() {
+        var submit = document.getElementById("form-submit");
+        var contactForm = document.getElementById("contact-form");
+        submit.addEventListener('click', function () {
+            contactForm.classList.add('submitted');
         });
-    });
-</script> -->
+    }
+    formSubmit();
+</script>
 </html>

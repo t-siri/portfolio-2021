@@ -1,7 +1,6 @@
 /* Mobile navigation, note that on mobile we are replacing the horizontal nav with the 
 hamburger and slide out navigation */
 
-
 /* START HAMBURGER */
 #menu,
 .menu-link {
@@ -42,7 +41,6 @@ hamburger and slide out navigation */
 	transition: 0.5s ease-in-out;
 	cursor: pointer;
 
-
 	//hamburger (3 spans for animating purposes)
 	span {
 		display: block;
@@ -55,7 +53,7 @@ hamburger and slide out navigation */
 		}
 
 		@include themify {
-			background: get-contrasting-text-color(themed('background-color'));
+			background: get-contrasting-text-color(themed("background-color"));
 		}
 
 		border-radius: convert-rem(9px);
@@ -119,41 +117,37 @@ hamburger and slide out navigation */
 }
 
 .menu-link {
-	margin-top: 47vh;
-	right: .7rem;
+	margin-top: $space-xxs;
+	right: $space-xs;
 }
 
 /* END HAMBURGER */
 
-
 //navigation whole - converting horizontal navigation to slide out navigation on acive
 #navigation {
-
 	//iPad size styling
 	@include media(md) {
 		position: fixed;
 		z-index: 4;
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-		padding: $space-md;
+		padding: $space-xl $space-md;
 		overflow: hidden;
 
 		&.inactive {
-			width: 0;
-			opacity: 0;
-			padding: 0;
-			// left: 100vw;
-			@include transform-timing(.25s);
+			right: -100vw;
+			@include transform-timing(0.25s);
 		}
 
 		&.active {
 			opacity: 1;
 			width: 100vw;
+			right: 0;
 			@include slideInRight($quick-animation-time);
 		}
 
 		@include themify {
-			background-color: themed('background-color');
+			background-color: themed("background-color");
 		}
 
 		ul {
@@ -166,7 +160,6 @@ hamburger and slide out navigation */
 			li {
 				&:first-of-type {
 					margin-bottom: auto;
-					opacity: 0;
 				}
 
 				a {
@@ -204,42 +197,42 @@ hamburger and slide out navigation */
 					}
 				}
 
-				//contact content 
+				//contact content
 				.contact-content {
 					flex-direction: column;
-					top: calc(40px + #{$space-sm});
+					top: 0;
 					left: 0;
 					overflow-y: auto;
 
 					@include themify {
-						background-color: themed('background-color');
+						background-color: themed("background-color");
 					}
 
 					&__visible {
-						height: calc(100vh - 40px - 1.5rem);
+						height: 100vh;
 						width: 100vw;
+
+						.contact-content {
+							top: 0;
+						}
 					}
 
+					&__hidden {
+						width: 0;
+						height: 0;
+						@include slideOutRight(.5s);
+					}
+					.contact-nav-form {
+						padding-top: $space-xs;
+					}
 					.contact {
 						margin-left: $space-lg;
 					}
 
-					//contact back link
-					.contact {
-						margin: $space-sm $space-lg;
-						width: fit-content;
-
-						&:before {
-							height: $text-lg;
-							width: $text-lg;
-							background-color: $color-primary;
-						}
-					}
 					p a {
 						font-size: $base-font-size;
 					}
 				}
-
 			}
 		}
 	}
@@ -247,7 +240,6 @@ hamburger and slide out navigation */
 	//mobile size styling
 	@include media(xsm) {
 		ul {
-
 			li {
 				padding: 0.25rem $space-xs 0;
 
@@ -269,70 +261,9 @@ hamburger and slide out navigation */
 					}
 				}
 
-				//contact content 
+				//contact content
 				.contact-content {
-					.contact,
-					.article-info,
-					.sub-contact {
-						margin-left: $space-md;
-					}
-
-					.sub-contact {
-						display: flex;
-						flex-direction: column;
-
-						a,
-						a:nth-of-type(1),
-						a:nth-of-type(2) {
-							margin: 0;
-							width: fit-content;
-						}
-
-						.sub-block {
-							h4 {
-								font-size: $text-lg;
-							}
-
-							p {
-								display: none;
-							}
-
-							&.ebooks {
-								.web-link {
-									display: none;
-									pointer-events: none;
-								}
-
-								.mobile-link {
-									display: block;
-									pointer-events: auto;
-
-									&:nth-of-type(2) {
-										margin-bottom: $space-xs !important;
-									}
-								}
-							}
-						}
-					}
-
-					.blog-article-nav {
-						.article-info {
-							h6 {
-								margin-bottom: $space-xs;
-							}
-
-							p {
-								@include truncate-more-lines(3, 2);
-								font-size: $base-font-size;
-							}
-
-							.btn {
-								padding: $space-xxs $space-sm;
-								margin-bottom: 0;
-							}
-						}
-					}
-
+					
 					//contact back link
 					.contact {
 						margin: $space-xs $space-md;
@@ -345,7 +276,6 @@ hamburger and slide out navigation */
 						}
 					}
 				}
-
 			}
 		}
 	}

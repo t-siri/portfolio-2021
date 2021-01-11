@@ -7,45 +7,32 @@
 // Breakpoints for CSS variables
 // Used for the typography, spacing and the inputs
 
-
 @mixin breakpoint($class) {
 	@if $class==xs {
 		@media (max-width: map-get($breakpoints, xs)) {
 			@content;
 		}
-	}
-
-	@else if $class==xsm {
+	} @else if $class==xsm {
 		@media (max-width: map-get($breakpoints, xsm)) {
 			@content;
 		}
-	}
-
-	@else if $class==sm {
+	} @else if $class==sm {
 		@media (max-width: map-get($breakpoints, sm)) {
 			@content;
 		}
-	}
-
-	@else if $class==md {
+	} @else if $class==md {
 		@media (max-width: map-get($breakpoints, md)) {
 			@content;
 		}
-	}
-
-	@else if $class==lg {
+	} @else if $class==lg {
 		@media (max-width: map-get($breakpoints, lg)) {
 			@content;
 		}
-	}
-
-	@else if $class==xl {
+	} @else if $class==xl {
 		@media (max-width: map-get($breakpoints, xl)) {
 			@content;
 		}
-	}
-
-	@else {
+	} @else {
 		@error "Breakpoint mixin supports: xs, xsm, sm, md, lg, xl";
 	}
 }
@@ -71,7 +58,7 @@
 //****************-------END MEDIA QUERIES--------****************
 
 //****************-------PSEUDO ELEMENTS MIXINS--------****************
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
 	content: $content;
 	display: $display;
 	position: $pos;
@@ -105,10 +92,10 @@
 			height: convert-rem(16px);
 			width: convert-rem(16px);
 			display: inline-block;
-			content: '';
+			content: "";
 
 			@include themify {
-				background-color: get-contrasting-text-color(themed('background-color'));
+				background-color: get-contrasting-text-color(themed("background-color"));
 			}
 		}
 
@@ -129,9 +116,7 @@
 
 		@if $position==before {
 			margin-right: $space-xxs;
-		}
-
-		@else {
+		} @else {
 			margin-left: $space-xxs;
 		}
 
@@ -160,16 +145,18 @@ $theme-map: null;
 }
 
 @mixin themify($themes: $themes) {
-	
-	@each $theme,
-	$map in $themes {
+	@each $theme, $map in $themes {
 		.theme-#{$theme} & {
 			$theme-map: () !global;
 
-			@each $key,
-			$submap in $map {
-				$value: map-get(map-get($themes, $theme), '#{$key}');
-				$theme-map: map-merge($theme-map, ($key: $value)) !global;
+			@each $key, $submap in $map {
+				$value: map-get(map-get($themes, $theme), "#{$key}");
+				$theme-map: map-merge(
+					$theme-map,
+					(
+						$key: $value,
+					)
+				) !global;
 			}
 
 			@content;
@@ -192,37 +179,23 @@ $theme-map: null;
 // major is the most prominent
 @mixin shadow-box($type: standard) {
 	@include themify {
-		$shadow-color: themed('shadow-color');
+		$shadow-color: themed("shadow-color");
 
 		@if ($type==minor) {
 			box-shadow: 0 5px 20px 5px $shadow-color, 0 0px 10px 0 $shadow-color;
-		}
-
-		@else if ($type==standard) {
+		} @else if ($type==standard) {
 			box-shadow: 0 10px 30px 5px $shadow-color, 0 0px 10px 0 $shadow-color;
-		}
-
-		@else if ($type==major) {
+		} @else if ($type==major) {
 			box-shadow: 0 20px 50px 5px $shadow-color, 0 0px 10px 0 $shadow-color;
-		}
-
-		@else if ($type==subtle) {
+		} @else if ($type==subtle) {
 			box-shadow: 0 5px 15px $shadow-color;
-		}
-
-		@else if ($type==x-subtle) {
+		} @else if ($type==x-subtle) {
 			box-shadow: 0 3px 15px $shadow-color;
-		}
-
-		@else if ($type==subtle-right-bottom) {
+		} @else if ($type==subtle-right-bottom) {
 			box-shadow: 7px 7px 7px $shadow-color;
-		}
-
-		@else if ($type==subtle-bottom) {
+		} @else if ($type==subtle-bottom) {
 			box-shadow: 0 13px 15px $shadow-color;
-		}
-
-		@else {
+		} @else {
 			@error "The shadow-box mixin only accepts x-subtle, subtle, minor, standard or major as box-shadow types";
 		}
 	}
@@ -248,23 +221,17 @@ $theme-map: null;
 		border-right: $size solid transparent;
 		border-top: $size solid $color;
 		margin-top: 0 - round($size / 2.5);
-	}
-
-	@else if $direction==up {
+	} @else if $direction==up {
 		border-left: $size solid transparent;
 		border-right: $size solid transparent;
 		border-bottom: $size solid $color;
 		margin-bottom: 0 - round($size / 2.5);
-	}
-
-	@else if $direction==right {
+	} @else if $direction==right {
 		border-top: $size solid transparent;
 		border-bottom: $size solid transparent;
 		border-left: $size solid $color;
 		margin-right: -$size;
-	}
-
-	@else if $direction==left {
+	} @else if $direction==left {
 		border-top: $size solid transparent;
 		border-bottom: $size solid transparent;
 		border-right: $size solid $color;
@@ -274,7 +241,6 @@ $theme-map: null;
 
 //****************-------END SHAPES--------*****************
 
-
 //****************-------TEXTFIELD--------***************** //fix me - why is this not moved to textfield.scss
 @mixin textfield-style {
 	position: relative;
@@ -282,7 +248,7 @@ $theme-map: null;
 	margin-top: $space-xl;
 
 	@include themify {
-		border-bottom-color: themed('form-element-border');
+		border-bottom-color: themed("form-element-border");
 	}
 
 	label {
@@ -301,7 +267,7 @@ $theme-map: null;
 			font-weight: $text-regular;
 
 			@include themify {
-				color: themed('form-text-placeholder');
+				color: themed("form-text-placeholder");
 			}
 		}
 	}
@@ -311,9 +277,9 @@ $theme-map: null;
 	input[type="text"],
 	input[type="password"] {
 		@include themify {
-			background-color: themed('form-element-transparent');
+			background-color: themed("form-element-transparent");
 			border: none;
-			color: themed('color-text');
+			color: themed("color-text");
 		}
 
 		position: absolute;
@@ -335,7 +301,7 @@ $theme-map: null;
 		@include set-transition(all, 0.3s);
 
 		@include themify {
-			background-color: themed('form-element-border-focus');
+			background-color: themed("form-element-border-focus");
 		}
 
 		content: "";
@@ -359,7 +325,7 @@ $theme-map: null;
 				line-height: 1;
 
 				@include themify {
-					color: themed('color-text');
+					color: themed("color-text");
 				}
 			}
 		}
@@ -375,7 +341,7 @@ $theme-map: null;
 		input[type="text"],
 		input[type="password"] {
 			@include themify {
-				background-color: themed('form-element-transparent');
+				background-color: themed("form-element-transparent");
 			}
 
 			box-shadow: none;
@@ -384,13 +350,12 @@ $theme-map: null;
 		label {
 			span {
 				@include themify {
-					color: themed('form-element-border-focus');
+					color: themed("form-element-border-focus");
 				}
 			}
 		}
 	}
 }
-
 
 //****************-------END TEXTFIELD--------*****************
 
@@ -412,7 +377,7 @@ $theme-map: null;
 }
 
 //Mixin for truncating more than first line of text
-@mixin truncate-more-lines($numLines : 1, $lineHeight: 1.412) {
+@mixin truncate-more-lines($numLines: 1, $lineHeight: 1.412) {
 	overflow: hidden;
 	text-overflow: -o-ellipsis-lastline;
 	text-overflow: ellipsis;
@@ -421,7 +386,7 @@ $theme-map: null;
 	display: -webkit-box;
 	-webkit-line-clamp: $numLines;
 	-webkit-box-orient: vertical;
-	max-height: $numLines * $lineHeight + unquote('em');
+	max-height: $numLines * $lineHeight + unquote("em");
 }
 
 //Style only for dark theme
@@ -437,9 +402,7 @@ $theme-map: null;
 		@at-root .theme-dark #{&} {
 			@content;
 		}
-	}
-
-	@else if $theme==light {
+	} @else if $theme==light {
 		@at-root .theme-light #{&} {
 			@content;
 		}
@@ -449,4 +412,8 @@ $theme-map: null;
 @mixin text-md {
 	font-size: $text-md;
 	line-height: 1.8;
+}
+
+@mixin text-shadow {
+	text-shadow: 1px 1px 1px $grey-3;
 }

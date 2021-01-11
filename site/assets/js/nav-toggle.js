@@ -4,6 +4,16 @@ function toggleContact() {
 	contact.classList.toggle('contact-content__hidden');
 }
 
+function toggleContactX() {
+	var contact = document.getElementById('contact-content');
+	var close = document.getElementById('close-nav');
+	close.addEventListener('click', function() {
+		contact.classList.toggle('contact-content__visible');
+		contact.classList.toggle('contact-content__hidden');
+	});
+}
+toggleContactX() 
+
 function toggleMobNav() {
 	var burger = document.getElementById("menu-link");
 	var navicon = document.getElementById("nav-icon1");

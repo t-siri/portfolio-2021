@@ -1,6 +1,3 @@
-This repository contains the developer related files for codebots.com, **if you are
-wanting to write an article for the Blog**, see [Marketing Blog](https://gitlab.codebots.com/Codebots/codebots-blog).
-
 ## Developing Locally
 
 ### macOS
@@ -26,21 +23,7 @@ wanting to write an article for the Blog**, see [Marketing Blog](https://gitlab.
     rbenv global 2.7.1
     ```
 6. **Restart your terminal**
-6. Install Large File Storage (LFS) for Git
-    ```bash
-    brew install git-lfs
-    git lfs install
-    ```
-7. Clone the `Marketing Site` repo
-    ```bash
-    cd repos # or to wherever you keep your repos
-    git clone https://gitlab.codebots.com/Codebots/marketing-site.git
-    ```
-8. Pull the Blog data into `_blog` from the submodule
-    ```bash
-    cd marketing-site
-    git submodule update --init
-    ```
+
 9. Install `Bundler` and `Jekyll`
     ```bash
     echo 'export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"' >> ~/.bash_profile
@@ -62,7 +45,7 @@ wanting to write an article for the Blog**, see [Marketing Blog](https://gitlab.
     bundle config build.libv8 --with-system-v8
     bundle config build.therubyracer --with-v8-dir=$(brew --prefix v8@3.15)
     ```
-12. In the `marketing-site` folder, run
+12. In the `portfolio` folder, run
     ```bash
     bundle install
     bundle update
