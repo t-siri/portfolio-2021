@@ -1,0 +1,38 @@
+.work-view-page {
+    .btn {
+        margin-bottom: $space-lg;
+    }
+    .work-view__content-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: $space-xxxxl;
+
+        &:last-of-type {
+            margin-bottom: $space-md;
+        }
+
+        .img-wrapper {
+            .img-zoom {
+            }
+            img {
+                width: 50vw;
+                &:last-of-type {
+                    margin-top: $space-md;
+                }
+            }
+
+            // .icon-look {
+            //     padding: .4rem;
+            //     &:before {
+            //         vertical-align: middle;
+            //         height: $text-md;
+            //         width: $text-md;
+            //     }
+            // }
+        }
+        .border-box {
+            margin: 0 0 0 $space-lg;
+            padding: $space-md;
+        }
+    }
+}

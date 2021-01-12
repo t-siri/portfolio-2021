@@ -1755,6 +1755,8 @@ a:visited { color: #272727; }
 
 .btn.icon-right:not(.show-text):after, button.icon-right:not(.show-text):after, .button.icon-right:not(.show-text):after, .icon-right[type="button"]:not(.show-text):after, .icon-right[role="button"]:not(.show-text):after { vertical-align: middle; margin-left: 0 !important; height: calc(1rem * 1.6); width: calc(1rem * 1.6); }
 
+.btn.icon-left:not(.show-text):before, button.icon-left:not(.show-text):before, .button.icon-left:not(.show-text):before, .icon-left[type="button"]:not(.show-text):before, .icon-left[role="button"]:not(.show-text):before { vertical-align: middle; margin-left: 0 !important; height: calc(1rem * 1.6); width: calc(1rem * 1.6); }
+
 .btn:not(.show-text) span, button:not(.show-text) span, .button:not(.show-text) span, [type="button"]:not(.show-text) span, [role="button"]:not(.show-text) span { width: 0; opacity: 0; position: absolute; vertical-align: middle; }
 
 a.btn, button, .button, [type="button"], [role="button"] { display: inline-block; }
@@ -2179,9 +2181,11 @@ hamburger and slide out navigation */
 
 .border-box.no-heading { padding: calc(1.5 * 1rem) calc(2 * 1rem); }
 
-.border-box .border-box-heading { position: absolute; top: -50px; left: calc(1.5 * 1rem); background-color: #ffe7d0; }
+.border-box .border-box-heading.h2 { position: absolute; top: -50px; left: calc(1.5 * 1rem); background-color: #ffe7d0; }
 
-.border-box .border-box-footer { position: absolute; right: calc(1.5 * 1rem); background-color: #ffe7d0; bottom: -50px; }
+.border-box .border-box-heading.h3 { position: absolute; top: -20px; left: calc(1.5 * 1rem); background-color: #ffe7d0; }
+
+.border-box .border-box-footer { position: absolute; right: calc(1.5 * 1rem); background-color: #ffe7d0; bottom: -65px; }
 
 .border-box .border-box-footer.btn-only { bottom: -30px; }
 

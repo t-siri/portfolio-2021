@@ -61,6 +61,7 @@ a {
 		width: 65px;
 		height: 65px;
 	}
+
 	&.show-text {
 		border-radius: 40px;
 	}
@@ -83,6 +84,12 @@ a {
 			}
 		}
 		&.icon-right:after {
+			vertical-align: middle;
+			margin-left: 0 !important;
+			height: $text-md;
+			width: $text-md;
+		}
+		&.icon-left:before {
 			vertical-align: middle;
 			margin-left: 0 !important;
 			height: $text-md;
