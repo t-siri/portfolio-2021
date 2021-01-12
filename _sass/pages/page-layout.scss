@@ -1,3 +1,7 @@
 main.content {
-    padding: $space-xxxl $space-xl;
+    padding: 7rem $space-xl;
+
+    @include media(md) {
+        padding: $space-md $space-lg;
+    }
 }

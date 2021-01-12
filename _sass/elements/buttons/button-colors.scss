@@ -51,9 +51,6 @@
 			border-color: $color;
 			@include set-button-text-color(get-contrasting-text-color($color));
 			// No force for this one since they all get defined again anyway
-			&:focus {
-				border-color: $color-primary;
-			}
 		}
 
 		@else {

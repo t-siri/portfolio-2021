@@ -131,19 +131,19 @@ hamburger and slide out navigation */
 		z-index: 4;
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-		padding: $space-xl $space-md;
+		padding: $space-xs $space-md;
 		overflow: hidden;
 
 		&.inactive {
 			right: -100vw;
-			@include transform-timing(0.25s);
+			@include transform-timing($animation-time);
 		}
 
 		&.active {
 			opacity: 1;
 			width: 100vw;
 			right: 0;
-			@include slideInRight($quick-animation-time);
+			@include slideInRight($animation-time);
 		}
 
 		@include themify {
@@ -158,6 +158,7 @@ hamburger and slide out navigation */
 			margin: 0;
 
 			li {
+				padding: 0 $space-xs $space-xs;
 				&:first-of-type {
 					margin-bottom: auto;
 				}
@@ -200,35 +201,34 @@ hamburger and slide out navigation */
 				//contact content
 				.contact-content {
 					flex-direction: column;
-					top: 0;
-					left: 0;
 					overflow-y: auto;
-
+					
 					@include themify {
 						background-color: themed("background-color");
 					}
-
+					
+					top: 0;
 					&__visible {
+						right: 0;
 						height: 100vh;
 						width: 100vw;
-
-						.contact-content {
-							top: 0;
-						}
+						@include slideInRight($animation-time);
 					}
 
 					&__hidden {
-						width: 0;
-						height: 0;
-						@include slideOutRight(.5s);
+						right: -100vw;
 					}
 					.contact-nav-form {
 						padding-top: $space-xs;
 					}
 					.contact {
+						margin-top: $space-sm;
 						margin-left: $space-lg;
 					}
-
+					.icon-chevron-left.contact:before {
+						height: $text-lg;
+						width: $text-lg;
+					}
 					p a {
 						font-size: $base-font-size;
 					}
@@ -241,7 +241,6 @@ hamburger and slide out navigation */
 	@include media(xsm) {
 		ul {
 			li {
-				padding: 0.25rem $space-xs 0;
 
 				a {
 					font-family: $heading-font-family;

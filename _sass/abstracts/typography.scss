@@ -36,7 +36,7 @@ $text-smd: 1.35vw;
 $text-md: calc(1rem * #{$text-scale-ratio});
 $text-lg: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio}));
 $text-xl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
-$text-xxl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
+$text-xxl: calc(.9rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
 $text-xxxl: calc(
 	1rem *
 		(
@@ -260,7 +260,7 @@ a:not(.no-a-style) {
 	text-decoration: none;
 
 	&:focus {
-		border: 2px solid $color-primary;
+		@include text-shadow;
 	}
 
 	//Link sizes
@@ -305,9 +305,13 @@ nav a:not(.no-a-hover) {
 		content: "";
 		display: block;
 		width: 0;
+		height: .5rem;
 		position: absolute;
 		top: 100%;
 		left: -8px;
+		-webkit-transition: width 0.2s ease-in-out;
+		transition: width 0.2s ease-in-out;
+		overflow: visible;
 
 		@include themify {
 			background-color: themed("responsive-state");
@@ -322,10 +326,15 @@ nav a:not(.no-a-hover) {
 
 		&:after {
 			width: 105%;
-			height: convert-rem(6px);
 			-webkit-transition: width 0.2s ease-in-out;
 			transition: width 0.2s ease-in-out;
 			overflow: visible;
+
+			@include media(md) {
+				height: 1rem;
+				width: 99%;
+				margin: 0 auto;
+			}
 		}
 	}
 }

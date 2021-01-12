@@ -1,0 +1,45 @@
+.about-page {
+    .content {
+        display: grid;
+        grid-template-areas: 'long short'
+                            'long skills';
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .top-section {
+        grid-area: long;
+        .about__long {
+            .img-avatar-wrapper {
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                @include shadow-box(subtle);
+                display: flex;
+                border-radius: 50%;
+                justify-content: center;
+                img {
+                    height: 180px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .about__short {
+        grid-area: short;
+        margin: $space-lg 0 $space-lg $space-lg;
+    }
+
+    .about__skillsets {
+        grid-area: skills;
+        margin: $space-lg 0 $space-md $space-lg;
+        .border-box__body {
+            display: flex;
+            justify-content: space-between;
+            div:last-of-type {
+                margin-left: $space-md;
+            }
+        }
+    }
+}

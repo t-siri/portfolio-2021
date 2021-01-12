@@ -1,5 +1,8 @@
 .gallery-page {
-   p {
+    h2, .blurb {
+        text-align: center;
+    }
+   .blurb {
        margin-bottom: $space-lg;
    }
     section.creative-gallery {

@@ -1,0 +1,27 @@
+.border-box {
+    padding: $space-lg $space-lg $space-md;
+    position: relative;
+    border: 2px solid $color-primary;
+
+    &.no-heading {
+        padding: $space-sm $space-md;
+    }
+
+    .border-box-heading {
+        position: absolute;
+        top: -50px;
+        left: $space-sm;
+        background-color: $color-brand-01;
+    }
+
+    .border-box-footer {
+        position: absolute;
+        right: $space-sm;
+        background-color: $color-brand-01;
+        bottom: -50px;
+
+        &.btn-only {
+            bottom: -30px;
+        }
+    }
+}

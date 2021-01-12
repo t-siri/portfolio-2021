@@ -1,4 +1,76 @@
 /* Home page */
 .home-page {
-	
+    .top-section {
+        .section__title {
+            position: relative;
+            // for spacing reasons
+            .transparent {
+                opacity: 0;
+                margin: $space-xs;
+            }
+            //the design word
+            img {
+                height: 9.5rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .logic-mind {
+                margin-top: $space-xs;
+            }
+        }
+
+        .introduction {
+            display: flex;
+            flex-direction: column;
+            margin: $space-lg 0 0 auto;
+            width: 50%;
+
+            p {
+                margin: $space-xxs 0;
+            }
+
+            .btn {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .recent-work {
+        .home-page__recent-work {
+            display: flex;
+            margin-top: $space-xxxxxl;
+            .border-box {
+                img {
+                    width: 60vw;
+                }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                p {
+                    margin: $space-xxs 0;
+                }
+
+                .btn {
+                    margin-left: auto;
+                    margin-top: $space-sm;
+                }
+            }
+
+            &.info-right {
+                .info {
+                    margin: auto $space-md 0 0;
+                }
+            }
+            &.info-left {
+                .info {
+                    margin: auto 0 0 $space-md;
+                }
+            }
+        }
+    }
 }

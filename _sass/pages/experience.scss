@@ -1,0 +1,36 @@
+.experience-page {
+    .content {
+        display: grid;
+        grid-template-areas: 'exp edu'
+                            'skills high';
+        grid-template-columns: 1.7fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .top-section {
+        grid-area: exp;
+    }
+
+    .experience__education {
+        grid-area: edu;
+        margin: $space-lg 0 $space-lg $space-lg;
+    }
+    
+
+    .experience__skillsets {
+        grid-area: skills;
+        margin: $space-md 0 $space-md 0;
+        .border-box__body {
+            display: flex;
+            justify-content: space-between;
+            div:nth-of-type(2) {
+                margin-left: $space-md;
+            }
+        }
+    }
+
+    .experience__highlights {
+        grid-area: high;
+        margin: $space-xxl 0 $space-lg $space-lg;
+    }
+}
