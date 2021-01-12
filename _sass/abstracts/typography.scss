@@ -36,7 +36,7 @@ $text-smd: 1.35vw;
 $text-md: calc(1rem * #{$text-scale-ratio});
 $text-lg: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio}));
 $text-xl: calc(1rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
-$text-xxl: calc(.9rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
+$text-xxl: calc(0.9rem * (#{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}));
 $text-xxxl: calc(
 	1rem *
 		(
@@ -253,15 +253,16 @@ textarea {
 	font-size: $base-font-size;
 	font-family: $body-font-family;
 }
-
+p a,
+li a {
+	&:focus {
+		@include text-shadow;
+	}
+}
 a:not(.no-a-style) {
 	line-height: 1.6;
 	font-family: $body-font-family;
 	text-decoration: none;
-
-	&:focus {
-		@include text-shadow;
-	}
 
 	//Link sizes
 	&.link-sm {
@@ -305,7 +306,7 @@ nav a:not(.no-a-hover) {
 		content: "";
 		display: block;
 		width: 0;
-		height: .5rem;
+		height: 0.5rem;
 		position: absolute;
 		top: 100%;
 		left: -8px;

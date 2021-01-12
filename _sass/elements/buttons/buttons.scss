@@ -23,7 +23,7 @@ a {
 	&:hover,
 	&:active,
 	&:focus {
-		@include transform-timing($quick-animation-time);
+		@include transform-timing($animation-time);
 	}
 
 	&:visited {
@@ -52,11 +52,10 @@ a {
 	cursor: pointer;
 	@include fontSmooth;
 	@include set-transition;
-	@include shadow-box(subtle);
 	border-width: $btn-border-width;
 	border-style: solid;
 	grid-template-areas: "text arrow";
-
+	@include shadow-box(subtle);
 	&.icon-only {
 		width: 65px;
 		height: 65px;

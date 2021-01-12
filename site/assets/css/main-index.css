@@ -1155,7 +1155,7 @@ form legend, table caption { margin-bottom: calc(0.5 * 1rem); line-height: 1.2; 
 
 h1, .h1, h2, .h2, h3, .h3 { font-family: "montserrat", "lato", Arial, Helvetica, sans-serif; }
 
-h1, .h1 { font-size: calc(.9rem * (1.6 * 1.6 * 1.6 * 1.6)); font-weight: 700; }
+h1, .h1 { font-size: calc(0.9rem * (1.6 * 1.6 * 1.6 * 1.6)); font-weight: 700; }
 
 @media (max-width: 1000px) { h1, .h1 { font-size: 7.9vw; } }
 
@@ -1201,9 +1201,9 @@ label { font-size: 1rem; }
 
 textarea { font-size: 1rem; font-family: "Lato", Arial, Helvetica, sans-serif; }
 
-a:not(.no-a-style) { line-height: 1.6; font-family: "Lato", Arial, Helvetica, sans-serif; text-decoration: none; }
+p a:focus, li a:focus { text-shadow: 1px 1px 1px #c3c1ca; }
 
-a:not(.no-a-style):focus { text-shadow: 1px 1px 1px #c3c1ca; }
+a:not(.no-a-style) { line-height: 1.6; font-family: "Lato", Arial, Helvetica, sans-serif; text-decoration: none; }
 
 a.link-sm:not(.no-a-style) { font-size: calc(1rem / 1.6); }
 
@@ -1229,7 +1229,7 @@ p a:after, nav a:not(.no-a-hover):after { -webkit-mask: url(/assets/icon/a-under
 
 .theme-dark p a:after, .theme-dark nav a:not(.no-a-hover):after { background-color: #ffffff; }
 
-p a:after, nav a:not(.no-a-hover):after { content: ""; display: block; width: 0; height: .5rem; position: absolute; top: 100%; left: -8px; -webkit-transition: width 0.2s ease-in-out; transition: width 0.2s ease-in-out; overflow: visible; }
+p a:after, nav a:not(.no-a-hover):after { content: ""; display: block; width: 0; height: 0.5rem; position: absolute; top: 100%; left: -8px; -webkit-transition: width 0.2s ease-in-out; transition: width 0.2s ease-in-out; overflow: visible; }
 
 .theme-light p a:after, .theme-light nav a:not(.no-a-hover):after { background-color: #272727; }
 
@@ -1723,13 +1723,13 @@ Additions: Button groups and icons
 
 .btn.btn--xl:before, .btn.btn--xl:after, button.btn--xl:before, button.btn--xl:after, .button.btn--xl:before, .button.btn--xl:after, .btn--xl[type="button"]:before, .btn--xl[type="button"]:after, .btn--xl[role="button"]:before, .btn--xl[role="button"]:after { height: calc(1rem * (1.6 * 1.6 * 1.6)); width: calc(1rem * (1.6 * 1.6 * 1.6)); }
 
-.btn.btn--xlg, button.btn--xlg, .button.btn--xlg, .btn--xlg[type="button"], .btn--xlg[role="button"] { padding: calc(2 * 1rem) calc(3 * 1rem); font-size: calc(.9rem * (1.6 * 1.6 * 1.6 * 1.6)); }
+.btn.btn--xlg, button.btn--xlg, .button.btn--xlg, .btn--xlg[type="button"], .btn--xlg[role="button"] { padding: calc(2 * 1rem) calc(3 * 1rem); font-size: calc(0.9rem * (1.6 * 1.6 * 1.6 * 1.6)); }
 
 .btn.btn--xlg, .btn.btn--xlg *, button.btn--xlg, button.btn--xlg *, .button.btn--xlg, .button.btn--xlg *, .btn--xlg[type="button"], .btn--xlg[type="button"] *, .btn--xlg[role="button"], .btn--xlg[role="button"] * { font-size: calc(1rem * 1.2); line-height: calc(1rem * 1.2); }
 
-.btn.btn--xlg:before, .btn.btn--xlg:after, button.btn--xlg:before, button.btn--xlg:after, .button.btn--xlg:before, .button.btn--xlg:after, .btn--xlg[type="button"]:before, .btn--xlg[type="button"]:after, .btn--xlg[role="button"]:before, .btn--xlg[role="button"]:after { height: calc(.9rem * (1.6 * 1.6 * 1.6 * 1.6)); width: calc(.9rem * (1.6 * 1.6 * 1.6 * 1.6)); }
+.btn.btn--xlg:before, .btn.btn--xlg:after, button.btn--xlg:before, button.btn--xlg:after, .button.btn--xlg:before, .button.btn--xlg:after, .btn--xlg[type="button"]:before, .btn--xlg[type="button"]:after, .btn--xlg[role="button"]:before, .btn--xlg[role="button"]:after { height: calc(0.9rem * (1.6 * 1.6 * 1.6 * 1.6)); width: calc(0.9rem * (1.6 * 1.6 * 1.6 * 1.6)); }
 
-a:hover, a:active, a:focus { -webkit-transition: all 0.25s ease; -moz-transition: all 0.25s ease; -o-transition: all 0.25s ease; -ms-transition: all 0.25s ease; transition: all 0.25s ease; }
+a:hover, a:active, a:focus { -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
 
 a:visited { color: #272727; }
 
