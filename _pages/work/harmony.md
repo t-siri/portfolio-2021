@@ -1,47 +1,48 @@
 ---
 layout: work
-title: Work | Harmony design system
+title: Work • Harmony design system
 permalink: /work-harmony
 img1: harmony
 img2: harmony-1
 img3: harmony-2
 img4: harmony-3
-img5: self-taught-4
-img6: self-taught-5
-img7: self-taught-6
+img5: harmony-4
+img6: harmony-5
+img7: harmony-6
 ---
 
 {% contentfor introduction %}
-Self taught is an online app that helps students learn languages and log their progress with their studies.
+During my employment with <a href="https://workingmouse.com.au/" target="_blank">WorkingMouse</a> I had the opportunity to work with Codebots and design <a href="www.codebots.com" target='_blank'>Codebots'</a> bot design guidelines and Harmony.
 
-If assigned, teachers can view their student's progress and review their homework.
+Harmony is a library with standardised HTML and SCSS. I had the opportunity to work with my colleagues and design behaviours such as, CRUD, Timelines, Dashboards and many more components.
 
-Students also have the capability of reviewing on their own by adding new words to the dictionary and the audio book.
+This library consist of multiple lines of SCSS code that styles all the components that are found in the bot, from buttons and inputs to high functional behaviours. The library is written in a very clean and organised manner to allow clients that uses these bots to easily customise their project in SCSS. The standardisation of HTML and Harmony has enabled these bots to produced high functional components that are standardised to the required UX and the ability to view, manipulate and use clean code with the given Harmony library.
 {% endcontentfor %}
 
 
 {% contentfor problem %}
-My client requested to redesign the application that he developed, he wanted it to be mobile responsive and more user friendly.
+Before we were able to start on development, we had to come up with designs of the behaviours, these behaviours were advanced and modern which required great UX Design.
 
-He also requested a more modern design and a better user flow in the app.
+Not only did the behaviour required a well design User Experience, but it also required a structural HTML and SCSS code that allows customisation for Codebots' clients.
 
-Since my client wanted to focus on the students in this application, I had decided to redesign the application as a student user and focus on the experience of the application as a student.
 {% endcontentfor %}
 
 
 {% contentfor solution %}
-I have decided to design the mobile experience of the application first and made sure to design the web after.
+With time spent on user research and product research, we were able to come up with a few designs for these behaviours and we constantly re-iterated with user testing.
 
-I interviewed the students and their process into learning a new language and how they would have used the application, I found their pain points and made sure I tend to them.
+The designs had components that are reusable but also behaviours that is unique to <a href="www.codebots.com" target='_blank'>Codebots</a>.
 
-The application was then redesigned with a new UI and UX.
+Once we were satisfied with the designs, I then spent the time to write the HTML standards for these behaviours and worked with the developers to creating them with alongside the bots.
+
+I then styled these behaviours and components in the Harmony library, which is templated when a new project is generated.
 {% endcontentfor %}
 
 
 {% contentfor outcome %}
-The client was happy with the designs produced. 
+Alongside these designs, I standardised them by writing the HTML structure for them and also created an SCSS library named Harmony that pre-styles these components.
 
-Given the application was already built, it was not too hard to re-design and brand the application. 
+These bots and Harmony has two sections to them the Admin section and the Frontend section and I had the challenge to implement a library to style both ends seperately but also allows customisation in the frontend.
 
-The focus on the user journey and better user interface allowed me to produce the designs rapidly.
+The bot now produces standardised components and behaviours that are styled accordingly.
 {% endcontentfor %}

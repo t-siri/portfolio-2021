@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work | Innovo
+title: Work • Innovo
 permalink: /work-innovo
 img1: innovo-1 
 img2: innovo-2 
@@ -12,36 +12,36 @@ img7: innovo-7
 ---
 
 {% contentfor introduction %}
-Self taught is an online app that helps students learn languages and log their progress with their studies.
+I had the opportunity to brand, design and implement Innovo's marketing website.
 
-If assigned, teachers can view their student's progress and review their homework.
+Innovo is a company that provides multiple work such as construction, welding and many more. 
 
-Students also have the capability of reviewing on their own by adding new words to the dictionary and the audio book.
+My client wanted to go online and allow his clients to understand his business and services.
 {% endcontentfor %}
 
 
 {% contentfor problem %}
-My client requested to redesign the application that he developed, he wanted it to be mobile responsive and more user friendly.
+Our client wanted a marketing website that represented their company online.
 
-He also requested a more modern design and a better user flow in the app.
+They also wanted to make sure that their website's SEO is implemented to a standard so that Google could identify their business.
 
-Since my client wanted to focus on the students in this application, I had decided to redesign the application as a student user and focus on the experience of the application as a student.
+It was important that the website shows the company's services but also projects provided in a *blog*. 
 {% endcontentfor %}
 
 
 {% contentfor solution %}
-I have decided to design the mobile experience of the application first and made sure to design the web after.
+I spent some time understanding my client's business and what his everyday process is like. 
 
-I interviewed the students and their process into learning a new language and how they would have used the application, I found their pain points and made sure I tend to them.
+I then started to research on marketing websites in the industry to see what his competitors were doing.
 
-The application was then redesigned with a new UI and UX.
+I then prototyped the website and also designed the branding system, from there I started implementing my designs.
 {% endcontentfor %}
 
 
 {% contentfor outcome %}
-The client was happy with the designs produced. 
+The site is not yet public as some content review needs to be done.
 
-Given the application was already built, it was not too hard to re-design and brand the application. 
+But the branding, prototype and implementation is completed within a week. 
 
-The focus on the user journey and better user interface allowed me to produce the designs rapidly.
+Since my client also wanted the ability to blog his projects easily, I also designed and provided the solution on the website.
 {% endcontentfor %}

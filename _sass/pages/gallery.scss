@@ -34,6 +34,9 @@
                 width: 100%;
                 height: auto;
                 max-width: 260px;
+                @include media(smd) {
+                    max-width: 26vw;
+                }
                 @include media(xsm) {
                     max-width: 100%;
                 }

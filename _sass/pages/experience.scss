@@ -1,30 +1,68 @@
 .experience-page {
     .content {
         display: grid;
-        grid-template-areas: 'exp edu'
-                            'skills high';
+        grid-template-areas:
+            "exp edu"
+            "skills high";
         grid-template-columns: 1.7fr 1fr;
         grid-template-rows: 1fr;
+
+        @include media(smd) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media(sm) {
+            grid-template-areas:
+                "edu" "exp"
+                "high" "skills";
+            grid-template-columns: 1fr;
+            .btn {
+                border-radius: 40px;
+                width: 180px;
+                background-color: $color-primary;
+                span {
+                    position: relative;
+                    width: max-content;
+                    margin-right: $space-sm;
+                    opacity: 1;
+                    @include cubic-bezier-ease-in(width, 0.5s);
+                }
+            }
+        }
     }
 
     .top-section {
         grid-area: exp;
+        @include media(sm) {
+            margin: $space-md 0;
+        }
     }
 
     .experience__education {
         grid-area: edu;
         margin: $space-lg 0 $space-lg $space-lg;
+        @include media(sm) {
+            margin: $space-md 0;
+        }
     }
-    
 
     .experience__skillsets {
         grid-area: skills;
         margin: $space-md 0 $space-md 0;
+        @include media(sm) {
+            margin: $space-md 0;
+        }
         .border-box__body {
             display: flex;
             justify-content: space-between;
+            @include media(smd) {
+                flex-direction: column;
+            }
             div:nth-of-type(2) {
                 margin-left: $space-md;
+                @include media(smd) {
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -32,5 +70,8 @@
     .experience__highlights {
         grid-area: high;
         margin: $space-xxl 0 $space-lg $space-lg;
+        @include media(sm) {
+            margin: $space-md 0;
+        }
     }
 }

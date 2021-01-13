@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work | Codebots V1
+title: Work • Codebots V1
 permalink: /work-codebots-v1
 img1: codebots-mktg-1
 img2: codebots-mktg-2

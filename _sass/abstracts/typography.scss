@@ -147,8 +147,8 @@ h2,
 	margin-bottom: $space-md;
 	font-weight: $text-bold;
 
-	@include media(md) {
-		font-size: 6.3vw;
+	@include media(smd) {
+		font-size: $text-lg;
 	}
 
 	@include media(xsm) {
@@ -161,12 +161,8 @@ h3,
 	font-size: 2.19vw;
 	font-weight: $text-medium;
 
-	@include media(md) {
-		font-size: 4.9vw;
-	}
-
-	@include media(xsm) {
-		font-size: 5.6vw;
+	@include media(smd) {
+		font-size: $text-md;
 	}
 }
 

@@ -1,5 +1,7 @@
 .work-view-page {
-    .btn {
+    .header {
+        display: flex;
+        justify-content: space-between;
         margin-bottom: $space-lg;
     }
     .work-view__content-wrapper {

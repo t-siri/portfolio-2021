@@ -1,14 +1,36 @@
 .about-page {
     .content {
         display: grid;
-        grid-template-areas: 'long short'
-                            'long skills';
+        grid-template-areas:
+            "long short"
+            "long skills";
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 1fr;
+
+        @include media(sm) {
+            grid-template-areas:
+                "long"
+                "short" "skills";
+            grid-template-columns: 1fr;
+        }
     }
 
     .top-section {
         grid-area: long;
+        @include media(sm) {
+            margin: $space-lg 0 0;
+        }
+        .show-text {
+            @include media-min(sm) {
+                display: none;
+            }
+            @include media(sm) {
+                display: flex;
+                position: absolute;
+                top: -6px;
+                left: 50vw;
+            }
+        }
         .about__long {
             .img-avatar-wrapper {
                 width: 150px;
@@ -22,6 +44,10 @@
                     height: 180px;
                     object-fit: cover;
                 }
+
+                @include media(md) {
+                    margin-top: $space-xxs;
+                }
             }
         }
     }
@@ -29,11 +55,17 @@
     .about__short {
         grid-area: short;
         margin: $space-lg 0 $space-lg $space-lg;
+        @include media(sm) {
+            margin: $space-xl 0 $space-xl 0;
+        }
     }
 
     .about__skillsets {
         grid-area: skills;
         margin: $space-lg 0 $space-md $space-lg;
+        @include media(sm) {
+            margin: 0;
+        }
         .border-box__body {
             display: flex;
             justify-content: space-between;

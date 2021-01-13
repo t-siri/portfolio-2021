@@ -1,19 +1,37 @@
 /* Home page */
 .home-page {
     .top-section {
+        @include media(smd) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+        }
         .section__title {
             position: relative;
+            @include media(smd) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
             // for spacing reasons
-            .transparent {
-                opacity: 0;
-                margin: $space-xs;
+            .design {
+                display: flex;
+                align-items: center;
+                @include media(smd) {
+                    justify-content: center;
+                }
             }
             //the design word
             img {
-                height: 9.5rem;
-                position: absolute;
-                left: 0;
-                top: 0;
+                margin-right: $space-sm;
+                margin-top: $space-sm;
+
+                @include media(md) {
+                    width: 50%;
+                }
             }
 
             .logic-mind {
@@ -26,7 +44,12 @@
             flex-direction: column;
             margin: $space-lg 0 0 auto;
             width: 50%;
-
+            @include media(smd) {
+                margin: $space-xl auto 0;
+            }
+            @include media(sm) {
+                width: 80%;
+            }
             p {
                 margin: $space-xxs 0;
             }
@@ -44,12 +67,39 @@
             .border-box {
                 img {
                     width: 60vw;
+                    margin: auto;
+                    display: flex;
+                    @include media(smd) {
+                        width: 80vw;
+                    }
+
+                    @include media(smd) {
+                        width: 75vw;
+                    }
+                }
+                @include media(sm) {
+                    padding: $space-xl 0;
+
+                    .h2 {
+                        font-size: $text-md;
+                    }
+
+                    .border-box__heading {
+                        top: -20px;
+                    }
+                    .border-box__footer {
+                        top: -45px;
+                    }
                 }
             }
             .info {
                 display: flex;
                 flex-direction: column;
                 width: 50%;
+
+                @include media(sm) {
+                    width: 100%;
+                }
 
                 p {
                     margin: $space-xxs 0;
@@ -69,6 +119,20 @@
             &.info-left {
                 .info {
                     margin: auto 0 0 $space-md;
+                }
+            }
+
+            @include media(smd) {
+                flex-direction: column;
+                margin-top: $space-xxxl;
+                &:last-of-type {
+                    flex-direction: column-reverse;
+                }
+                &.info-right,
+                &.info-left {
+                    .info {
+                        margin: $space-md 0 0 auto;
+                    }
                 }
             }
         }

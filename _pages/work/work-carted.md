@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work | Carted
+title: Work • Carted
 permalink: /work-carted
 img1: carted-1
 img2: carted-2

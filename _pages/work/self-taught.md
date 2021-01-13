@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work | Self taught
+title: Work • Self taught
 permalink: /work-self-taught
 img1: self-taught
 img2: self-taught-1

@@ -78,15 +78,6 @@ nav {
 						&:before {
 							display: none;
 						}
-
-						&:after {
-							content: "";
-							width: convert-rem(18px);
-							height: convert-rem(18px);
-							margin-left: $space-sm;
-							background-color: $color-brand-01;
-							border-radius: 50%;
-						}
 					}
 				}
 

@@ -8,9 +8,12 @@
 <body class="work-view-page"> 
     {% include common/navigation.html %}
     <main class="content">
-        <a class="btn btn--solid btn--primary icon-left icon-arrow-left" href="/work">
-            <span>go back</span>
-        </a>
+        <div class="header">
+            <a class="btn btn--solid btn--primary icon-left icon-arrow-left" href="/work">
+                <span>go back</span>
+            </a>
+            <h2>{{page.title}}</h2>
+        </div>
         {% include common/work-setup.html %}
     </main>
 </body>

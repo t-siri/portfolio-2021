@@ -12,6 +12,10 @@
         top: -50px;
         left: $space-sm;
         background-color: $color-brand-01;
+
+        @include media(smd) {
+            top: -30px;
+        }
     }
     .border-box-heading.h3 {
         position: absolute;
@@ -25,7 +29,9 @@
         right: $space-sm;
         background-color: $color-brand-01;
         bottom: -65px;
-
+        @include media(smd) {
+            bottom: -55px;
+        }
         &.btn-only {
             bottom: -30px;
         }
