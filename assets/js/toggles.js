@@ -43,6 +43,7 @@ function addOnScrollAnimationToggles(className) {
 }
 
 window.addEventListener("load", () => {
+    console.log("Here");
     addClickEventToToggles();
     addOnScrollAnimationToggles("scroll-animation");
 });
