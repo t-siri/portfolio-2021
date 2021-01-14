@@ -1922,7 +1922,7 @@ nav ul li:first-of-type span.b:before { content: ""; height: 6px; width: 6px; ba
 
 nav ul li:last-of-type { padding-right: 0; }
 
-@media (min-width: 1100px) { nav ul li .home { display: none; } }
+@media (min-width: 950px) { nav ul li .home { display: none; } }
 
 nav ul li a { display: flex; align-items: center; text-decoration: none; justify-content: center; font-family: "montserrat", "lato", Arial, Helvetica, sans-serif !important; color: #272727; }
 
@@ -1930,7 +1930,7 @@ nav ul li a:hover, nav ul li a:active, nav ul li a:focus { -webkit-transition: a
 
 nav ul li a.active { font-weight: bold; }
 
-@media (max-width: 1100px) { nav ul li a.active:before { display: none; } }
+@media (max-width: 950px) { nav ul li a.active:before { display: none; } }
 
 nav ul li a.btn--force { color: white; }
 
@@ -1944,7 +1944,7 @@ nav .contact-content { display: flex; position: absolute; right: 0; z-index: 5; 
 
 @media (min-width: 1250px) { nav .contact-content { top: 4.375rem; } }
 
-@media (min-width: 1100px) { nav .contact-content .contact { display: none; } }
+@media (min-width: 950px) { nav .contact-content .contact { display: none; } }
 
 .theme-light nav .contact-content { background-color: #ffe7d0; }
 
@@ -1952,11 +1952,11 @@ nav .contact-content { display: flex; position: absolute; right: 0; z-index: 5; 
 
 nav .contact-content__hidden { z-index: -1; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
 
-@media (min-width: 1100px) { nav .contact-content__hidden { top: -100vh; } }
+@media (min-width: 950px) { nav .contact-content__hidden { top: -100vh; } }
 
 nav .contact-content__visible { opacity: 1; min-height: 18.75rem; height: 100vh; }
 
-@media (min-width: 1100px) { nav .contact-content__visible { -webkit-animation-name: slideInDown; animation-name: slideInDown; animation-duration: 1s; } }
+@media (min-width: 950px) { nav .contact-content__visible { -webkit-animation-name: slideInDown; animation-name: slideInDown; animation-duration: 1s; } }
 
 nav .contact-content .contact-nav-form { padding: calc(2 * 1rem) calc(3.5 * 1rem); width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #ffe7d0; }
 
@@ -1968,7 +1968,7 @@ nav .contact-content .contact-nav-form p a { display: inline; }
 
 nav .contact-content .contact-nav-form .btn.icon-x { position: absolute; right: calc(3.5 * 1rem); top: 50px; }
 
-@media (max-width: 1100px) { nav .contact-content .contact-nav-form .btn.icon-x { display: none; } }
+@media (max-width: 950px) { nav .contact-content .contact-nav-form .btn.icon-x { display: none; } }
 
 nav .contact-content .contact-nav-form #form-submit { display: flex; margin-left: auto; }
 

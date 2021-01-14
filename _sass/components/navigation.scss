@@ -51,7 +51,7 @@ nav {
 			padding: 0 1vw;
 			min-width: convert-rem(80px);
 
-			@include media-min(md) {
+			@include media-min(smd) {
 				.home {
 					display: none;
 				}
@@ -74,7 +74,7 @@ nav {
 				&.active {
 					font-weight: bold;
 
-					@include media(md) {
+					@include media(smd) {
 						&:before {
 							display: none;
 						}
@@ -117,7 +117,7 @@ nav {
 			top: convert-rem(70px);
 		}
 
-		@include media-min(md) {
+		@include media-min(smd) {
 			.contact {
 				display: none;
 			}
@@ -131,7 +131,7 @@ nav {
 			z-index: -1;
 			@include transform-timing($animation-time);
 
-			@include media-min(md) {
+			@include media-min(smd) {
 				top: -100vh;
 			}
 		}
@@ -140,7 +140,7 @@ nav {
 			opacity: 1;
 			min-height: convert-rem(300px);
 			height: 100vh;
-			@include media-min(md) {
+			@include media-min(smd) {
 				@include slideInDown($animation-time);
 			}
 		}
@@ -169,7 +169,7 @@ nav {
 				right: $space-xl;
 				top: 50px;
 
-				@include media(md) {
+				@include media(smd) {
 					display: none;
 				}
 			}
