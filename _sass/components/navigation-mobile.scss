@@ -142,7 +142,7 @@ hamburger and slide out navigation */
 		&.active {
 			opacity: 1;
 			width: 100vw;
-			height: 100vh;
+			height: 100vh;height: calc(var(--vh, 1vh) * 100);
 			right: 0;
 			@include slideInRight($animation-time);
 		}
@@ -211,7 +211,7 @@ hamburger and slide out navigation */
 					top: 0;
 					&__visible {
 						right: 0;
-						height: 100vh;
+						height: 100vh;height: calc(var(--vh, 1vh) * 100);
 						width: 100vw;
 						@include slideInRight($animation-time);
 					}
