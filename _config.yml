@@ -1,7 +1,7 @@
 title: Dsignkul
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://designkul.netlify.app"
-destination: ./site
+destination: /site
 
 plugins:
   - jekyll-feed
