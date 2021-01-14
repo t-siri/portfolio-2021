@@ -2260,7 +2260,7 @@ hamburger and slide out navigation */
 
 @media (max-width: 950px) { .home-page .top-section .section__title .design { justify-content: center; } }
 
-.home-page .top-section .section__title svg { margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); }
+.home-page .top-section .section__title svg { margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); -webkit-transform: translate3d(0, 0, 0); }
 
 @media (max-width: 1100px) { .home-page .top-section .section__title svg { width: 50%; } }
 
