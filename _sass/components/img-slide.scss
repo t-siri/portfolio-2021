@@ -1,0 +1,421 @@
+//IMAGE SLIDE WITH EYE ICON
+
+
+//shared across all divs
+.img-slide-component {
+    display: flex;
+    align-items: center;
+    height: 97vh;
+    padding: $space-lg 0;
+    position: relative;
+    justify-content: space-around;
+
+    @include media(md) {
+        height: 65vh;
+        padding: $space-md 0;
+    }
+
+    @include media(xsm) {
+        height: 100%;
+        padding: $space-lg;
+    }
+
+    //set width to not move .info text when active
+    .img-btn-wrapper {
+        width: 30%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        @include media(md) {
+            width: 65%;
+            height: 100%;
+        }
+
+        @include media(xsm) {
+            width: 100%;
+            margin: $space-md 0;
+        }
+    }
+
+    //img wrapper of btn and img itself
+    .img {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        position: relative;
+
+        .btn {
+            border-radius: 50%;
+            border-width: 5px;
+            padding: $space-lg 3.2rem;
+            position: absolute;
+            z-index: 3;
+            @include motion-selected-bounce-x;
+            @include transform-timing(1s);
+
+            @include media(md) {
+                padding: $space-xs;
+                margin-bottom: 0;
+
+                &:before {
+                    width: $space-md;
+                    height: $space-md;
+                }
+            }
+
+            @include media(xsm) {
+                display: none;
+            }
+        }
+
+        .img-wrapper {
+            overflow: hidden;
+            @include transform-timing(1s);
+            transform: scale(1);
+
+            @include media(md) {
+                transform: scale(1.1);
+            }
+
+            @include media(xsm) {
+                height: 100%;
+                transform: none;
+            }
+
+
+            img,
+            video {
+                width: 100%;
+                height: auto;
+                max-width: 700px;
+                object-fit: cover;
+
+                @include media-min(xxl) {
+                    max-width: 50vw;
+                }
+
+                @include media(xsm) {
+                    margin-bottom: $space-sm;
+                }
+            }
+        }
+    }
+
+    //info div - the text
+    .info {
+        padding: $space-xl;
+
+        @include media(lg) {
+            width: 60%;
+            padding: $space-lg;
+        }
+
+        @include media(md) {
+            width: 100%;
+        }
+
+        @include media(xsm) {
+            padding: 0;
+        }
+
+
+        .info__heading {
+            font-size: 9vw;
+            margin: 0;
+            white-space: nowrap;
+
+            @include media(xsm) {
+                font-size: convert-rem(26px);
+            }
+        }
+
+        .info__body {
+            width: 75%;
+            margin: 0;
+
+            @include media(md) {
+                width: 95%;
+            }
+        }
+    }
+
+    //start of specific styling according to position of image
+    &.img-left {
+
+        @include media(xsm) {
+            flex-direction: column-reverse;
+        }
+
+        .img {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin-left: -500px;
+
+            @include media(md) {
+                margin-left: -620px;
+            }
+
+            @include media(xsm) {
+                margin-left: -7%;
+                left: -5%;
+            }
+
+            .btn {
+                right: -12%;
+            }
+        }
+    }
+
+    &.img-right {
+        @include media(xsm) {
+            flex-direction: column-reverse;
+
+            .img-btn-wrapper {
+                margin: $space-md 0 0;
+            }
+        }
+
+        .info {
+
+            @include media(md) {
+
+                &__heading,
+                &__body {
+                    margin-left: auto;
+                    width: 95%;
+                }
+            }
+        }
+
+
+        .img {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin-right: -500px;
+
+            @include media(md) {
+                margin-right: -620px;
+                right: -10px;
+            }
+
+            @include media(xsm) {
+                margin-right: -7%;
+                right: -5%;
+            }
+
+            .btn {
+                left: -12%;
+            }
+        }
+    }
+
+    &.img-bottom {
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        right: 0;
+
+        @include media(xsm) {
+            flex-direction: column-reverse;
+        }
+
+        .img-btn-wrapper {
+            width: 100%;
+            margin-top: $space-xxl;
+
+            @include media(md) {
+                width: 70%;
+                height: 30vh;
+            }
+
+            @include media(xsm) {
+                height: 100%;
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        .img-wrapper {
+            height: 30vh;
+
+            @include media(md) {
+                height: 25vh;
+            }
+        }
+
+        .img {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .btn {
+                top: -32%;
+                @include motion-selected-bounce;
+            }
+        }
+
+        .info {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include media(md) {
+                width: 65%;
+                align-items: flex-start;
+                margin-bottom: 5rem;
+            }
+
+            @include media(xsm) {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    //end of specific styling according to position of image
+
+
+
+    //Active styling when btn is clicked
+    &.active {
+        z-index: 3;
+
+        //Setting img wrapper to absolute
+        .img {
+            position: absolute;
+            z-index: 2;
+            margin: unset;
+            @include transform-timing(.5s);
+
+            .img-wrapper {
+                transform: scale(1.7);
+
+                @include media(lg) {
+                    transform: scale(1.5);
+                }
+
+                @include media(md) {
+                    transform: scale(1.3);
+                }
+
+                img,
+                video {
+                    @include media(lg) {
+                        max-width: calc(100vw - 23rem);
+                    }
+
+                    @include media(md) {
+                        max-width: calc(100vw - 15rem);
+                    }
+                }
+            }
+
+            .btn {
+                z-index: 3;
+
+                &:before {
+                    mask: url(/assets/icon/x.svg);
+                    -webkit-mask: url(/assets/icon/x.svg);
+                }
+            }
+        }
+
+        //Shadow
+        &:after {
+            content: '';
+            position: absolute;
+            top: -26vh;
+            left: 0;
+            width: 100vw;
+            height: 130vh;
+            @include fadeIn(.5s);
+
+            @include themify {
+                background-color: transparentize(themed('background-color'), .4);
+            }
+        }
+
+
+        &.img-left {
+            .img {
+                margin-left: 15vw;
+
+                @include media-min(xxl) {
+                    margin-left: 17vw;
+                }
+
+                @include media(lg) {
+                    margin-left: 10vw;
+                }
+
+                .btn {
+                    right: -20vw;
+
+                    @include media(md) {
+                        right: -15%;
+                    }
+                }
+            }
+        }
+
+        &.img-right {
+            .img {
+                margin-right: 15vw;
+
+
+                @include media-min(xxl) {
+                    margin-right: 17vw;
+                }
+
+                @include media(lg) {
+                    margin-right: 10vw;
+                }
+
+                .btn {
+                    left: -20vw;
+
+                    @include media(md) {
+                        left: -15%;
+                    }
+                }
+            }
+        }
+
+        &.img-bottom {
+            .img {
+                bottom: -30vh;
+
+                .img-wrapper {
+                    height: 90vh;
+                    overflow: visible;
+
+                    @include media(md) {
+                        height: 80vh;
+
+                        img {
+                            width: 85%;
+                            margin-left: 7%;
+
+                            @include media(lg) {
+                                max-width: calc(100vw - 30rem);
+                            }
+                        }
+                    }
+                }
+
+                .btn {
+                    top: -43%;
+
+                    @include media(md) {
+                        top: -20%;
+                    }
+                }
+            }
+        }
+    }
+}

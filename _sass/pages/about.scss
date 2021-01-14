@@ -1,0 +1,109 @@
+.about-page {
+    .content {
+        display: grid;
+        grid-template-areas:
+            "long short"
+            "long skills";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+
+        @include media(sm) {
+            grid-template-areas:
+                "long"
+                "short" "skills";
+            grid-template-columns: 100%;
+        }
+    }
+
+    .top-section {
+        grid-area: long;
+        @include media(sm) {
+            margin: $space-lg 0 0;
+        }
+        @include media(sm) {
+            margin: $space-xxxl 0 0;
+        }
+        .show-text {
+            @include media-min(sm) {
+                display: none;
+            }
+            @include media(sm) {
+                display: flex;
+                position: absolute;
+                left:calc(50vw - 155px);
+                top: -100px;
+            }
+        }
+        .about__long {
+            .img-avatar-wrapper {
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                @include shadow-box(subtle);
+                display: flex;
+                border-radius: 50%;
+                justify-content: center;
+                img {
+                    z-index: 2;
+                    height: 180px;
+                    object-fit: cover;
+                }
+
+                @include media(md) {
+                    margin-top: $space-xxs;
+                }
+
+                @include media(md) {
+                    margin: $space-xs auto;
+                }
+            }
+        }
+    }
+
+    .about__short {
+        grid-area: short;
+        margin: $space-lg 0 $space-lg $space-lg;
+        @include media(sm) {
+            margin: $space-xl 0 $space-xl 0;
+        }
+        @include media(xs) {
+            margin: $space-xxl 0 $space-xxl 0;
+        }
+    }
+
+    .about__skillsets {
+        grid-area: skills;
+        margin: $space-lg 0 $space-md $space-lg;
+        @include media(smd) {
+            margin-bottom: $space-lg;
+        }
+        @include media(sm) {
+            margin:0 0 $space-lg;
+        }
+        .border-box__body {
+            display: flex;
+            justify-content: space-between;
+            @include media(smd) {
+                padding-bottom: $space-md;
+            }
+            div:last-of-type {
+                margin-left: $space-md;
+                @include media(xs) {
+                    margin-left: 0;
+                }
+            }
+
+            @include media(xs) {
+                flex-direction: column;
+            }
+        }
+
+        .border-box-footer {
+            left: unset;
+            background-color: transparent;
+            @include media(sm) {
+                right: 25%;
+            }
+        }
+    }
+}

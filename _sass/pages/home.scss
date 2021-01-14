@@ -1,0 +1,164 @@
+/* Home page */
+.home-page {
+    .content {
+        padding: 4rem $space-xl;
+    }
+    .top-section {
+        @include media(smd) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+        }
+        @include media(xs) {
+            height: 85vh;
+        }
+        .section__title {
+            position: relative;
+            @include media(smd) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            // for spacing reasons
+            .design {
+                display: flex;
+                align-items: center;
+                @include media(smd) {
+                    justify-content: center;
+                }
+            }
+            //the design word
+            img {
+                margin-right: $space-sm;
+                margin-top: $space-sm;
+
+                @include media(md) {
+                    width: 50%;
+                }
+            }
+        }
+
+        .introduction {
+            display: flex;
+            flex-direction: column;
+            margin: $space-lg 0 0 auto;
+            width: 50%;
+            @include media(smd) {
+                margin: $space-sm auto 0;
+            }
+            @include media(sm) {
+                width: 80%;
+            }
+
+            @include media(xs) {
+                width: 100%;
+                margin: $space-lg auto 0;
+            }
+            p {
+                margin: $space-xxs 0;
+            }
+
+            .btn {
+                margin-left: auto;
+                @include media(smd) {
+                    margin: $space-md auto;
+                }
+            }
+        }
+    }
+
+    .recent-work {
+        .home-page__recent-work {
+            display: flex;
+            margin-top: $space-xxxxxl;
+            @include media(xs) {
+                margin-top: $space-xl;
+            }
+
+            .h2 {
+                white-space: nowrap;
+            }
+            .border-box {
+                img {
+                    width: 60vw;
+                    margin: auto;
+                    display: flex;
+                    @include media(lg) {
+                        width: 55vw;
+                    }
+                    @include media(smd) {
+                        width: 80vw;
+                    }
+
+                    @include media(smd) {
+                        width: 75vw;
+                    }
+
+                    @include media(smd) {
+                        width: 65vw;
+                    }
+                }
+                @include media(sm) {
+                    padding: $space-md $space-xs;
+
+                    .h2 {
+                        font-size: $text-md;
+                    }
+
+                    .border-box__heading {
+                        top: -20px;
+                    }
+                    .border-box__footer {
+                        top: -45px;
+                    }
+                }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                @include media(sm) {
+                    width: 100%;
+                }
+
+                p {
+                    margin: $space-xxs 0;
+                }
+
+                .btn {
+                    margin-left: auto;
+                    margin-top: $space-sm;
+                }
+            }
+
+            &.info-right {
+                .info {
+                    margin: auto $space-md 0 0;
+                }
+            }
+            &.info-left {
+                .info {
+                    margin: auto 0 0 $space-md;
+                }
+            }
+
+            @include media(smd) {
+                flex-direction: column;
+                margin-top: $space-xxxl;
+                &:last-of-type {
+                    flex-direction: column-reverse;
+                }
+                &.info-right,
+                &.info-left {
+                    .info {
+                        margin: $space-md 0 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

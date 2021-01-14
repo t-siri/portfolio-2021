@@ -1,0 +1,122 @@
+//IMAGE SLIDE WITH EYE ICON
+.img-zoom {
+    .img {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: min-content;
+        z-index: 2;
+        right: 0;
+        transition: all .5s;
+
+        @include media(lg) {
+            right: -4.5rem;
+        }
+
+        .img-wrapper {
+            transition: all 1s;
+        }
+    }
+
+    &-right {
+        .img .btn {
+            right: -6rem;
+        }
+    }
+
+    &-left {
+        .img {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &-top {
+        .img {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    }
+
+    &-bottom {
+        .img {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .btn {
+        border-radius: 50%;
+        border-width: 5px;
+        padding: $space-md 2.2rem;
+        position: absolute;
+        z-index: 1;
+        @include motion-selected-bounce-x;
+        @include transform-timing(1s);
+
+        @include media(md) {
+            padding: $space-xs;
+            margin-bottom: 0;
+
+            &:before {
+                width: $space-sm;
+                height: $space-sm;
+            }
+        }
+
+        @include media(xsm) {
+            display: none;
+        }
+    }
+
+    &.active {
+        z-index: 4;
+
+        .img {
+            right: 15%;
+
+            .img-wrapper {
+                transform: scale(1.6);
+
+                @include media-min(xl) {
+                    transform: scale(2);
+                }
+
+
+                @include media(md) {
+                    transform: scale(1.2);
+                }
+
+                @include media(xsm) {
+                    transform: none;
+                }
+            }
+        }
+
+        //Shadow
+        &:after {
+            content: '';
+            position: absolute;
+            top: -50vh;
+            left: 0vw;
+            width: 100vw;
+            height: 150vh;
+            @include fadeIn(.5s);
+            z-index: 0;
+
+            @include themify {
+                background-color: transparentize(themed('background-color'), .4);
+            }
+        }
+
+        .btn {
+            z-index: 3;
+            right: -65%;
+
+            &:before {
+                mask: url(/assets/icon/x.svg);
+                -webkit-mask: url(/assets/icon/x.svg);
+            }
+        }
+    }
+
+}
