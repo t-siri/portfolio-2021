@@ -166,6 +166,9 @@ $input-border-width: $standard-border-width;
 	box-shadow: none;
 	margin: 0;
 	@include set-transition(all, 0.3s);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
 }
 
 #{$inline-text-input-types},
@@ -193,6 +196,9 @@ $input-border-width: $standard-border-width;
 
 // Setting larger line-heights for inputs which go over multiple lines.
 textarea {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
 	line-height: calc(#{$input-font-size} * 1.8);
 }
 
@@ -245,6 +251,11 @@ label {
 		left: 10px;
 		font-family: $heading-font-family;
 		font-weight: bold;
+		_::-webkit-full-page-media,
+		_:future,
+		:root .panel {
+			background-color: #ffe7d0;
+		}
 	}
 
 	//loops through for color assignments
@@ -277,7 +288,7 @@ label {
 			color: transparentize(get-contrasting-text-color(themed("background-color")), 0.1);
 		}
 	}
-	
+
 	textarea {
 		height: convert-rem(160px);
 		resize: none;

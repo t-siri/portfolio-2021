@@ -1799,7 +1799,7 @@ icons and positioning
 Input types:
 Non-input tag types:
 */
-input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="select"], textarea, select, option { height: auto; font-family: "Lato", Arial, Helvetica, sans-serif; border-width: 2px; border-style: solid; box-shadow: none; margin: 0; transition: all 0.3s cubic-bezier(0, 0, 0.44, 0.96) 0s; font-weight: 400; font-size: 1rem; line-height: 1rem; padding: calc(0.5 * 1rem) calc(1 * 1rem); }
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="select"], textarea, select, option { height: auto; font-family: "Lato", Arial, Helvetica, sans-serif; border-width: 2px; border-style: solid; box-shadow: none; margin: 0; transition: all 0.3s cubic-bezier(0, 0, 0.44, 0.96) 0s; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; font-weight: 400; font-size: 1rem; line-height: 1rem; padding: calc(0.5 * 1rem) calc(1 * 1rem); }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="select"]:focus, textarea:focus, select:focus, option:focus { border-width: 2px; box-shadow: none; outline: none; }
 
@@ -1819,7 +1819,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .theme-dark input[type="text"]:hover, .theme-dark input[type="password"]:hover, .theme-dark input[type="email"]:hover, .theme-dark input[type="number"]:hover, .theme-dark input[type="search"]:hover, .theme-dark input[type="tel"]:hover, .theme-dark input[type="time"]:hover, .theme-dark input[type="url"]:hover, .theme-dark input[type="select"]:hover, .theme-dark textarea:hover, .theme-dark select:hover, .theme-dark option:hover { border-color: white; }
 
-textarea { line-height: calc(1rem * 1.8); }
+textarea { border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; line-height: calc(1rem * 1.8); }
 
 label { margin-bottom: calc(0.25 * 1rem); }
 
@@ -1836,6 +1836,8 @@ label, label * { font-weight: 400; }
 .input-group label { display: inline-block; font-weight: 400; grid-area: label; cursor: default; }
 
 .input-group span { background-color: #ffe7d0; position: absolute; top: 4px; left: 10px; font-family: "montserrat", "lato", Arial, Helvetica, sans-serif; font-weight: bold; }
+
+.input-group span _::-webkit-full-page-media, .input-group span _:future, .input-group span :root .panel { background-color: #ffe7d0; }
 
 .input-group.input--primary input { border-color: #272727 !important; }
 
