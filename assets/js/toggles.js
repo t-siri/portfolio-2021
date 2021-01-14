@@ -1,3 +1,6 @@
+// Script written by Jordi Kitto https://www.linkedin.com/in/jordi-kitto/
+
+
 /**
  * This file contains functions for connecting buttons to activators
  * E.g. connecting a button to toggle the class from active/inactive
@@ -43,6 +46,7 @@ function addOnScrollAnimationToggles(className) {
 }
 
 window.addEventListener("load", () => {
+    console.log("Here");
     addClickEventToToggles();
     addOnScrollAnimationToggles("scroll-animation");
 });
