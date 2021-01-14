@@ -126,7 +126,7 @@ hamburger and slide out navigation */
 //navigation whole - converting horizontal navigation to slide out navigation on acive
 #navigation {
 	//iPad size styling
-	@include media(md) {
+	@include media(smd) {
 		position: fixed;
 		z-index: 4;
 		height: 100vh;
