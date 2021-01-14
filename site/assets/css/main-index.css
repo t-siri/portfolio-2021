@@ -2258,9 +2258,9 @@ hamburger and slide out navigation */
 
 @media (max-width: 950px) { .home-page .top-section .section__title .design { justify-content: center; } }
 
-.home-page .top-section .section__title img { margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); }
+.home-page .top-section .section__title svg { margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); }
 
-@media (max-width: 1100px) { .home-page .top-section .section__title img { width: 50%; } }
+@media (max-width: 1100px) { .home-page .top-section .section__title svg { width: 50%; } }
 
 .home-page .top-section .introduction { display: flex; flex-direction: column; margin: calc(3 * 1rem) 0 0 auto; width: 50%; }
 
