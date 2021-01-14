@@ -223,8 +223,7 @@ hamburger and slide out navigation */
 						padding-top: $space-xs;
 					}
 					.contact {
-						margin-top: $space-sm;
-						margin-left: $space-lg;
+						margin: $space-sm auto $space-md $space-lg;
 					}
 					.icon-chevron-left.contact:before {
 						height: $text-lg;
