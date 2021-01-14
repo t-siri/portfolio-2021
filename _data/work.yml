@@ -1,7 +1,7 @@
-- name: codebots v2
-  type: development
-  url: /work-codebots-v2
-  img: codebots-v2-1
+# - name: codebots v2
+#   type: development
+#   url: /work-codebots-v2
+#   img: codebots-v2-1
 - name: carted
   type: design & development
   url: /work-carted
