@@ -1,5 +1,8 @@
 /* Home page */
 .home-page {
+    .content {
+        padding: 4rem $space-xl;
+    }
     .top-section {
         @include media(smd) {
             display: flex;
@@ -7,6 +10,9 @@
             align-items: center;
             justify-content: center;
             height: 95vh;
+        }
+        @include media(xs) {
+            height: 85vh;
         }
         .section__title {
             position: relative;
@@ -33,10 +39,6 @@
                     width: 50%;
                 }
             }
-
-            .logic-mind {
-                margin-top: $space-xs;
-            }
         }
 
         .introduction {
@@ -45,10 +47,15 @@
             margin: $space-lg 0 0 auto;
             width: 50%;
             @include media(smd) {
-                margin: $space-xl auto 0;
+                margin: $space-sm auto 0;
             }
             @include media(sm) {
                 width: 80%;
+            }
+
+            @include media(xs) {
+                width: 100%;
+                margin: $space-lg auto 0;
             }
             p {
                 margin: $space-xxs 0;
@@ -56,6 +63,9 @@
 
             .btn {
                 margin-left: auto;
+                @include media(smd) {
+                    margin: $space-md auto;
+                }
             }
         }
     }
@@ -64,11 +74,21 @@
         .home-page__recent-work {
             display: flex;
             margin-top: $space-xxxxxl;
+            @include media(xs) {
+                margin-top: $space-xl;
+            }
+
+            .h2 {
+                white-space: nowrap;
+            }
             .border-box {
                 img {
                     width: 60vw;
                     margin: auto;
                     display: flex;
+                    @include media(lg) {
+                        width: 55vw;
+                    }
                     @include media(smd) {
                         width: 80vw;
                     }
@@ -76,9 +96,13 @@
                     @include media(smd) {
                         width: 75vw;
                     }
+
+                    @include media(smd) {
+                        width: 65vw;
+                    }
                 }
                 @include media(sm) {
-                    padding: $space-xl 0;
+                    padding: $space-md $space-xs;
 
                     .h2 {
                         font-size: $text-md;

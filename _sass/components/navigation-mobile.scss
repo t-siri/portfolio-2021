@@ -142,6 +142,7 @@ hamburger and slide out navigation */
 		&.active {
 			opacity: 1;
 			width: 100vw;
+			height: 100vh;
 			right: 0;
 			@include slideInRight($animation-time);
 		}
@@ -202,11 +203,11 @@ hamburger and slide out navigation */
 				.contact-content {
 					flex-direction: column;
 					overflow-y: auto;
-					
+
 					@include themify {
 						background-color: themed("background-color");
 					}
-					
+
 					top: 0;
 					&__visible {
 						right: 0;
@@ -241,7 +242,6 @@ hamburger and slide out navigation */
 	@include media(xsm) {
 		ul {
 			li {
-
 				a {
 					font-family: $heading-font-family;
 					font-size: 2rem;
@@ -262,7 +262,6 @@ hamburger and slide out navigation */
 
 				//contact content
 				.contact-content {
-					
 					//contact back link
 					.contact {
 						margin: $space-xs $space-md;
@@ -276,6 +275,14 @@ hamburger and slide out navigation */
 					}
 				}
 			}
+		}
+	}
+
+	@include media(xs) {
+		padding: $space-lg $space-md;
+
+		textarea {
+			height: 280px;
 		}
 	}
 }

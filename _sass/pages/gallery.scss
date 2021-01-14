@@ -1,12 +1,21 @@
 .gallery-page {
-    h2, .blurb {
+    h2,
+    .blurb {
         text-align: center;
     }
-   .blurb {
-       margin-bottom: $space-lg;
-   }
+    .blurb {
+        margin-bottom: $space-lg;
+    }
     section.creative-gallery {
+        @include media-min(md) {
+            max-width: 80vw;
+            display: flex;
+            margin: 0 auto;
+        }
         @include media(xsm) {
+            max-width: calc(100vw - 3rem - 3rem);
+            display: flex;
+            margin: 0 auto;
             display: flex;
             align-content: center;
             justify-content: center;
@@ -35,7 +44,7 @@
                 height: auto;
                 max-width: 260px;
                 @include media(smd) {
-                    max-width: 26vw;
+                    max-width: 25vw;
                 }
                 @include media(xsm) {
                     max-width: 100%;

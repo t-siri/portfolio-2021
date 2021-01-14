@@ -3,6 +3,10 @@
     position: relative;
     border: 2px solid $color-primary;
 
+    @include media(xs) {
+        padding: $space-md $space-sm;
+    }
+
     &.no-heading {
         padding: $space-sm $space-md;
     }
@@ -16,12 +20,24 @@
         @include media(smd) {
             top: -30px;
         }
+
+        @include media(xs) {
+            top: -20px;
+        }
     }
     .border-box-heading.h3 {
         position: absolute;
         top: -20px;
         left: $space-sm;
         background-color: $color-brand-01;
+    }
+
+    .border-box-heading {
+        @include media(xs) {
+            span {
+                display: none;
+            }
+        }
     }
 
     .border-box-footer {

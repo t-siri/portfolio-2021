@@ -1,4 +1,7 @@
 .work-page {
+    .content {
+        padding-top: 0;
+    }
     .border-box {
         position: relative;
         margin: $space-xxxl $space-xxl;
@@ -6,17 +9,27 @@
 
         @include media(smd) {
             margin: $space-xxxl 0;
-            padding: $space-xl 0;
+            padding: $space-xl $space-xs;
 
             .h2 {
                 font-size: $text-md;
             }
 
-            .border-box__heading {
+            .border-box-heading.h2 {
                 top: -20px;
             }
-            .border-box__footer {
-                top: -45px;
+            .border-box-footer {
+                bottom: -45px;
+            }
+        }
+
+        @include media(xs) {
+            .border-box-heading.h2 {
+                display: none;
+            }
+
+            .btn {
+                left: 13vw;
             }
         }
 
@@ -27,6 +40,9 @@
                 margin: auto;
                 @include media(smd) {
                     width: 75vw;
+                }
+                @include media(xs) {
+                    width: 66vw;
                 }
             }
 
