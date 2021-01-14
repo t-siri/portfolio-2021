@@ -327,7 +327,7 @@ nav a:not(.no-a-hover) {
 			transition: width 0.2s ease-in-out;
 			overflow: visible;
 
-			@include media(md) {
+			@include media(smd) {
 				height: 1rem;
 				width: 99%;
 				margin: 0 auto;
