@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Carted
 permalink: /work-carted
 img1: carted-1

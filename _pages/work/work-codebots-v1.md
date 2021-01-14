@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Codebots V1
 permalink: /work-codebots-v1
 img1: codebots-mktg-1

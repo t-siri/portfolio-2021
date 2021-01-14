@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Kindred client portal
 permalink: /work-kindred-client
 img1: kindred-client-1 

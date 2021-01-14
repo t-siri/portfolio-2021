@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Self taught
 permalink: /work-self-taught
 img1: self-taught

@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Advance Cabello
 permalink: /work-advance-cabello
 img1: advance-cabello

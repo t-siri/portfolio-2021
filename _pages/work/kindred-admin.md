@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Kindred admin portal
 permalink: /work-kindred-admin
 img1: kindred-admin-1 

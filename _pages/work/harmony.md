@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Harmony design system
 permalink: /work-harmony
 img1: harmony

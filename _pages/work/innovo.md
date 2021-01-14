@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-view
 title: Work • Innovo
 permalink: /work-innovo
 img1: innovo-1 
