@@ -1,3 +1,5 @@
+// Script written by Jordi Kitto https://www.linkedin.com/in/jordi-kitto/
+
 /**
  * This code is used for connecting buttons to toggle inactice/active on other elements
  */
