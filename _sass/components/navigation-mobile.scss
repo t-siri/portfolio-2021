@@ -267,6 +267,7 @@ hamburger and slide out navigation */
 						margin: $space-xs $space-md;
 						width: fit-content;
 						height: 60px;
+						display: flex;
 
 						&:before {
 							height: $text-md;
