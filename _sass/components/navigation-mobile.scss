@@ -266,6 +266,7 @@ hamburger and slide out navigation */
 					.contact {
 						margin: $space-xs $space-md;
 						width: fit-content;
+						height: 60px;
 
 						&:before {
 							height: $text-md;
@@ -282,7 +283,7 @@ hamburger and slide out navigation */
 		padding: $space-lg $space-md;
 
 		textarea {
-			height: 240px;
+			height: 160px;
 		}
 	}
 }
