@@ -7,7 +7,12 @@ function toggleContact() {
 function toggleContactX() {
 	var contact = document.getElementById('contact-content');
 	var close = document.getElementById('close-nav');
+	var formClose = document.getElementById('form-close');
 	close.addEventListener('click', function() {
+		contact.classList.toggle('contact-content__visible');
+		contact.classList.toggle('contact-content__hidden');
+	});
+	formClose.addEventListener('click', function() {
 		contact.classList.toggle('contact-content__visible');
 		contact.classList.toggle('contact-content__hidden');
 	});

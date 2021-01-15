@@ -193,6 +193,9 @@ nav {
 			.submit-message {
 				opacity: 0;
 				height: 0;
+				h2 {
+					height: 0;
+				}
 			}
 			.form {
 				opacity: 1;
@@ -202,6 +205,9 @@ nav {
 				.submit-message {
 					opacity: 1;
 					height: max-content;
+					h2 {
+						height: max-content;
+					}
 				}
 				.form {
 					opacity: 0;
