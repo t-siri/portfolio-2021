@@ -11,8 +11,11 @@
         margin: 0 auto;
         align-content: center;
         justify-content: center;
+        @include media-min(xl) {
+            max-width: unset;
+        }
         @include media-min(md) {
-            max-width: 85vw;
+            max-width: 80vw;
         }
         @include media(xsm) {
             max-width: calc(100vw - 3rem - 3rem);
