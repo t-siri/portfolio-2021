@@ -12,7 +12,7 @@
         align-content: center;
         justify-content: center;
         @include media-min(xl) {
-            max-width: unset;
+            max-width: 860px;
         }
         @include media-min(md) {
             max-width: 80vw;
