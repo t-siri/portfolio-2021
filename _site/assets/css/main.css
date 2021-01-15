@@ -2320,9 +2320,9 @@ hamburger and slide out navigation */
 
 main.content { padding: 8rem calc(3.5 * 1rem); }
 
-@media (max-width: 1100px) { main.content { padding: calc(8 * 1rem) calc(3 * 1rem); } }
+@media (max-width: 1100px) { main.content { padding: calc(8 * 1rem) calc(2 * 1rem); } }
 
-@media (max-width: 640px) { main.content { padding: calc(3.5 * 1rem) calc(3 * 1rem); } }
+@media (max-width: 640px) { main.content { padding: calc(3.5 * 1rem) calc(2 * 1rem); } }
 
 .about-page .content { display: grid; grid-template-areas: "long short" "long skills"; grid-template-columns: 1.5fr 1fr; grid-template-rows: 1fr; }
 

@@ -2,9 +2,9 @@ main.content {
     padding: 8rem $space-xl;
 
     @include media(md) {
-        padding: $space-xxxl $space-lg;
+        padding: $space-xxxl $space-md;
     }
     @include media(xsm) {
-        padding: $space-xl $space-lg;
+        padding: $space-xl $space-md;
     }
 }
