@@ -2553,7 +2553,7 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 380px) { .work-page .border-box .border-box__body img { width: 66vw; } }
 
-.work-page .border-box .border-box__body .btn { position: absolute; right: -50px; top: 50%; }
+.work-page .border-box .border-box__body .btn { position: absolute; right: -35px; top: 50%; }
 
 @media (max-width: 950px) { .work-page .border-box .border-box__body .btn { right: 20px; top: -35px; } }
 
