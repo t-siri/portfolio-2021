@@ -12,7 +12,7 @@ img7: carted-7
 ---
 
 {% contentfor introduction %}
-Carted is a side project I have founded and is a current work in progress.
+Carted is a side project I have found and is a current work in progress.
 
 The idea behind this came from me and how I wanted to simplify my shopping experience in general.
 
