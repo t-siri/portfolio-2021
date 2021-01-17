@@ -1522,7 +1522,7 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
     /* The typwriter cursor */
     -webkit-border-right: 3px solid #272727;
     /* The typwriter cursor */ }
-  to { width: 100%;
+  to { width: 85%;
     border-right: 3px solid #272727;
     /* The typwriter cursor */
     -webkit-border-right: 3px solid #272727;
@@ -2354,6 +2354,8 @@ hamburger and slide out navigation */
 .home-page .top-section .section__title .design-svg { display: flex; margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); -webkit-transform: translate3d(0, 0, 0); height: auto; }
 
 .home-page .top-section .section__title .design-svg svg { display: block; width: 21rem; }
+
+@media (max-width: 1100px) { .home-page .top-section .section__title .design-svg svg { width: 17rem; } }
 
 @media (max-width: 950px) { .home-page .top-section .section__title .design-svg svg { width: 12rem; } }
 

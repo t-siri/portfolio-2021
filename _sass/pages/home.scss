@@ -46,7 +46,9 @@
                 svg {
                     display: block;
                     width: 21rem;
-
+                    @include media(md) {
+                        width: 17rem;
+                    }
                     @include media(smd) {
                         width: 12rem;
                     }
