@@ -1514,7 +1514,6 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
     border-right: 3px solid #272727;
     /* The typwriter cursor */ }
   to { width: 85%;
-    @media (max-width: 380px) { width: 80%; }
     border-right: 3px solid #272727;
     /* The typwriter cursor */ } }
 
@@ -1524,7 +1523,24 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
     -webkit-border-right: 3px solid #272727;
     /* The typwriter cursor */ }
   to { width: 100%;
-    @media (max-width: 380px) { width: 80%; }
+    border-right: 3px solid #272727;
+    /* The typwriter cursor */
+    -webkit-border-right: 3px solid #272727;
+    /* The typwriter cursor */ } }
+
+@keyframes typingxs { from { width: 0;
+    border-right: 3px solid #272727;
+    /* The typwriter cursor */ }
+  to { width: 84%;
+    border-right: 3px solid #272727;
+    /* The typwriter cursor */ } }
+
+@-webkit-keyframes typingxs { from { width: 0;
+    border-right: 3px solid #272727;
+    /* The typwriter cursor */
+    -webkit-border-right: 3px solid #272727;
+    /* The typwriter cursor */ }
+  to { width: 84%;
     border-right: 3px solid #272727;
     /* The typwriter cursor */
     -webkit-border-right: 3px solid #272727;
@@ -2364,6 +2380,8 @@ hamburger and slide out navigation */
 .home-page .top-section .section__title .the { width: 0; animation: keyframesthe 0.5s steps(500); overflow: hidden; animation-delay: 2.4s; animation-fill-mode: forwards; grid-area: the; }
 
 .home-page .top-section .section__title .logic { width: 0; overflow: hidden; /* Ensures the content is not revealed until the animation */ white-space: nowrap; /* Keeps the content on a single line */ margin: 0 calc(1.5 * 1rem); /* Gives that scrolling effect as the typing happens */ letter-spacing: 0.07em; /* Adjust as needed */ animation: typing 1.8s steps(10, end), blink-caret 0.7s step-end infinite; animation-delay: 2.8s; animation-fill-mode: forwards; grid-area: logic; border-right: 3px solid #ffe7d0; }
+
+@media (max-width: 380px) { .home-page .top-section .section__title .logic { margin: 0 calc(0.5 * 1rem); width: 0; border-right: 3px solid #ffe7d0; animation: typingxs 1.8s steps(10, end), blink-caret 0.7s step-end infinite; animation-fill-mode: forwards; animation-delay: 2.8s; } }
 
 .home-page .top-section .section__title .mind { width: 0; animation: keyframesmind 0.8s steps(500); overflow: hidden; animation-delay: 4.8s; animation-fill-mode: forwards; grid-area: mind; }
 

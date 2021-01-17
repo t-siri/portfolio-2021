@@ -126,6 +126,14 @@
                 animation-fill-mode: forwards;
                 grid-area: logic;
                 border-right: 3px solid $color-brand-01;
+                @include media(xs) {
+                    margin: 0 $space-xxs;
+                    width: 0;
+                    border-right: 3px solid $color-brand-01;
+                    animation: typingxs 1.8s steps(10, end), blink-caret 0.7s step-end infinite;
+                    animation-fill-mode: forwards;
+                    animation-delay: 2.8s;
+                }
             }
             .mind {
                 width: 0;
