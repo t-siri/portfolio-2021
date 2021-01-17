@@ -2359,7 +2359,7 @@ hamburger and slide out navigation */
 
 .home-page .top-section .section__title .logic-mind { white-space: nowrap; align-items: center; display: grid; grid-template-areas: "the logic mind"; grid-template-columns: repeat(3, min-content); }
 
-.home-page .top-section .section__title .meets { width: 0; animation: keyframesmeets 1.2s steps(500); overflow: hidden; animation-delay: 2s; animation-fill-mode: forwards; }
+.home-page .top-section .section__title .meets { width: 0; animation: keyframesmeets 1.8s steps(500); overflow: hidden; animation-delay: 2s; animation-fill-mode: forwards; }
 
 .home-page .top-section .section__title .the { width: 0; animation: keyframesthe 0.5s steps(500); overflow: hidden; animation-delay: 2.4s; animation-fill-mode: forwards; grid-area: the; }
 
