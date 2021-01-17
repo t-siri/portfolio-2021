@@ -411,6 +411,9 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
 	}
 	to {
 		width: 85%;
+		@include media(xs) {
+			width: 80%;
+		}
 		border-right: 0.08em solid $color-primary; /* The typwriter cursor */
 	}
 }

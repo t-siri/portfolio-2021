@@ -21,7 +21,7 @@
         @include fadeInLeft(2s);
         grid-area: long;
         @include media(smd) {
-            @include fadeInDown(1.5s);
+            @include fadeInDown(2s);
         }
         @include media(sm) {
             margin: $space-lg 0 0;

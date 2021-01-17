@@ -1514,6 +1514,7 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
     border-right: 0.08em solid #272727;
     /* The typwriter cursor */ }
   to { width: 85%;
+    @media (max-width: 380px) { width: 80%; }
     border-right: 0.08em solid #272727;
     /* The typwriter cursor */ } }
 
@@ -2328,6 +2329,8 @@ hamburger and slide out navigation */
 
 @media (max-width: 1100px) { .home-page .top-section .section__title .design-svg svg { width: 12rem; } }
 
+@media (max-width: 380px) { .home-page .top-section .section__title .design-svg svg { width: 9rem; } }
+
 .home-page .top-section .section__title .design-svg .path { stroke: #272727; }
 
 .home-page .top-section .section__title .design-svg .path-clip-d, .home-page .top-section .section__title .design-svg .path-clip-e, .home-page .top-section .section__title .design-svg .path-clip-s, .home-page .top-section .section__title .design-svg .path-clip-i, .home-page .top-section .section__title .design-svg .path-clip-g, .home-page .top-section .section__title .design-svg .path-clip-n { stroke-dasharray: 2600; stroke-dashoffset: 2600; stroke-width: 40; margin-right: 40px; animation: design-other-letters 2.5s linear forwards 0.1s; }
@@ -2352,7 +2355,7 @@ hamburger and slide out navigation */
 
 .home-page .top-section .section__title .mind { width: 0; animation: keyframesmind 0.8s steps(500); overflow: hidden; animation-delay: 4.8s; animation-fill-mode: forwards; grid-area: mind; }
 
-.home-page .top-section .introduction { opacity: 0; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-fill-mode: forwards; animation-delay: 4.8s; display: flex; flex-direction: column; margin: calc(3 * 1rem) 0 0 auto; width: 50%; }
+.home-page .top-section .introduction { opacity: 0; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-fill-mode: forwards; animation-delay: 5s; display: flex; flex-direction: column; margin: calc(3 * 1rem) 0 0 auto; width: 50%; }
 
 @media (max-width: 950px) { .home-page .top-section .introduction { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; } }
 
@@ -2412,7 +2415,7 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .about-page .top-section { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; grid-area: long; }
 
-@media (max-width: 950px) { .about-page .top-section { -webkit-animation-name: fadeInDown; animation-name: fadeInDown; animation-duration: 1.5s; } }
+@media (max-width: 950px) { .about-page .top-section { -webkit-animation-name: fadeInDown; animation-name: fadeInDown; animation-duration: 2s; } }
 
 @media (max-width: 750px) { .about-page .top-section { margin: calc(3 * 1rem) 0 0; } }
 

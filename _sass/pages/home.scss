@@ -50,6 +50,9 @@
                     @include media(md) {
                         width: 12rem;
                     }
+                    @include media(xs) {
+                        width: 9rem;
+                    }
                 }
 
                 .path {
@@ -139,7 +142,7 @@
                 @include fadeInUp(2s);
             }
             animation-fill-mode: forwards;
-            animation-delay: 4.8s;
+            animation-delay: 5s;
             display: flex;
             flex-direction: column;
             margin: $space-lg 0 0 auto;
