@@ -102,7 +102,7 @@
             //animation starts
             .meets {
                 width: 0;
-                animation: keyframesmeets 0.5s steps(500);
+                animation: keyframesmeets 1.2s steps(500);
                 overflow: hidden;
                 animation-delay: 2s;
                 animation-fill-mode: forwards;
@@ -121,10 +121,11 @@
                 white-space: nowrap; /* Keeps the content on a single line */
                 margin: 0 $space-sm; /* Gives that scrolling effect as the typing happens */
                 letter-spacing: 0.07em; /* Adjust as needed */
-                animation: typing 1.8s steps(10, end), blink-caret 0.4s step-end infinite;
+                animation: typing 1.8s steps(10, end), blink-caret 0.7s step-end infinite;
                 animation-delay: 2.8s;
                 animation-fill-mode: forwards;
                 grid-area: logic;
+                border-right: 3px solid $color-brand-01;
             }
             .mind {
                 width: 0;

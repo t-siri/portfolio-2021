@@ -1523,7 +1523,7 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
     /* The typwriter cursor */
     -webkit-border-right: 3px solid #272727;
     /* The typwriter cursor */ }
-  to { width: 85%;
+  to { width: 100%;
     @media (max-width: 380px) { width: 80%; }
     border-right: 3px solid #272727;
     /* The typwriter cursor */
@@ -2359,11 +2359,11 @@ hamburger and slide out navigation */
 
 .home-page .top-section .section__title .logic-mind { white-space: nowrap; align-items: center; display: grid; grid-template-areas: "the logic mind"; grid-template-columns: repeat(3, min-content); }
 
-.home-page .top-section .section__title .meets { width: 0; animation: keyframesmeets 0.5s steps(500); overflow: hidden; animation-delay: 2s; animation-fill-mode: forwards; }
+.home-page .top-section .section__title .meets { width: 0; animation: keyframesmeets 1.2s steps(500); overflow: hidden; animation-delay: 2s; animation-fill-mode: forwards; }
 
 .home-page .top-section .section__title .the { width: 0; animation: keyframesthe 0.5s steps(500); overflow: hidden; animation-delay: 2.4s; animation-fill-mode: forwards; grid-area: the; }
 
-.home-page .top-section .section__title .logic { width: 0; overflow: hidden; /* Ensures the content is not revealed until the animation */ white-space: nowrap; /* Keeps the content on a single line */ margin: 0 calc(1.5 * 1rem); /* Gives that scrolling effect as the typing happens */ letter-spacing: 0.07em; /* Adjust as needed */ animation: typing 1.8s steps(10, end), blink-caret 0.4s step-end infinite; animation-delay: 2.8s; animation-fill-mode: forwards; grid-area: logic; }
+.home-page .top-section .section__title .logic { width: 0; overflow: hidden; /* Ensures the content is not revealed until the animation */ white-space: nowrap; /* Keeps the content on a single line */ margin: 0 calc(1.5 * 1rem); /* Gives that scrolling effect as the typing happens */ letter-spacing: 0.07em; /* Adjust as needed */ animation: typing 1.8s steps(10, end), blink-caret 0.7s step-end infinite; animation-delay: 2.8s; animation-fill-mode: forwards; grid-area: logic; border-right: 3px solid #ffe7d0; }
 
 .home-page .top-section .section__title .mind { width: 0; animation: keyframesmind 0.8s steps(500); overflow: hidden; animation-delay: 4.8s; animation-fill-mode: forwards; grid-area: mind; }
 
@@ -2414,5 +2414,3 @@ hamburger and slide out navigation */
 .home-page .recent-work .home-page__recent-work.info-left .info { margin: auto 0 0 calc(2 * 1rem); }
 
 @media (max-width: 950px) { .home-page .recent-work .home-page__recent-work { flex-direction: column; margin-top: calc(8 * 1rem); } .home-page .recent-work .home-page__recent-work:last-of-type { flex-direction: column-reverse; } .home-page .recent-work .home-page__recent-work.info-right .info, .home-page .recent-work .home-page__recent-work.info-left .info { margin: calc(2 * 1rem) 0 0 auto; } }
-
-/*# sourceMappingURL=main-index.css.map */
