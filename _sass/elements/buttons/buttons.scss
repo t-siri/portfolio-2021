@@ -71,21 +71,21 @@ a {
 		span {
 			width: 0;
 			opacity: 0;
-			position: absolute;
+			// position: absolute; 
 			vertical-align: middle;
+			margin-right: $space-sm;
 		}
 		&:hover,
 		&:active,
 		&:focus {
 			border-radius: 40px;
-			width: 180px;
 			background-color: $color-primary;
+			width: 170px;
 			span {
-				position: relative;
-				width: max-content;
-				margin-right: $space-sm;
+				// position: relative;
+				width: 140px;
 				opacity: 1;
-				@include cubic-bezier-ease-in(width, 0.5s);
+				@include cubic-bezier-ease-in(all, 0.5s);
 			}
 		}
 
