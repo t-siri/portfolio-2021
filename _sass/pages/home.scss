@@ -47,11 +47,12 @@
                     display: block;
                     width: 21rem;
 
-                    @include media(md) {
+                    @include media(smd) {
                         width: 12rem;
                     }
                     @include media(xs) {
-                        width: 9rem;
+                        width: 8rem;
+                        margin-top: -20px;
                     }
                 }
 
@@ -120,7 +121,7 @@
                 white-space: nowrap; /* Keeps the content on a single line */
                 margin: 0 $space-sm; /* Gives that scrolling effect as the typing happens */
                 letter-spacing: 0.07em; /* Adjust as needed */
-                animation: typing 1.8s steps(10, end), blink-caret .4s step-end infinite;
+                animation: typing 1.8s steps(10, end), blink-caret 0.4s step-end infinite;
                 animation-delay: 2.8s;
                 animation-fill-mode: forwards;
                 grid-area: logic;
