@@ -3,7 +3,7 @@
     .content {
         padding: 4rem $space-xl;
         @include media(md) {
-            padding: $space-xxxl $space-lg;
+            padding: 5rem $space-lg;
         }
         @include media(xsm) {
             padding: $space-xl $space-lg;
@@ -37,23 +37,109 @@
                 }
             }
             //the design word
-            svg {
+            .design-svg {
+                display: flex;
                 margin-right: $space-sm;
                 margin-top: $space-sm;
                 -webkit-transform: translate3d(0, 0, 0);
                 height: auto;
+                svg {
+                    display: block;
+                    width: 21rem;
 
-                @include media(md) {
-                    width: 50%;
+                    @include media(md) {
+                        width: 12rem;
+                    }
+                }
+
+                .path {
+                    stroke: $color-primary;
+                }
+                .path-clip- {
+                    &d,
+                    &e,
+                    &s,
+                    &i,
+                    &g,
+                    &n {
+                        stroke-dasharray: 2600;
+                        stroke-dashoffset: 2600;
+                        stroke-width: 40;
+                        margin-right: 40px;
+                        animation: design-other-letters 2.5s linear forwards 0.1s;
+                    }
+
+                    &e {
+                        animation-delay: 0.5s;
+                    }
+                    &s {
+                        animation-delay: 0.8s;
+                    }
+                    &i {
+                        animation-delay: 1.2s;
+                    }
+                    &g {
+                        animation-delay: 1.4s;
+                    }
+                    &n {
+                        animation-delay: 1.8s;
+                    }
                 }
             }
 
             .logic-mind {
                 white-space: nowrap;
+                align-items: center;
+                display: grid;
+                grid-template-areas: "the logic mind";
+                grid-template-columns: repeat(3, min-content);
+            }
+
+            //animation starts
+            .meets {
+                width: 0;
+                animation: keyframesmeets 0.5s steps(500);
+                overflow: hidden;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+            }
+            .the {
+                width: 0;
+                animation: keyframesthe 0.5s steps(500);
+                overflow: hidden;
+                animation-delay: 2.4s;
+                animation-fill-mode: forwards;
+                grid-area: the;
+            }
+            .logic {
+                width: 0;
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                white-space: nowrap; /* Keeps the content on a single line */
+                margin: 0 $space-sm; /* Gives that scrolling effect as the typing happens */
+                letter-spacing: 0.07em; /* Adjust as needed */
+                animation: typing 1.8s steps(10, end), blink-caret 1s step-end infinite;
+                animation-delay: 2.8s;
+                animation-fill-mode: forwards;
+                grid-area: logic;
+            }
+            .mind {
+                width: 0;
+                animation: keyframesmind 0.8s steps(500);
+                overflow: hidden;
+                animation-delay: 4.8s;
+                animation-fill-mode: forwards;
+                grid-area: mind;
             }
         }
 
         .introduction {
+            opacity: 0;
+            @include fadeInRight(2s);
+            @include media(smd) {
+                @include fadeInUp(2s);
+            }
+            animation-fill-mode: forwards;
+            animation-delay: 4.8s;
             display: flex;
             flex-direction: column;
             margin: $space-lg 0 0 auto;

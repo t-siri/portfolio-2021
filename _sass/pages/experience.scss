@@ -21,6 +21,9 @@
 
     .top-section {
         grid-area: exp;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInLeft(2s);
         @include media(sm) {
             margin: $space-md 0 $space-xl;
         }
@@ -37,6 +40,10 @@
 
     .experience__education {
         grid-area: edu;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInRight(2s);
+        animation-delay: 0.2s;
         margin: $space-lg 0 $space-lg $space-lg;
         @include media(sm) {
             margin: $space-md 0;
@@ -45,6 +52,10 @@
 
     .experience__skillsets {
         grid-area: skills;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInLeft(2s);
+        animation-delay: 0.2s;
         margin: $space-md 0 $space-md 0;
         @include media(sm) {
             margin: $space-md 0;
@@ -66,6 +77,10 @@
 
     .experience__highlights {
         grid-area: high;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInRight(2s);
+        animation-delay: 0.4s;
         margin: $space-xxl 0 $space-lg $space-lg;
         @include media(sm) {
             margin: $space-md 0;

@@ -1366,6 +1366,34 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
 @keyframes fadeIn { from { opacity: 0; }
   to { opacity: 1; } }
 
+@keyframes fadeInLeft { from { opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to { opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInDown { from { opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to { opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInRight { from { opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to { opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp { from { opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to { opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
 @keyframes slideGradient { 0% { background-position: 0% 50%; }
   50% { background-position: 100% 51%; }
   100% { background-position: 0% 50%; } }
@@ -1471,6 +1499,30 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
 
 @keyframes moveAnimRev { from { flex: 1; }
   to { flex: none; } }
+
+@keyframes keyframesthe { from { width: 0px; }
+  to { width: 100%; } }
+
+@keyframes keyframesmeets { from { width: 0px; }
+  to { width: 100%; } }
+
+@keyframes keyframesmind { from { width: 0px; }
+  to { width: 100%; } }
+
+/* The typing effect */
+@keyframes typing { from { width: 0;
+    border-right: 0.08em solid #272727;
+    /* The typwriter cursor */ }
+  to { width: 85%;
+    border-right: 0.08em solid #272727;
+    /* The typwriter cursor */ } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret { from, to { border-color: transparent; }
+  50% { border-color: #272727; } }
+
+@keyframes design-other-letters { 0% { stroke-dashoffset: 2600; }
+  100% { stroke-dashoffset: 0; } }
 
 /*
 Types: Text, solid or outline
@@ -2254,7 +2306,7 @@ hamburger and slide out navigation */
 /* Home page */
 .home-page .content { padding: 4rem calc(3.5 * 1rem); }
 
-@media (max-width: 1100px) { .home-page .content { padding: calc(8 * 1rem) calc(3 * 1rem); } }
+@media (max-width: 1100px) { .home-page .content { padding: 5rem calc(3 * 1rem); } }
 
 @media (max-width: 640px) { .home-page .content { padding: calc(3.5 * 1rem) calc(3 * 1rem); } }
 
@@ -2270,13 +2322,39 @@ hamburger and slide out navigation */
 
 @media (max-width: 950px) { .home-page .top-section .section__title .design { justify-content: center; } }
 
-.home-page .top-section .section__title svg { margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); -webkit-transform: translate3d(0, 0, 0); height: auto; }
+.home-page .top-section .section__title .design-svg { display: flex; margin-right: calc(1.5 * 1rem); margin-top: calc(1.5 * 1rem); -webkit-transform: translate3d(0, 0, 0); height: auto; }
 
-@media (max-width: 1100px) { .home-page .top-section .section__title svg { width: 50%; } }
+.home-page .top-section .section__title .design-svg svg { display: block; width: 21rem; }
 
-.home-page .top-section .section__title .logic-mind { white-space: nowrap; }
+@media (max-width: 1100px) { .home-page .top-section .section__title .design-svg svg { width: 12rem; } }
 
-.home-page .top-section .introduction { display: flex; flex-direction: column; margin: calc(3 * 1rem) 0 0 auto; width: 50%; }
+.home-page .top-section .section__title .design-svg .path { stroke: #272727; }
+
+.home-page .top-section .section__title .design-svg .path-clip-d, .home-page .top-section .section__title .design-svg .path-clip-e, .home-page .top-section .section__title .design-svg .path-clip-s, .home-page .top-section .section__title .design-svg .path-clip-i, .home-page .top-section .section__title .design-svg .path-clip-g, .home-page .top-section .section__title .design-svg .path-clip-n { stroke-dasharray: 2600; stroke-dashoffset: 2600; stroke-width: 40; margin-right: 40px; animation: design-other-letters 2.5s linear forwards 0.1s; }
+
+.home-page .top-section .section__title .design-svg .path-clip-e { animation-delay: 0.5s; }
+
+.home-page .top-section .section__title .design-svg .path-clip-s { animation-delay: 0.8s; }
+
+.home-page .top-section .section__title .design-svg .path-clip-i { animation-delay: 1.2s; }
+
+.home-page .top-section .section__title .design-svg .path-clip-g { animation-delay: 1.4s; }
+
+.home-page .top-section .section__title .design-svg .path-clip-n { animation-delay: 1.8s; }
+
+.home-page .top-section .section__title .logic-mind { white-space: nowrap; align-items: center; display: grid; grid-template-areas: "the logic mind"; grid-template-columns: repeat(3, min-content); }
+
+.home-page .top-section .section__title .meets { width: 0; animation: keyframesmeets 0.5s steps(500); overflow: hidden; animation-delay: 2s; animation-fill-mode: forwards; }
+
+.home-page .top-section .section__title .the { width: 0; animation: keyframesthe 0.5s steps(500); overflow: hidden; animation-delay: 2.4s; animation-fill-mode: forwards; grid-area: the; }
+
+.home-page .top-section .section__title .logic { width: 0; overflow: hidden; /* Ensures the content is not revealed until the animation */ white-space: nowrap; /* Keeps the content on a single line */ margin: 0 calc(1.5 * 1rem); /* Gives that scrolling effect as the typing happens */ letter-spacing: 0.07em; /* Adjust as needed */ animation: typing 1.8s steps(10, end), blink-caret 1s step-end infinite; animation-delay: 2.8s; animation-fill-mode: forwards; grid-area: logic; }
+
+.home-page .top-section .section__title .mind { width: 0; animation: keyframesmind 0.8s steps(500); overflow: hidden; animation-delay: 4.8s; animation-fill-mode: forwards; grid-area: mind; }
+
+.home-page .top-section .introduction { opacity: 0; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-fill-mode: forwards; animation-delay: 4.8s; display: flex; flex-direction: column; margin: calc(3 * 1rem) 0 0 auto; width: 50%; }
+
+@media (max-width: 950px) { .home-page .top-section .introduction { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; } }
 
 @media (max-width: 950px) { .home-page .top-section .introduction { margin: calc(1.5 * 1rem) auto 0; } }
 

@@ -2,9 +2,15 @@
     h2,
     .blurb {
         text-align: center;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInDown(2s);
     }
     .blurb {
         margin-bottom: $space-lg;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInDown(2s);
     }
     section.creative-gallery {
         display: flex;
@@ -21,6 +27,10 @@
             max-width: calc(100vw - 3rem - 3rem);
         }
         .gallery-image {
+            opacity: 0;
+            animation-fill-mode: forwards;
+            @include fadeInUp(2s);
+            animation-delay: 0.2s;
             @include media(xsm) {
                 margin: $space-xxs auto;
                 left: unset !important;

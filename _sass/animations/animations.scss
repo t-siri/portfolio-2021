@@ -149,3 +149,23 @@ $easing-exit-expressive: cubic-bezier(0.100, 0.015, 0.850, 0.100);
 	animation-name: fadeIn;
 	animation-duration: $duration;
 }
+@mixin fadeInRight($duration:linear) {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+	animation-duration: $duration;
+}
+@mixin fadeInUp($duration:linear) {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	animation-duration: $duration;
+}
+@mixin fadeInLeft($duration:linear) {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	animation-duration: $duration;
+}
+@mixin fadeInDown($duration:linear) {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	animation-duration: $duration;
+}

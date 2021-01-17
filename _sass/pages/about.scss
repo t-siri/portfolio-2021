@@ -16,7 +16,13 @@
     }
 
     .top-section {
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInLeft(2s);
         grid-area: long;
+        @include media(smd) {
+            @include fadeInDown(1.5s);
+        }
         @include media(sm) {
             margin: $space-lg 0 0;
         }
@@ -30,7 +36,7 @@
             @include media(sm) {
                 display: flex;
                 position: absolute;
-                left:calc(50vw - 155px);
+                left: calc(50vw - 155px);
                 top: -100px;
             }
         }
@@ -61,6 +67,10 @@
     }
 
     .about__short {
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInRight(2s);
+        animation-delay: 0.2s;
         grid-area: short;
         margin: $space-lg 0 $space-lg $space-lg;
         @include media(sm) {
@@ -72,13 +82,17 @@
     }
 
     .about__skillsets {
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s;
+        @include fadeInRight(2s);
         grid-area: skills;
         margin: $space-lg 0 $space-md $space-lg;
         @include media(smd) {
             margin-bottom: $space-lg;
         }
         @include media(sm) {
-            margin:0 0 $space-lg;
+            margin: 0 0 $space-lg;
         }
         .border-box__body {
             display: flex;
