@@ -407,14 +407,29 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
 @keyframes typing {
 	from {
 		width: 0;
-		border-right: 0.08em solid $color-primary; /* The typwriter cursor */
+		border-right: 3px solid $color-primary; /* The typwriter cursor */
 	}
 	to {
 		width: 85%;
 		@include media(xs) {
 			width: 80%;
 		}
-		border-right: 0.08em solid $color-primary; /* The typwriter cursor */
+		border-right: 3px solid $color-primary; /* The typwriter cursor */
+	}
+}
+@-webkit-keyframes typing {
+	from {
+		width: 0;
+		border-right: 3px solid $color-primary; /* The typwriter cursor */
+		-webkit-border-right: 3px solid $color-primary; /* The typwriter cursor */
+	}
+	to {
+		width: 85%;
+		@include media(xs) {
+			width: 80%;
+		}
+		border-right: 3px solid $color-primary; /* The typwriter cursor */
+		-webkit-border-right: 3px solid $color-primary; /* The typwriter cursor */
 	}
 }
 

@@ -12,7 +12,7 @@ img7: advance-cabello-7
 ---
 
 {% contentfor introduction %}
-<a href="http://www.advancecabello.com/" target="_blank">Advance Cabello</a> is a company in Thailad that distributes high quality hair products nation-wide.
+<a href="/advance-cabello" target="_blank">Advance Cabello</a> is a company in Thailad that distributes high quality hair products nation-wide.
 
 Since Thailand has a different experience with online ordering, the company had to cater to their clients. 
 {% endcontentfor %}

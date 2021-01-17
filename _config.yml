@@ -8,6 +8,7 @@ plugins:
   - jekyll-feed
 
 include: ['_pages']
+include: [_redirects]
 
 defaults:
   - scope:
