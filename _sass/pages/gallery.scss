@@ -17,10 +17,10 @@
         margin: 0 auto;
         align-content: center;
         justify-content: center;
-        @include media-min(xl) {
-            max-width: 860px;
-        }
         @include media-min(md) {
+            max-width: 1150px;
+        }
+        @include media(md) {
             max-width: 80vw;
         }
         @include media(xsm) {
