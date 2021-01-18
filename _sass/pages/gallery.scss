@@ -50,6 +50,7 @@
             img {
                 border: 2px solid $color-primary;
                 padding: 5px;
+                opacity: 0;
                 &.scroll-animation-true {
                     animation-fill-mode: forwards;
                     @include fadeInUp(1.5s);
