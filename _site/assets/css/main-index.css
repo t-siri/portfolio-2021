@@ -2407,6 +2407,10 @@ hamburger and slide out navigation */
 
 @media (max-width: 380px) { .home-page .recent-work .home-page__recent-work { margin-top: calc(3.5 * 1rem); } }
 
+.home-page .recent-work .home-page__recent-work.scroll-animation-false { opacity: 0; }
+
+.home-page .recent-work .home-page__recent-work.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1.5s; }
+
 .home-page .recent-work .home-page__recent-work .h2 { white-space: nowrap; }
 
 .home-page .recent-work .home-page__recent-work .border-box img { width: 60vw; margin: auto; display: flex; }

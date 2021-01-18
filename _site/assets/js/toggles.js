@@ -38,7 +38,7 @@ function addOnScrollAnimationToggles(className) {
                 }
             }
         })
-    }, { threshold: [1] });
+    }, { threshold: [0.025] });
 
     document.querySelectorAll("[class*='"+className+"-']").forEach((element) => {
         observer.observe(element);

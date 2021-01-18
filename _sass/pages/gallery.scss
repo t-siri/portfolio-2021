@@ -43,13 +43,17 @@
             display: flex;
             float: left;
             position: relative;
-            border: 2px solid $color-primary;
-            padding: 5px;
             height: fit-content;
             width: fit-content;
             margin-right: $space-xs;
             margin-bottom: $space-xs;
             img {
+                border: 2px solid $color-primary;
+                padding: 5px;
+                &.scroll-animation-true {
+                    animation-fill-mode: forwards;
+                    @include fadeInUp(1.5s);
+                }
                 width: 100%;
                 height: auto;
                 max-width: 260px;
@@ -59,8 +63,6 @@
                 @include media(xsm) {
                     max-width: 100%;
                 }
-                @include fadeIn(0.5s);
-                @include slideInDown(0.4s);
             }
         }
     }

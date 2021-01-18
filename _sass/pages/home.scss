@@ -190,7 +190,14 @@
             @include media(xs) {
                 margin-top: $space-xl;
             }
-
+            &.scroll-animation-false {
+                opacity: 0;
+            }
+            &.scroll-animation-true {
+                animation-fill-mode: forwards;
+                @include fadeInUp(1.5s);
+            }
+            
             .h2 {
                 white-space: nowrap;
             }

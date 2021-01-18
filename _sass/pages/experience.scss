@@ -23,7 +23,9 @@
         grid-area: exp;
         opacity: 0;
         animation-fill-mode: forwards;
-        @include fadeInLeft(2s);
+        &.scroll-animation-true {
+            @include fadeInLeft(2s);
+        }
         @include media(sm) {
             margin: $space-md 0 $space-xl;
         }
@@ -42,7 +44,9 @@
         grid-area: edu;
         opacity: 0;
         animation-fill-mode: forwards;
-        @include fadeInRight(2s);
+        &.scroll-animation-true {
+            @include fadeInRight(2s);
+        }
         animation-delay: 0.2s;
         margin: $space-lg 0 $space-lg $space-lg;
         @include media(sm) {
@@ -54,7 +58,9 @@
         grid-area: skills;
         opacity: 0;
         animation-fill-mode: forwards;
-        @include fadeInLeft(2s);
+        &.scroll-animation-true {
+            @include fadeInLeft(2s);
+        }
         animation-delay: 0.2s;
         margin: $space-md 0 $space-md 0;
         @include media(sm) {
@@ -79,7 +85,9 @@
         grid-area: high;
         opacity: 0;
         animation-fill-mode: forwards;
-        @include fadeInRight(2s);
+        &.scroll-animation-true {
+            @include fadeInRight(2s);
+        }
         animation-delay: 0.4s;
         margin: $space-xxl 0 $space-lg $space-lg;
         @include media(sm) {

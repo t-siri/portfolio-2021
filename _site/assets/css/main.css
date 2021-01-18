@@ -2407,6 +2407,10 @@ hamburger and slide out navigation */
 
 @media (max-width: 380px) { .home-page .recent-work .home-page__recent-work { margin-top: calc(3.5 * 1rem); } }
 
+.home-page .recent-work .home-page__recent-work.scroll-animation-false { opacity: 0; }
+
+.home-page .recent-work .home-page__recent-work.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1.5s; }
+
 .home-page .recent-work .home-page__recent-work .h2 { white-space: nowrap; }
 
 .home-page .recent-work .home-page__recent-work .border-box img { width: 60vw; margin: auto; display: flex; }
@@ -2443,11 +2447,11 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .about-page .content { display: grid; grid-template-areas: "long short" "long skills"; grid-template-columns: 1.5fr 1fr; grid-template-rows: 1fr; }
 
-@media (max-width: 750px) { .about-page .content { grid-template-areas: "long" "short" "skills"; grid-template-columns: 100%; } }
+@media (max-width: 950px) { .about-page .content { grid-template-areas: "long" "short" "skills"; grid-template-columns: 100%; } }
 
-.about-page .top-section { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; grid-area: long; }
+.about-page .top-section { opacity: 0; animation-fill-mode: forwards; grid-area: long; }
 
-@media (max-width: 950px) { .about-page .top-section { -webkit-animation-name: fadeInDown; animation-name: fadeInDown; animation-duration: 2s; } }
+.about-page .top-section.scroll-animation-true { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
 
 @media (max-width: 750px) { .about-page .top-section { margin: calc(3 * 1rem) 0 0; } }
 
@@ -2469,15 +2473,19 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 1100px) { .about-page .top-section .about__long .img-avatar-wrapper { margin: calc(1 * 1rem) auto; } }
 
-.about-page .about__short { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-delay: 0.2s; grid-area: short; margin: calc(3 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
+.about-page .about__short { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; grid-area: short; margin: calc(3 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
 
-@media (max-width: 750px) { .about-page .about__short { margin: calc(3.5 * 1rem) 0 calc(3.5 * 1rem) 0; } }
+.about-page .about__short.scroll-animation-true { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
+
+@media (max-width: 950px) { .about-page .about__short { margin: calc(4 * 1rem) 0 calc(4 * 1rem) 0; animation-delay: 0s; } }
 
 @media (max-width: 380px) { .about-page .about__short { margin: calc(4 * 1rem) 0 calc(4 * 1rem) 0; } }
 
-.about-page .about__skillsets { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.3s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; grid-area: skills; margin: calc(3 * 1rem) 0 calc(2 * 1rem) calc(3 * 1rem); }
+.about-page .about__skillsets { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.3s; grid-area: skills; margin: calc(3 * 1rem) 0 calc(2 * 1rem) calc(3 * 1rem); }
 
-@media (max-width: 950px) { .about-page .about__skillsets { margin-bottom: calc(3 * 1rem); } }
+.about-page .about__skillsets.scroll-animation-true { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
+
+@media (max-width: 950px) { .about-page .about__skillsets { margin-bottom: calc(3 * 1rem); animation-delay: 0s; } .about-page .about__skillsets.scroll-animation-true { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; } }
 
 @media (max-width: 750px) { .about-page .about__skillsets { margin: 0 0 calc(3 * 1rem); } }
 
@@ -2501,17 +2509,23 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 750px) { .experience-page .content { grid-template-areas: "edu" "exp" "high" "skills"; grid-template-columns: 1fr; } }
 
-.experience-page .top-section { grid-area: exp; opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
+.experience-page .top-section { grid-area: exp; opacity: 0; animation-fill-mode: forwards; }
+
+.experience-page .top-section.scroll-animation-true { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
 
 @media (max-width: 750px) { .experience-page .top-section { margin: calc(2 * 1rem) 0 calc(3.5 * 1rem); } }
 
 @media (max-width: 380px) { .experience-page .top-section .border-box .border-box-footer { background-color: transparent; } .experience-page .top-section .border-box .border-box-footer.btn-only { left: 13vw; } }
 
-.experience-page .experience__education { grid-area: edu; opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-delay: 0.2s; margin: calc(3 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
+.experience-page .experience__education { grid-area: edu; opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; margin: calc(3 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
+
+.experience-page .experience__education.scroll-animation-true { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
 
 @media (max-width: 750px) { .experience-page .experience__education { margin: calc(2 * 1rem) 0; } }
 
-.experience-page .experience__skillsets { grid-area: skills; opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; animation-delay: 0.2s; margin: calc(2 * 1rem) 0 calc(2 * 1rem) 0; }
+.experience-page .experience__skillsets { grid-area: skills; opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; margin: calc(2 * 1rem) 0 calc(2 * 1rem) 0; }
+
+.experience-page .experience__skillsets.scroll-animation-true { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
 
 @media (max-width: 750px) { .experience-page .experience__skillsets { margin: calc(2 * 1rem) 0; } }
 
@@ -2523,7 +2537,9 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 950px) { .experience-page .experience__skillsets .border-box__body div:nth-of-type(2) { margin-left: 0; } }
 
-.experience-page .experience__highlights { grid-area: high; opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-delay: 0.4s; margin: calc(4 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
+.experience-page .experience__highlights { grid-area: high; opacity: 0; animation-fill-mode: forwards; animation-delay: 0.4s; margin: calc(4 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
+
+.experience-page .experience__highlights.scroll-animation-true { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
 
 @media (max-width: 750px) { .experience-page .experience__highlights { margin: calc(2 * 1rem) 0; } }
 
@@ -2535,11 +2551,15 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .work-view-page .work-view__content-wrapper { display: flex; align-items: center; margin-bottom: calc(10 * 1rem); }
 
+.work-view-page .work-view__content-wrapper.scroll-animation-true .img-wrapper { animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
+
+.work-view-page .work-view__content-wrapper.scroll-animation-true .border-box { animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
+
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper { flex-direction: column; margin-bottom: calc(3 * 1rem); } }
 
 .work-view-page .work-view__content-wrapper:last-of-type { margin-bottom: calc(2 * 1rem); }
 
-.work-view-page .work-view__content-wrapper .img-wrapper { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
+.work-view-page .work-view__content-wrapper .img-wrapper { opacity: 0; }
 
 .work-view-page .work-view__content-wrapper .img-wrapper img { width: 50vw; }
 
@@ -2549,7 +2569,7 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper .img-wrapper img { margin: calc(1 * 1rem) auto; } }
 
-.work-view-page .work-view__content-wrapper .border-box { margin: 0 0 0 calc(3 * 1rem); padding: calc(2 * 1rem); opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-delay: 0.2s; }
+.work-view-page .work-view__content-wrapper .border-box { opacity: 0; margin: 0 0 0 calc(3 * 1rem); padding: calc(2 * 1rem); }
 
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper .border-box { margin: calc(4 * 1rem) 0 calc(3 * 1rem); } }
 
@@ -2559,9 +2579,13 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .work-page .border-box { position: relative; margin: calc(8 * 1rem) calc(4 * 1rem); padding: calc(3.5 * 1rem) calc(4 * 1rem); }
 
-.work-page .border-box:nth-of-type(odd) { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
+.work-page .border-box:nth-of-type(odd) { opacity: 0; }
 
-.work-page .border-box:nth-of-type(even) { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; animation-delay: 0.2s; }
+.work-page .border-box.scroll-animation-true:nth-of-type(odd) { animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
+
+.work-page .border-box:nth-of-type(even) { opacity: 0; }
+
+.work-page .border-box.scroll-animation-true:nth-of-type(even) { animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
 
 @media (max-width: 950px) { .work-page .border-box { margin: calc(8 * 1rem) 0; padding: calc(3.5 * 1rem) calc(1 * 1rem); } .work-page .border-box .h2 { font-size: calc(1rem * 1.6); } .work-page .border-box .border-box-heading.h2 { top: -20px; } .work-page .border-box .border-box-footer { bottom: -45px; } }
 
@@ -2589,18 +2613,16 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 950px) { .gallery-page section.creative-gallery { max-width: calc(100vw - 3rem - 3rem); } }
 
-.gallery-page section.creative-gallery .gallery-image { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; animation-delay: 0.2s; overflow: hidden; align-items: center; align-items: center; justify-content: center; align-content: center; display: flex; float: left; position: relative; border: 2px solid #272727; padding: 5px; height: fit-content; width: fit-content; margin-right: calc(1 * 1rem); margin-bottom: calc(1 * 1rem); }
+.gallery-page section.creative-gallery .gallery-image { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; animation-delay: 0.2s; overflow: hidden; align-items: center; align-items: center; justify-content: center; align-content: center; display: flex; float: left; position: relative; height: fit-content; width: fit-content; margin-right: calc(1 * 1rem); margin-bottom: calc(1 * 1rem); }
 
 @media (max-width: 640px) { .gallery-page section.creative-gallery .gallery-image { margin: calc(0.5 * 1rem) auto; left: unset !important; } }
 
-.gallery-page section.creative-gallery .gallery-image img { width: 100%; height: auto; max-width: 260px; -webkit-animation-name: fadeIn; animation-name: fadeIn; animation-duration: 0.5s; -webkit-animation-name: slideInDown; animation-name: slideInDown; animation-duration: 0.4s; }
+.gallery-page section.creative-gallery .gallery-image img { border: 2px solid #272727; padding: 5px; width: 100%; height: auto; max-width: 260px; }
+
+.gallery-page section.creative-gallery .gallery-image img.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1.5s; }
 
 @media (max-width: 950px) { .gallery-page section.creative-gallery .gallery-image img { max-width: 25vw; } }
 
 @media (max-width: 640px) { .gallery-page section.creative-gallery .gallery-image img { max-width: 100%; } }
-
-.scroll-animation-false { opacity: 0; }
-
-.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1.5s; }
 
 /*# sourceMappingURL=main.css.map */

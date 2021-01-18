@@ -9,14 +9,17 @@
 
         &:nth-of-type(odd) {
             opacity: 0;
-            animation-fill-mode: forwards;
-            @include fadeInLeft(2s);
+            &.scroll-animation-true {
+                animation-fill-mode: forwards;
+                @include fadeInLeft(2s);
+            }
         }
         &:nth-of-type(even) {
             opacity: 0;
-            animation-fill-mode: forwards;
-            @include fadeInRight(2s);
-            animation-delay: 0.2s;
+            &.scroll-animation-true {
+                animation-fill-mode: forwards;
+                @include fadeInRight(2s);
+            }
         }
 
         @include media(smd) {

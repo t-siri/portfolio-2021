@@ -7,7 +7,7 @@
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 1fr;
 
-        @include media(sm) {
+        @include media(smd) {
             grid-template-areas:
                 "long"
                 "short" "skills";
@@ -18,11 +18,10 @@
     .top-section {
         opacity: 0;
         animation-fill-mode: forwards;
-        @include fadeInLeft(2s);
-        grid-area: long;
-        @include media(smd) {
-            @include fadeInDown(2s);
+        &.scroll-animation-true {
+            @include fadeInLeft(2s);
         }
+        grid-area: long;
         @include media(sm) {
             margin: $space-lg 0 0;
         }
@@ -69,12 +68,15 @@
     .about__short {
         opacity: 0;
         animation-fill-mode: forwards;
-        @include fadeInRight(2s);
+        &.scroll-animation-true {
+            @include fadeInRight(2s);
+        }
         animation-delay: 0.2s;
         grid-area: short;
         margin: $space-lg 0 $space-lg $space-lg;
-        @include media(sm) {
-            margin: $space-xl 0 $space-xl 0;
+        @include media(smd) {
+            margin: $space-xxl 0 $space-xxl 0;
+            animation-delay: 0s;
         }
         @include media(xs) {
             margin: $space-xxl 0 $space-xxl 0;
@@ -85,11 +87,17 @@
         opacity: 0;
         animation-fill-mode: forwards;
         animation-delay: 0.3s;
-        @include fadeInRight(2s);
+        &.scroll-animation-true {
+            @include fadeInRight(2s);
+        }
         grid-area: skills;
         margin: $space-lg 0 $space-md $space-lg;
         @include media(smd) {
             margin-bottom: $space-lg;
+            animation-delay: 0s;
+            &.scroll-animation-true {
+                @include fadeInLeft(2s);
+            }
         }
         @include media(sm) {
             margin: 0 0 $space-lg;
