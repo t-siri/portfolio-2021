@@ -28,7 +28,7 @@ Our client saw a flaw in realestate and wanted to enhance their customers' exper
 
 
 {% contentfor solution %}
-With the current problem Kindred is facing, we have spent hte time to undergo discovery interviews, brainstorming sessions and design solutions that were constnatly re-iterated after user testing.
+With the current problem Kindred is facing, we have spent the time to undergo discovery interviews, brainstorming sessions and design solutions that were constnatly re-iterated after user testing.
 
 We finalised our findings by producing a web and mobile-focused system that allowed clients to view available properties and enquire about them immediately.
 
