@@ -132,7 +132,7 @@ nav {
 			@include transform-timing($animation-time);
 
 			@include media-min(smd) {
-				top: -100vh;
+				top: -150vh;
 			}
 		}
 

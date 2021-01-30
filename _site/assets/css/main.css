@@ -2035,7 +2035,7 @@ nav .contact-content { display: flex; position: absolute; right: 0; z-index: 5; 
 
 nav .contact-content__hidden { z-index: -1; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
 
-@media (min-width: 950px) { nav .contact-content__hidden { top: -100vh; } }
+@media (min-width: 950px) { nav .contact-content__hidden { top: -150vh; } }
 
 nav .contact-content__visible { opacity: 1; min-height: 18.75rem; height: 100vh; height: calc(var(--vh, 1vh) * 100); }
 
