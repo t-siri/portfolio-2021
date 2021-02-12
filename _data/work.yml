@@ -1,7 +1,7 @@
-# - name: codebots v2
-#   type: development
-#   url: /work-codebots-v2
-#   img: codebots-v2-1
+- name: codebots v2
+  type: development
+  url: /work-codebots-v2
+  img: codebots-mktgv2-1
 - name: solaris
   type: design & dev
   url: /work-solaris
@@ -30,10 +30,6 @@
   type: design
   url: /work-kindred-admin
   img: kindred-admin-1
-- name: advance cabello
-  type: design & dev
-  url: /work-advance-cabello
-  img: advance-cabello
 - name: innovo
   type: design
   url: /work-innovo
