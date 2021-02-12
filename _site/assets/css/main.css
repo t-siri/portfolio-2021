@@ -2363,17 +2363,17 @@ hamburger and slide out navigation */
 
 .home-page .top-section .section__title .design-svg .path { stroke: #272727; }
 
-.home-page .top-section .section__title .design-svg .path-clip-d, .home-page .top-section .section__title .design-svg .path-clip-e, .home-page .top-section .section__title .design-svg .path-clip-s, .home-page .top-section .section__title .design-svg .path-clip-i, .home-page .top-section .section__title .design-svg .path-clip-g, .home-page .top-section .section__title .design-svg .path-clip-n { stroke-dasharray: 2600; stroke-dashoffset: 2600; stroke-width: 40; margin-right: 40px; animation: design-other-letters 2.5s linear forwards 0.1s; }
+.home-page .top-section .section__title .design-svg .path-clip-d, .home-page .top-section .section__title .design-svg .path-clip-e, .home-page .top-section .section__title .design-svg .path-clip-s, .home-page .top-section .section__title .design-svg .path-clip-i, .home-page .top-section .section__title .design-svg .path-clip-g, .home-page .top-section .section__title .design-svg .path-clip-n { stroke-dasharray: 2600; stroke-dashoffset: 2600; stroke-width: 40; margin-right: 40px; animation: design-other-letters 1.8s linear forwards 0.1s; }
 
-.home-page .top-section .section__title .design-svg .path-clip-e { animation-delay: 0.5s; }
+.home-page .top-section .section__title .design-svg .path-clip-e { animation-delay: 0.4s; }
 
-.home-page .top-section .section__title .design-svg .path-clip-s { animation-delay: 0.8s; }
+.home-page .top-section .section__title .design-svg .path-clip-s { animation-delay: 0.7s; }
 
-.home-page .top-section .section__title .design-svg .path-clip-i { animation-delay: 1.2s; }
+.home-page .top-section .section__title .design-svg .path-clip-i { animation-delay: 1.1s; }
 
-.home-page .top-section .section__title .design-svg .path-clip-g { animation-delay: 1.4s; }
+.home-page .top-section .section__title .design-svg .path-clip-g { animation-delay: 1.3s; }
 
-.home-page .top-section .section__title .design-svg .path-clip-n { animation-delay: 1.8s; }
+.home-page .top-section .section__title .design-svg .path-clip-n { animation-delay: 1.7s; }
 
 .home-page .top-section .section__title .logic-mind { white-space: nowrap; align-items: center; display: grid; grid-template-areas: "the logic mind"; grid-template-columns: repeat(3, min-content); }
 
