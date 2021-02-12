@@ -12,23 +12,23 @@ img7: kindred-client-7
 ---
 
 {% contentfor introduction %}
-During my employment with <a href="https://workingmouse.com.au/" target="_blank">WorkingMouse</a> I had the opportunity to work with Kindred a client in realestate.
+During my employment with <a href="https://workingmouse.com.au/" target="_blank">WorkingMouse</a> I had the opportunity to work with Kindred a client in real estate.
 
-The client wanted to change the realestate workflow and to do so, it required a client portal.
+The client wanted to change the real estate workflow and to do so, it required a client portal.
 
 Alongside this client portal we also created the <a href="/work-kindred-admin">Green Zone Portal</a>, which allows Kindred to communicate with clients promptly.
 {% endcontentfor %}
 
 
 {% contentfor problem %}
-Kindred wanted an innovative way for clients to contact them whenever they see fit to their own schedule and recieve a response right away.
+Kindred wanted an innovative way for clients to contact them whenever they see fit to their own schedule and receive a response right away.
 
-Our client saw a flaw in realestate and wanted to enhance their customers' experience by providing the best service.
+Our client saw a flaw in real estate and wanted to enhance their customers' experience by providing the best service.
 {% endcontentfor %}
 
 
 {% contentfor solution %}
-With the current problem Kindred is facing, we have spent the time to undergo discovery interviews, brainstorming sessions and design solutions that were constnatly re-iterated after user testing.
+With the current problem Kindred is facing, we have spent the time to undergo discovery interviews, brainstorming sessions and design solutions that were constantly re-iterated after user testing.
 
 We finalised our findings by producing a web and mobile-focused system that allowed clients to view available properties and enquire about them immediately.
 

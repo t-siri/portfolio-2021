@@ -16,12 +16,12 @@ Self taught is an online app that helps students learn languages and log their p
 
 If assigned, teachers can view their student's progress and review their homework.
 
-Students also have the capability of reviewing on their own by adding new words to the dictionary and the audio book.
+Students also have the capability of reviewing on their own by adding new words to the dictionary and the audiobook.
 {% endcontentfor %}
 
 
 {% contentfor problem %}
-My client requested to redesign the application that he developed, he wanted it to be mobile responsive and more user friendly.
+My client requested to redesign the application that he developed, he wanted it to be mobile responsive and more user-friendly.
 
 He also requested a more modern design and a better user flow in the app.
 

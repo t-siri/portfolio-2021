@@ -12,9 +12,9 @@ img7: kindred-admin-7
 ---
 
 {% contentfor introduction %}
-During my employment with <a href="https://workingmouse.com.au/" target="_blank">WorkingMouse</a> I had the opportunity to work with Kindred a client in realestate.
+During my employment with <a href="https://workingmouse.com.au/" target="_blank">WorkingMouse</a> I had the opportunity to work with Kindred a client in real estate.
 
-The client wanted to change the realestate workflow and to do so, it required a client portal.
+The client wanted to change the real estate workflow and to do so, it required a client portal.
 
 Alongside this client portal we also created the <a href="/work-kindred-admin">Green Zone Portal</a>, which allows Kindred to communicate with clients promptly.
 {% endcontentfor %}
@@ -23,12 +23,12 @@ Alongside this client portal we also created the <a href="/work-kindred-admin">G
 {% contentfor problem %}
 Kindred wanted a way to communicate with their clients promptly and efficiently, alongside we wanted this portal to provide solutions to other employees such as marketers, customer service team and the CEO himself.
 
-Our client wanted a portal that shows statistics of his company, and mainly allowed clear and efficient communicatoin between their clients and the customer care team.
+Our client wanted a portal that shows statistics of his company, and mainly allowed clear and efficient communication between their clients and the customer care team.
 {% endcontentfor %}
 
 
 {% contentfor solution %}
-We have conducted a way to run a scope process that included interviewing users that will be using the application. Alongside that, we researched on solutions for this portal and wireframed multiple solutions, until we came up with a finalised one.
+We have conducted a way to run a scope process that included interviewing users that will be using the application. Alongside that, we researched on solutions for this portal and wire framed multiple solutions, until we came up with a finalised one.
 
 
 We have concluded that since clients want to communicate with Kindred's employees and build a relationship, it was required to create an admin portal to allow this flowing communication.
@@ -38,7 +38,7 @@ This design solution was created to solve problems for Kindred's Green Zone cust
 
 
 {% contentfor outcome %}
-We did high fedility prototypes. These prototypes included multiple UX solutions for multiple use cases such as the dashboard, tables and file upload.
+We did high fidelity prototypes. These prototypes included multiple UX solutions for multiple use cases such as the dashboard, tables and file upload.
 
 Once we have prototyped, the developers started the frontend development and I customised the styling using Harmony's Library. I styled using SCSS and with Harmony's pre-defined styles I was able to accomplish these customisations rapidly.
 {% endcontentfor %}

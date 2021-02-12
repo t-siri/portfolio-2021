@@ -35,14 +35,14 @@ The designs had components that are reusable but also behaviours that is unique 
 
 Once we were satisfied with the designs, I then spent the time to write the HTML standards for these behaviours and worked with the developers to creating them with alongside the bots.
 
-I then styled these behaviours and components in the Harmony library, which is templated when a new project is generated.
+I then styled these behaviours and components in the Harmony library, which is written in templates for when a new project is generated.
 {% endcontentfor %}
 
 
 {% contentfor outcome %}
-Alongside these designs, I standardised them by writing the HTML structure for them and also created an SCSS library named Harmony that pre-styles these components.
+Alongside these designs, I standardised them by writing the HTML structure for them and also created an SCSS library named Harmony that styles these components.
 
-These bots and Harmony has two sections to them the Admin section and the Frontend section and I had the challenge to implement a library to style both ends seperately but also allows customisation in the frontend.
+These bots and Harmony has two sections to them the Admin section and the Frontend section and I had the challenge to implement a library to style both ends separately but also allows customisation in the frontend.
 
 The bot now produces standardised components and behaviours that are styled accordingly.
 {% endcontentfor %}

@@ -1,4 +1,4 @@
-I"í
+I"ï¿½
 <p>Alongside these designs, I standardised them by writing the HTML structure for them and also created an SCSS library named Harmony that pre-styles these components.</p>
 
 <p>These bots and Harmony has two sections to them the Admin section and the Frontend section and I had the challenge to implement a library to style both ends seperately but also allows customisation in the frontend.</p>

@@ -14,7 +14,7 @@ img7: codebots-mktg-7
 {% contentfor introduction %}
 During my employment with <a href="/workingmouse" target="_blank">WorkingMouse</a> I had the opportunity to work with <a href="/codebotsmarketing">Codebots</a> and developed Codebots marketing website.
 
-I had the opportunity to learn a new programming language Jekyll and applied my skillsets in front-end development to build the website.
+I had the opportunity to learn a new programming language Jekyll and applied my skill sets in front-end development to build the website.
 
 The site is responsive on all devices, and is accessible.
 {% endcontentfor %}
@@ -39,7 +39,7 @@ The HTML, SCSS, and JavaScript was written in a specific manner to allow accessi
 {% contentfor outcome %}
 The website is now <a href="/codebotsmarketing">live</a> and the front-end was written and set-up by me.
 
-Given that the handover was required, I made sure to write the project in standardised manner, where the simplicity of changing and updating the website is as easy as changing classnames
+Given that the handover was required, I made sure to write the project in a standardised manner, where the simplicity of changing and updating the website is as easy as changing class names
 
 To preview how I was able to accomplish this and how easy it is, please <a href="#" onclick="toggleContact()">contact</a> me for a demo.
 {% endcontentfor %}
