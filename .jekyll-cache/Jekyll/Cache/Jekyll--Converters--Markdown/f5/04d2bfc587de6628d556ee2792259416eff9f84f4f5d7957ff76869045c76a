@@ -1,0 +1,7 @@
+I"…
+<p>I designed the Solaris Design System site and broke it up into sections. It was important that in the components section, that content is broken up into three sections, the overview, the usage and the code.</p>
+
+<p>The overview represents the componentsâ€™ look and states <em>(hover, active, focus for example)</em>, the usage explains when to use the component and when not to use the component, and lastly the code is for the developers to document on how to use the component on the platform.</p>
+
+<p>It is important that these components are well document so that new developers who are onboarded can understand how to re-use them.</p>
+:ET

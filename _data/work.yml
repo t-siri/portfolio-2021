@@ -2,6 +2,10 @@
 #   type: development
 #   url: /work-codebots-v2
 #   img: codebots-v2-1
+- name: solaris
+  type: design & dev
+  url: /work-solaris
+  img: solaris-2
 - name: carted
   type: design & dev
   url: /work-carted
