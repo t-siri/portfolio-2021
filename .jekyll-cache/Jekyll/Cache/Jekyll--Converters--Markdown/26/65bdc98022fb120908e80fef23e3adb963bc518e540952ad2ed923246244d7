@@ -1,0 +1,7 @@
+I"Û
+<p>During my employment with <a href="https://workingmouse.com.au/" target="_blank">WorkingMouse</a>, I had the opportunity to work with Codebots and design <a href="www.codebots.com" target="_blank">Codebotsâ€™</a> bot design guidelines and Harmony.</p>
+
+<p>Harmony is a library with standardised HTML and SCSS. Having worked with my colleagues I had made design behaviours such as, CRUD, Timelines, Dashboards and many more components.</p>
+
+<p>This library consist of multiple lines of SCSS code that styles all the components that are found in the bot, from buttons and inputs to high functional behaviours. The library is written in a very clean and organised manner to allow clients that uses these bots to easily customise their project in SCSS. The standardisation of HTML and Harmony has enabled these bots to produced high functional components that are standardised to the required UX and the ability to view, manipulate and use clean code with the given Harmony library.</p>
+:ET

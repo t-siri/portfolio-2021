@@ -15,15 +15,13 @@ img7: codebots-mktg-7
 During my employment with <a href="/workingmouse" target="_blank">WorkingMouse</a> I had the opportunity to work with <a href="/codebotsmarketing">Codebots</a> and developed Codebots marketing website.
 
 I had the opportunity to learn a new programming language Jekyll and applied my skill sets in front-end development to build the website.
-
-The site is responsive on all devices, and is accessible.
 {% endcontentfor %}
 
 
 {% contentfor problem %}
 Codebots required a faster marketing website with more modern aesthetics and interaction.
 
-Being a sister company of WorkingMouse. I had the opportunity to develop the front-end of this website using Jekyll - HTML, SCSS, JavaScript and Jekyll liquids. It was also crucial for this site to responsive, and accessible.
+Being a sister company of WorkingMouse. I had the opportunity to develop the front-end of this website using Jekyll - HTML, SCSS, JavaScript and Jekyll liquids. It was also crucial for this site to be responsive and accessible.
 
 <a href="/codebotsmarketing">View the website here.</a>
 {% endcontentfor %}
@@ -37,9 +35,9 @@ The HTML, SCSS, and JavaScript was written in a specific manner to allow accessi
 
 
 {% contentfor outcome %}
-The website is now <a href="/codebotsmarketing">live</a> and the front-end was written and set-up by me.
+The website had been <a href="/codebotsmarketing">live</a> and the front-end was written and set-up by me.
 
-Given that the handover was required, I made sure to write the project in a standardised manner, where the simplicity of changing and updating the website is as easy as changing class names
+Given that the handover was required, I made sure to write the project in a standardised manner, where the simplicity of changing and updating the website was as easy as changing class names
 
-To preview how I was able to accomplish this and how easy it is, please <a href="#" onclick="toggleContact()">contact</a> me for a demo.
+To preview how I was able to accomplish this and how easy it was, please <a href="#" onclick="toggleContact()">contact</a> me for a demo.
 {% endcontentfor %}

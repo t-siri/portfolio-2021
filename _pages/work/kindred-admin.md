@@ -21,17 +21,17 @@ Alongside this client portal we also created the <a href="/work-kindred-admin">G
 
 
 {% contentfor problem %}
-Kindred wanted a way to communicate with their clients promptly and efficiently, alongside we wanted this portal to provide solutions to other employees such as marketers, customer service team and the CEO himself.
+Kindred wanted a way to communicate with their clients promptly and efficiently and at the same time, we wanted this portal to provide solutions to other employees such as marketers, customer service team and the CEO himself.
 
-Our client wanted a portal that shows statistics of his company, and mainly allowed clear and efficient communication between their clients and the customer care team.
+Our client wanted a portal that showed statistics of the company, and mainly allowed clear and efficient communication between their clients and the customer care team.
 {% endcontentfor %}
 
 
 {% contentfor solution %}
-We have conducted a way to run a scope process that included interviewing users that will be using the application. Alongside that, we researched on solutions for this portal and wire framed multiple solutions, until we came up with a finalised one.
+We had conducted a way to run a scope process that included interviewing users that would be using the application. Alongside that, we researched on solutions for this portal and wire framed multiple solutions, until we came up with a finalised one.
 
 
-We have concluded that since clients want to communicate with Kindred's employees and build a relationship, it was required to create an admin portal to allow this flowing communication.
+We had concluded that since clients wanted to communicate with Kindred's employees and build a relationship, it was required to create an admin portal to allow this flowing communication.
 
 This design solution was created to solve problems for Kindred's Green Zone customer service team, marketers and for the CEO to view statistics.
 {% endcontentfor %}
@@ -39,6 +39,5 @@ This design solution was created to solve problems for Kindred's Green Zone cust
 
 {% contentfor outcome %}
 We did high fidelity prototypes. These prototypes included multiple UX solutions for multiple use cases such as the dashboard, tables and file upload.
-
-Once we have prototyped, the developers started the frontend development and I customised the styling using Harmony's Library. I styled using SCSS and with Harmony's pre-defined styles I was able to accomplish these customisations rapidly.
+The developers started the frontend development and I customised the styling using Harmony's Library. I styled using SCSS and with Harmony's pre-defined styles I was able to accomplish these customisations rapidly.
 {% endcontentfor %}
