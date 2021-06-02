@@ -1,9 +1,0 @@
-I"–
-<p>With time spent on user research and product research, we were able to come up with a few designs for these behaviours and we constantly re-iterated with user testing.</p>
-
-<p>The designs had components that are reusable but also behaviours that is unique to <a href="www.codebots.com" target="_blank">Codebots</a>.</p>
-
-<p>Once we were satisfied with the designs, I then spent the time to write the HTML standards for these behaviours and worked with the developers to creating them with alongside the bots.</p>
-
-<p>I then styled these behaviours and components in the Harmony library, which is written in templates for when a new project is generated.</p>
-:ET
