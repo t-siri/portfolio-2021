@@ -176,6 +176,7 @@
 
             .btn {
                 margin-left: auto;
+                margin-top: $space-md;
                 @include media(smd) {
                     margin: $space-md auto;
                 }
