@@ -17,7 +17,7 @@ There are a few photography work as well.</p>
     {% for image in site.static_files %}
     {% if image.path contains 'img/gallery' %}
     <div class="gallery-image">
-        <img class="scroll-animation-false"src="{{ site.baseurl }}{{ image.path }}">
+        <img loading="lazy" class="scroll-animation-false" src="{{ site.baseurl }}{{ image.path }}">
     </div>
     {% endif %}
     {% endfor %}
