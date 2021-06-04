@@ -2399,7 +2399,7 @@ hamburger and slide out navigation */
 
 .home-page .top-section .introduction p { margin: calc(0.5 * 1rem) 0; }
 
-.home-page .top-section .introduction .btn { margin-left: auto; }
+.home-page .top-section .introduction .btn { margin-left: auto; margin-top: calc(2 * 1rem); }
 
 @media (max-width: 950px) { .home-page .top-section .introduction .btn { margin: calc(2 * 1rem) auto; } }
 
