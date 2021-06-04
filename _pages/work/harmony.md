@@ -2,6 +2,7 @@
 layout: work-view
 title: Work • Harmony design system
 permalink: /work-harmony
+type: des
 img1: harmony
 img2: harmony-1
 img3: harmony-2

@@ -2,13 +2,14 @@
 layout: work-view
 title: Work • Kindred client portal
 permalink: /work-kindred-client
-img1: kindred-client-1 
+type: des
+img1: kindred-client-1
 img2: kindred-client-2 
 img3: kindred-client-3 
 img4: kindred-client-4 
 img5: kindred-client-5 
 img6: kindred-client-6 
-img7: kindred-client-7 
+img7: kindred-client-7
 ---
 
 {% contentfor introduction %}

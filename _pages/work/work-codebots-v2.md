@@ -2,6 +2,7 @@
 layout: work-view
 title: Work • Codebots Version 2
 permalink: /work-codebots-v2
+type: dev
 img1: codebots-mktgv2-1
 img2: codebots-mktgv2-2
 img3: codebots-mktgv2-3

@@ -1,7 +1,3 @@
-- name: codebots v2
-  type: development
-  url: /work-codebots-v2
-  img: codebots-mktgv2-1
 - name: solaris
   type: design & dev
   url: /work-solaris
@@ -10,18 +6,14 @@
   type: design & dev
   url: /work-carted
   img: carted-1
+- name: codebots v2
+  type: development
+  url: /work-codebots-v2
+  img: codebots-mktgv2-1
 - name: codebots v1
   type: development
   url: /work-codebots-v1
   img: codebots-mktg-1
-- name: self taught
-  type: design
-  url: /work-self-taught
-  img: self-taught-1
-- name: harmony 
-  type: design & dev
-  url: /work-harmony
-  img: harmony-1
 - name: kindred client
   type: design & dev
   url: /work-kindred-client
@@ -30,3 +22,11 @@
   type: design
   url: /work-kindred-admin
   img: kindred-admin-1
+- name: harmony 
+  type: design & dev
+  url: /work-harmony
+  img: harmony-1
+- name: self taught
+  type: design
+  url: /work-self-taught
+  img: self-taught-1

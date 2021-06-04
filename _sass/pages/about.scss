@@ -73,7 +73,7 @@
         }
         animation-delay: 0.2s;
         grid-area: short;
-        margin: $space-lg 0 $space-lg $space-lg;
+        margin: $space-xxs 0 $space-lg $space-lg;
         @include media(smd) {
             margin: $space-xxl 0 $space-xxl 0;
             animation-delay: 0s;
@@ -91,7 +91,7 @@
             @include fadeInRight(2s);
         }
         grid-area: skills;
-        margin: $space-lg 0 $space-md $space-lg;
+        margin: 0 0 $space-md $space-lg;
         @include media(smd) {
             margin-bottom: $space-lg;
             animation-delay: 0s;

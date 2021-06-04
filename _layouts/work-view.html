@@ -14,7 +14,12 @@
             </a>
             <h2>{{page.title}}</h2>
         </div>
-        {% include common/work-setup.html %}
+        {% if page.type=='des'%}
+            {% include common/des-setup.html %}
+        {% endif %}
+        {% if page.type=='dev'%}
+            {% include common/dev-setup.html %}
+        {% endif %}
     </main>
 </body>
 {% include common/footer.html %}

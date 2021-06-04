@@ -2,6 +2,7 @@
 layout: work-view
 title: Work • Self taught
 permalink: /work-self-taught
+type: des
 img1: self-taught
 img2: self-taught-1
 img3: self-taught-2

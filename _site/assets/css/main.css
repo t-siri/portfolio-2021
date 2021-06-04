@@ -2473,7 +2473,7 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 1100px) { .about-page .top-section .about__long .img-avatar-wrapper { margin: calc(1 * 1rem) auto; } }
 
-.about-page .about__short { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; grid-area: short; margin: calc(3 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
+.about-page .about__short { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; grid-area: short; margin: calc(0.5 * 1rem) 0 calc(3 * 1rem) calc(3 * 1rem); }
 
 .about-page .about__short.scroll-animation-true { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
 
@@ -2481,7 +2481,7 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 380px) { .about-page .about__short { margin: calc(4 * 1rem) 0 calc(4 * 1rem) 0; } }
 
-.about-page .about__skillsets { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.3s; grid-area: skills; margin: calc(3 * 1rem) 0 calc(2 * 1rem) calc(3 * 1rem); }
+.about-page .about__skillsets { opacity: 0; animation-fill-mode: forwards; animation-delay: 0.3s; grid-area: skills; margin: 0 0 calc(2 * 1rem) calc(3 * 1rem); }
 
 .about-page .about__skillsets.scroll-animation-true { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
 
@@ -2523,7 +2523,7 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (max-width: 750px) { .experience-page .experience__education { margin: calc(2 * 1rem) 0; } }
 
-.experience-page .experience__skillsets { grid-area: skills; opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; margin: calc(2 * 1rem) 0 calc(2 * 1rem) 0; }
+.experience-page .experience__skillsets { grid-area: skills; opacity: 0; animation-fill-mode: forwards; animation-delay: 0.2s; margin: calc(3 * 1rem) 0 calc(2 * 1rem) 0; }
 
 .experience-page .experience__skillsets.scroll-animation-true { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
 

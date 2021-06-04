@@ -1,0 +1,7 @@
+I"X
+<p>From refining the ideas, I started immediately with inspiration as there were multiple UI libraries out there. I gathered multiple libraries and documented on what was desirable and what was a pain point. This was in order to produce Solaris in a way that both designers and developers will use as a source of truth.</p>
+
+<p>I designed the Solaris Design System website and broke it up into sections because two different types of user groups were using them. I started building the website using Jekyll and added the first component type (Avatars). Once the foundations of the website was completed alongside the Avatars page, I immediately conducted user interviews and retrieved feedback and made a few tweaks to the layout of the website.</p>
+
+<p>The website resulted to being theme responsive and also sectioned into seven parts to prevent content overload. Each section was specifically written to the target audience (writers, designers and developers). The website is theme responsive as Codebots come in both light and dark theme, therefore it was important to see what components look like in both themes. The design section was heavily documented in regards to component types, states, looks and sizes for developers to reference off. There is also a <em>code</em> section for developers to document these components and how to use them internally.</p>
+:ET

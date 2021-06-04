@@ -2,6 +2,7 @@
 layout: work-view
 title: Work • Carted
 permalink: /work-carted
+type: des
 img1: carted-1
 img2: carted-2
 img3: carted-3
@@ -12,42 +13,34 @@ img7: carted-7
 ---
 
 {% contentfor introduction %}
-Carted is a side project I have found and is a current work in progress.
+Carted is a side project I have founded and is a current work in progress in regards to development. 
 
-The idea behind this came from me and how I wanted to simplify my shopping experience in general.
+One day, I walked into IKEA and wanted a chair but did not want to pay the full price, and thought to myself: *If only I could scan the barcode of the item and get a notification when the product has reduced in price.*
 
-One day, I walked into IKEA and wanted a chair but did not want to pay the price, then I thought to myself: *'If only I could scan the bar code of the item and get a notification when it's on sale.*
-
-And that was how the project started
+I felt that there was a gap in shopping and how it could be further simplified in regards to finding the right products at a great price. 
 {% endcontentfor %}
 
 
 {% contentfor problem %}
-It was very tedious for me to find items that I liked at a cheap price and I would spend a significant amount of time before purchasing a product.
+The problem for me which I discovered was a common problem with other users as well was that it was very tedious to find items for the best price and the amount spent on finding the right product at a discounted price could be shorten by more than half. In addition, upon finding the right product at a discounted price would not always favour in what you are willing to pay for, so you end up leaving the tab opened and constantly refreshing the page to see if prices have changed. 
 
-Even when I would window-shop in stores, I wanted to watch an item because I didn't want to pay the full price for it.
-
-Sometimes finding a good deal or the cheapest item available takes longer than you expect, and when you want to keep watching the item, you end up with multiple tabs opened in your browser.
-
-The problem statement: How can we have a better window shopping experience and purchase an item at the lowest price with minimal research time.
+From here I refined the general issue into a problem statement: *How can we have a better window shopping experience and purchase an item at the lowest price, or the price we are willing to pay with minimal research time spent*
 {% endcontentfor %}
 
 
 {% contentfor solution %}
-I came up with this wishlist idea and have worked on the designs on it as a side project.
+With the problem statement I started ideating multiple solutions of what this platform could be. I did some research to see what competitors were doing and realised that the competitors were a decade behind in design and usability. I tested out the competitors’ applications and realised that it was a very average user experience in general. 
 
-I did some research to see how competitors were doing *(which the closest one was 9 years ago)*. Then did some user research to understand individuals' pain points and what would make their life easier if this app were to be used by them.
+I started sketching screens and writing down a few feature ideas of Carted and started conducting user testing with online shoppers. I discovered their pain points were very similar to mine and that I could simplify online shopping with Carted. 
 
-I then discussed with a group of developers and moved on to branding and design work. 
-
-I wanted the colours to be less of a *spending* money experience but a *list* of things you want to be notified about. 
-
-The branding is also accessible for the colour-blind as well.
+It was important that Carted saved users time in regards to researching for the product online, but also while they are physically online shopping. Users also wanted to be notified when an item they are watching has dropped in price. 
 {% endcontentfor %}
 
 
 {% contentfor outcome %}
-This ongoing project's goal is to help users with their shopping experience and to help them find the best product and price for it as quick as possible.
+With the sketches I produced from the ideation stage, I discovered that during the user testing that these sketches were valid and users had positive feedback in regards to the journey of the application and the simplicity of its features. 
 
-I have completed the prototype and now have started on front-end development making sure that the components are up to standards and accessible. 
+From there I started inspiration research in regards to branding and component layouts. I wanted the colours to be less of a *spending* money experience but a *list* of things you want to be notified about. It was also very important to immediately search for products or find products, hence the search being on the home page. Barcode scanning functionality is also important for users that like to physically window shop. 
+
+I immediately went to the Hi-Fi prototype and ran through user testing. I re-iterated the prototype with a few tweaks in regards to component placement but also additional features. 
 {% endcontentfor %}
