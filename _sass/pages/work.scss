@@ -7,19 +7,10 @@
         margin: $space-xxxl $space-xxl;
         padding: $space-xl $space-xxl;
 
-        &:nth-of-type(odd) {
-            opacity: 0;
-            &.scroll-animation-true {
-                animation-fill-mode: forwards;
-                @include fadeInLeft(2s);
-            }
-        }
-        &:nth-of-type(even) {
-            opacity: 0;
-            &.scroll-animation-true {
-                animation-fill-mode: forwards;
-                @include fadeInRight(2s);
-            }
+        opacity: 0;
+        &.scroll-animation-true {
+            animation-fill-mode: forwards;
+            @include fadeInUp(2s);
         }
 
         @include media(smd) {

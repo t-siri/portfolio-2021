@@ -2589,15 +2589,9 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .work-page .content { padding-top: 0; }
 
-.work-page .border-box { position: relative; margin: calc(8 * 1rem) calc(4 * 1rem); padding: calc(3.5 * 1rem) calc(4 * 1rem); }
+.work-page .border-box { position: relative; margin: calc(8 * 1rem) calc(4 * 1rem); padding: calc(3.5 * 1rem) calc(4 * 1rem); opacity: 0; }
 
-.work-page .border-box:nth-of-type(odd) { opacity: 0; }
-
-.work-page .border-box.scroll-animation-true:nth-of-type(odd) { animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
-
-.work-page .border-box:nth-of-type(even) { opacity: 0; }
-
-.work-page .border-box.scroll-animation-true:nth-of-type(even) { animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
+.work-page .border-box.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; }
 
 @media (max-width: 950px) { .work-page .border-box { margin: calc(8 * 1rem) 0; padding: calc(3.5 * 1rem) calc(1 * 1rem); } .work-page .border-box .h2 { font-size: calc(1rem * 1.6); } .work-page .border-box .border-box-heading.h2 { top: -20px; } .work-page .border-box .border-box-footer { bottom: -45px; } }
 
