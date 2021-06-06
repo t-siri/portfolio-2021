@@ -35,7 +35,7 @@ After ideating with our clients, we refined the ideas with Admin users and the C
 
 This resulted into the following: 
 
-**Admin Users (CEO, Customer Service Team Manager, Sales Manager)**
+<p class="b ul-heading">Admin Users (CEO, Customer Service Team Manager, Sales Manager)</p>
 * Statistics on customer service team 
     * Enquiries (made, unanswered, answered) statistics
     * Leads
@@ -49,7 +49,7 @@ This resulted into the following:
     * Leads
 * Ability to set up client expectations on customer service team’s availability 
 
-**Marketers**
+<p class="b ul-heading">Marketers</p>
 * Ability to view statistics on admin users in order to provide the right content to customers
 * Create, save, update and schedule campaigns
 * Create campaign templates

@@ -33,7 +33,7 @@ Since Codebots have both light and dark theme, it was clear that components can 
 
 After gathering ideas from both parties, I was able to conclude what Solaris (source of truth) should contain:
 
-**Designers**
+<p class="b ul-heading">Designers</p>
 * Components
     * Sizes
     * Padding
@@ -48,7 +48,7 @@ After gathering ideas from both parties, I was able to conclude what Solaris (so
     * When to use the component in designs
     * Purpose of the component
 
-**Developers**
+<p class="b ul-heading">Developers</p>
 * Component
     * What is available
     * States

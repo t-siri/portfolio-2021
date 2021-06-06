@@ -42,7 +42,7 @@ After the ideation workshop, I worked with the client in regards to refining the
 
 This resulted into the following:
 
-**Kindred's cutomers**
+<p class="b ul-heading">Kindred's cutomers</p>
 * Live messaging
     * Ability to message about topics that are not related to the property
     * Ability to message about property user is interested in, so there is a thread
@@ -53,7 +53,7 @@ This resulted into the following:
 
 
 
-**Kindred's cutomer service team**
+<p class="b ul-heading">Kindred's cutomer service team</p>
 * To seamlessly communicate with their customers and understand more on what their customers are after
 * Schedule best contact times and notify customers
 * Viewing properties 

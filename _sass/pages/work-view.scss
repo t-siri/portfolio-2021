@@ -2,26 +2,36 @@
     .header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: $space-lg;
         opacity: 0;
         animation-fill-mode: forwards;
         @include fadeInDown(2s);
 
-        @include media(smd) {
+        @include media(md) {
             flex-direction: column;
-            margin-bottom: $space-md;
+        }
+
+        @include media(smd) {
             .btn {
                 margin-bottom: $space-md;
             }
-        }
-        @include media(smd) {
-            margin-bottom: 0;
         }
     }
     .work-view__content-wrapper {
         display: flex;
         align-items: center;
+        justify-items: center;
+        flex-direction: column;
         margin-bottom: $space-xxxxl;
+        width: 80%;
+        margin: 0 auto;
+
+        @include media(smd) {
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 0;
+        }
 
         &.scroll-animation-true {
             .img-wrapper {
@@ -35,7 +45,6 @@
         }
 
         @include media(smd) {
-            flex-direction: column;
             margin-bottom: $space-lg;
         }
 
@@ -45,20 +54,24 @@
 
         .img-wrapper {
             opacity: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: $space-xl auto;
+            @include media(smd) {
+                margin: 0 auto;
+            }
             .img-zoom {
             }
             img {
-                width: 50vw;
+                width: auto;
                 &:last-of-type {
                     margin-top: $space-md;
                 }
 
                 @include media(smd) {
                     width: 100%;
-                    margin: $space-sm auto;
-                }
-                @include media(smd) {
-                    margin: $space-xs auto;
+                    margin: 0 auto;
                 }
             }
 
@@ -73,14 +86,29 @@
         }
         .border-box {
             opacity: 0;
-            margin: 0 0 0 $space-lg;
+            margin: 0 auto;
             padding: $space-md;
+            width: 80%;
+
+            @include media(smd) {
+                width: 100%;
+            }
 
             @include media(smd) {
                 margin: $space-xxl 0 $space-lg;
             }
             @include media(xs) {
                 margin: $space-xl 0 $space-xs;
+            }
+
+            .work-desc {
+                p.ul-heading {
+                    margin-bottom: 0;
+                }
+
+                ul {
+                    margin-top: 0;
+                }
             }
         }
     }

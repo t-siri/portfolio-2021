@@ -1,0 +1,47 @@
+I"$	
+<p>Codebots is an online platform that allows developers to quickly kickstart their application with the foundations of common application requirements. At the end of 2018, it was announced that the company wanted to create new bots using modernised languages. It was crucial that these bots have pre-set components and extensions available such as the CRUD (Create, Read, Update, Delete), Timelines, Dashboard, Forms and Workflows. Given the complexity of these extensions and the limitation in time on completing these components, it was important to narrow down these extensions to a Minimal Viable Product. To a standard where the extensions are usable with key features that represents what they do. From there, I spent time on user research and product research in order to refine these extensions. I surveyed developers and asked them what they wanted to see in regards to what Codebots can provide with extensions. I then surveyed project managers and asked them what their everyday workflow is and how these extensions could provide simplicity to their everyday routine.</p>
+
+<p>Once user interviews were completed, I was able to narrow down the problem for each extension:</p>
+
+<ul>
+  <li>Timelines
+    <ul>
+      <li>Ability to view in timelines view</li>
+      <li>Ability to view in list view (responsiveness)</li>
+      <li>Quickly jump to a time gap and view changes in their application</li>
+      <li>Jump to current date</li>
+      <li>Filter out type of information</li>
+      <li>Search specific information</li>
+    </ul>
+  </li>
+  <li>CRUD
+    <ul>
+      <li>List view of data</li>
+      <li>Sort tables</li>
+      <li>Filter tables</li>
+      <li>Search data</li>
+      <li>To create, read, update and delete data</li>
+      <li>Dashboard</li>
+      <li>Ability to quickly throw a dashboard together</li>
+      <li>Create custom graphs</li>
+      <li>Place graphs in layouts</li>
+      <li>Save, edit, and publish dashboards</li>
+    </ul>
+  </li>
+  <li>Forms
+    <ul>
+      <li>Ability to create forms</li>
+      <li>Create skip logic</li>
+      <li>Create specific types of questions</li>
+      <li>Requirements on forms</li>
+      <li>Preview and publish</li>
+      <li>View results</li>
+    </ul>
+  </li>
+  <li>Workflows
+    <ul>
+      <li>Easily move around workflows and edit them</li>
+    </ul>
+  </li>
+</ul>
+:ET
