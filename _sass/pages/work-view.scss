@@ -6,6 +6,10 @@
         animation-fill-mode: forwards;
         @include fadeInDown(2s);
 
+        h2 {
+            margin-bottom: 0;
+        }
+
         @include media(md) {
             flex-direction: column;
         }
@@ -33,17 +37,6 @@
             margin-bottom: 0;
         }
 
-        &.scroll-animation-true {
-            .img-wrapper {
-                animation-fill-mode: forwards;
-                @include fadeInLeft(2s);
-            }
-            .border-box {
-                animation-fill-mode: forwards;
-                @include fadeInRight(2s);
-            }
-        }
-
         @include media(smd) {
             margin-bottom: $space-lg;
         }
@@ -58,6 +51,10 @@
             flex-direction: column;
             width: 100%;
             margin: $space-xl auto;
+            &.scroll-animation-true {
+                animation-fill-mode: forwards;
+                @include fadeInUp(2s);
+            }
             @include media(smd) {
                 margin: 0 auto;
             }
@@ -89,6 +86,11 @@
             margin: 0 auto;
             padding: $space-md;
             width: 80%;
+            &.scroll-animation-true {
+                animation-fill-mode: forwards;
+                @include fadeInUp(2s);
+                animation-delay: 0.3s;
+            }
 
             @include media(smd) {
                 width: 100%;

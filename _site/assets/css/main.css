@@ -2545,6 +2545,8 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .work-view-page .header { display: flex; justify-content: space-between; opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; animation-duration: 2s; }
 
+.work-view-page .header h2 { margin-bottom: 0; }
+
 @media (max-width: 1100px) { .work-view-page .header { flex-direction: column; } }
 
 @media (max-width: 950px) { .work-view-page .header .btn { margin-bottom: calc(2 * 1rem); } }
@@ -2555,15 +2557,13 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .work-view-page .work-view__content-wrapper h2 { margin-bottom: 0; }
 
-.work-view-page .work-view__content-wrapper.scroll-animation-true .img-wrapper { animation-fill-mode: forwards; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 2s; }
-
-.work-view-page .work-view__content-wrapper.scroll-animation-true .border-box { animation-fill-mode: forwards; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 2s; }
-
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper { margin-bottom: calc(3 * 1rem); } }
 
 .work-view-page .work-view__content-wrapper:last-of-type { margin-bottom: calc(2 * 1rem); }
 
 .work-view-page .work-view__content-wrapper .img-wrapper { opacity: 0; display: flex; flex-direction: column; width: 100%; margin: calc(3.5 * 1rem) auto; }
+
+.work-view-page .work-view__content-wrapper .img-wrapper.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; }
 
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper .img-wrapper { margin: 0 auto; } }
 
@@ -2574,6 +2574,8 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper .img-wrapper img { width: 100%; margin: 0 auto; } }
 
 .work-view-page .work-view__content-wrapper .border-box { opacity: 0; margin: 0 auto; padding: calc(2 * 1rem); width: 80%; }
+
+.work-view-page .work-view__content-wrapper .border-box.scroll-animation-true { animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; animation-delay: 0.3s; }
 
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper .border-box { width: 100%; } }
 
