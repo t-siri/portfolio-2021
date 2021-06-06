@@ -2615,7 +2615,9 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (min-width: 1600px) { .gallery-page section.creative-gallery { max-width: 1180px; } }
 
-@media (max-width: 1250px) { .gallery-page section.creative-gallery { max-width: 70vw; } }
+@media (max-width: 1600px) { .gallery-page section.creative-gallery { max-width: 60vw; } }
+
+@media (max-width: 1100px) { .gallery-page section.creative-gallery { max-width: 70vw; } }
 
 @media (max-width: 950px) { .gallery-page section.creative-gallery { max-width: calc(100vw - 3rem - 3rem); } }
 

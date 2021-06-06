@@ -20,7 +20,10 @@
         @include media-min(xl) {
             max-width: 1180px;
         }
-        @include media(lg) {
+        @include media(xl) {
+            max-width: 60vw;
+        }
+        @include media(md) {
             max-width: 70vw;
         }
         @include media(smd) {
