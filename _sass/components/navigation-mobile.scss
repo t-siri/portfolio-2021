@@ -6,6 +6,7 @@ hamburger and slide out navigation */
 .menu-link {
 	position: fixed;
 	z-index: 6;
+	top: 45vh;
 
 	@include media-min(md) {
 		display: none;

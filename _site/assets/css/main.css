@@ -2074,7 +2074,7 @@ nav .contact-content #contact-form.submitted .form { opacity: 0; height: 0; }
 /* Mobile navigation, note that on mobile we are replacing the horizontal nav with the 
 hamburger and slide out navigation */
 /* START HAMBURGER */
-#menu, .menu-link { position: fixed; z-index: 6; }
+#menu, .menu-link { position: fixed; z-index: 6; top: 45vh; }
 
 @media (min-width: 1100px) { #menu, .menu-link { display: none; } }
 
