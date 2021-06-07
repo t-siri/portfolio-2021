@@ -21,9 +21,6 @@
             max-width: 1140px;
         }
         @include media(xl) {
-            max-width: 60vw;
-        }
-        @include media(lg) {
             max-width: 70vw;
         }
         @include media(smd) {
