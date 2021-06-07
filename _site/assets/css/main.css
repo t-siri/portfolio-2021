@@ -2615,9 +2615,9 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 @media (min-width: 1600px) { .gallery-page section.creative-gallery { max-width: 1140px; } }
 
-@media (max-width: 1600px) { .gallery-page section.creative-gallery { max-width: 70vw; } }
+@media (max-width: 1600px) { .gallery-page section.creative-gallery { max-width: 75vw; } }
 
-@media (max-width: 950px) { .gallery-page section.creative-gallery { max-width: calc(100vw - 3rem - 3rem); } }
+@media (max-width: 1100px) { .gallery-page section.creative-gallery { max-width: calc(100vw - 3rem - 3rem); } }
 
 .gallery-page section.creative-gallery .gallery-image { opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 2s; animation-delay: 0.2s; overflow: hidden; align-items: center; align-items: center; justify-content: center; align-content: center; display: flex; float: left; position: relative; height: fit-content; width: fit-content; margin-right: calc(1 * 1rem); margin-bottom: calc(1 * 1rem); }
 

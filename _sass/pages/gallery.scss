@@ -21,9 +21,9 @@
             max-width: 1140px;
         }
         @include media(xl) {
-            max-width: 70vw;
+            max-width: 75vw;
         }
-        @include media(smd) {
+        @include media(md) {
             max-width: calc(100vw - 3rem - 3rem);
         }
         .gallery-image {
