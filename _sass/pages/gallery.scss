@@ -18,12 +18,12 @@
         align-content: center;
         justify-content: center;
         @include media-min(xl) {
-            max-width: 1180px;
+            max-width: 1090px;
         }
         @include media(xl) {
             max-width: 60vw;
         }
-        @include media(md) {
+        @include media(lg) {
             max-width: 70vw;
         }
         @include media(smd) {
