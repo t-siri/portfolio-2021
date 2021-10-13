@@ -38,6 +38,14 @@
     </div>
 </div>
 
+{% if page.dev==true%}
+<div class="work-view__content-wrapper dev">
+    <div class="border-box  scroll-animation-false">
+        <p class="h3 border-box-heading">development</p>
+        <div class="work-desc">{% contentblock development %}</div>
+    </div>
+</div>
+{% endif %}
 <!-- 
     for img zoom
 <div class="img-wrapper scroll-animation-false">

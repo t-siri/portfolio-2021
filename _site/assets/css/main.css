@@ -2553,6 +2553,8 @@ main.content { padding: 8rem calc(3.5 * 1rem); }
 
 .work-view-page .work-view__content-wrapper { display: flex; align-items: center; justify-items: center; flex-direction: column; margin-bottom: calc(10 * 1rem); width: 80%; margin: 0 auto; }
 
+.work-view-page .work-view__content-wrapper.dev { margin-top: calc(3 * 1rem); }
+
 @media (max-width: 950px) { .work-view-page .work-view__content-wrapper { width: 100%; } }
 
 .work-view-page .work-view__content-wrapper h2 { margin-bottom: 0; }

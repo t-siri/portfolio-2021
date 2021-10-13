@@ -29,6 +29,10 @@
         width: 80%;
         margin: 0 auto;
 
+        &.dev {
+            margin-top: $space-lg;
+        }
+
         @include media(smd) {
             width: 100%;
         }
