@@ -10,6 +10,7 @@ img4: harmony-3
 img5: harmony-4
 img6: harmony-5
 img7: harmony-6
+img8: harmony-7
 dev: true
 ---
 
